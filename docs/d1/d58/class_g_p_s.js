@@ -4,6 +4,7 @@ var class_g_p_s =
     [ "gpsLocation", "dd/d56/struct_g_p_s_1_1gps_location.html", "dd/d56/struct_g_p_s_1_1gps_location" ],
     [ "~GPS", "d1/d58/class_g_p_s.html#afe84b00ea93254fcb8b84a0f2b240c9d", null ],
     [ "BlockUntilLocationAquired", "d1/d58/class_g_p_s.html#ad278ad43b9d85b0bddd0e977fcceaae0", null ],
+    [ "BlockUntilLocationAquired", "d1/d58/class_g_p_s.html#ab131d32a9cf0eb6fbfa983e8c8189c80", null ],
     [ "GetAltitude", "d1/d58/class_g_p_s.html#a4efb007e891474ff5e3c9634f4aec11d", null ],
     [ "GetDateTime", "d1/d58/class_g_p_s.html#aa81805e904880e19b581085bf5d0948e", null ],
     [ "GetLocation", "d1/d58/class_g_p_s.html#a041af96581cc8c5d2b5a8c7d100591ee", null ],

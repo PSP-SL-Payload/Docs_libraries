@@ -2,7 +2,7 @@ var searchData=
 [
   ['back_0',['back',['../d5/db2/class_vector.html#a6decf0bdeb6849bfcc151b2c514f639f',1,'Vector']]],
   ['begin_1',['begin',['../d5/db2/class_vector.html#ad1dc835efbf1859b3bd960c9b4f55ad4',1,'Vector::begin()'],['../d5/db2/class_vector.html#af8559abeb71f43efc0fc2933b79c3901',1,'Vector::begin() const']]],
-  ['blockuntillocationaquired_2',['BlockUntilLocationAquired',['../d1/d58/class_g_p_s.html#ad278ad43b9d85b0bddd0e977fcceaae0',1,'GPS']]],
+  ['blockuntillocationaquired_2',['BlockUntilLocationAquired',['../d1/d58/class_g_p_s.html#ad278ad43b9d85b0bddd0e977fcceaae0',1,'GPS::BlockUntilLocationAquired()'],['../d1/d58/class_g_p_s.html#ab131d32a9cf0eb6fbfa983e8c8189c80',1,'GPS::BlockUntilLocationAquired(uint32_t timeout_ms)']]],
   ['buzzer_3',['Buzzer',['../d2/d9a/class_buzzer.html#afc6f95e098b96f774ad5f4e8c6e74a4e',1,'Buzzer']]],
   ['buzzerroraltimeter_4',['BuzzErrorAltimeter',['../d2/d9a/class_buzzer.html#a43d9be925cebc9817d4cbb2931555d4d',1,'Buzzer']]],
   ['buzzerrorimu_5',['BuzzErrorIMU',['../d2/d9a/class_buzzer.html#a66b39f3726037013a758e593eb49a31b',1,'Buzzer']]],

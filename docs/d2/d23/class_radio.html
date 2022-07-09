@@ -83,10 +83,7 @@ $(document).ready(function(){initNavTree('d2/d23/class_radio.html','../../'); in
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="../../d1/d15/class_radio-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Radio Class Reference</div></div>
 </div><!--header-->
@@ -94,172 +91,31 @@ $(document).ready(function(){initNavTree('d2/d23/class_radio.html','../../'); in
 
 <p><code>#include &lt;<a class="el" href="../../d9/d1e/_radio__433_t30_d_8h_source.html">Radio_433T30D.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d10/struct_radio_1_1gps_coords_packet_data.html">gpsCoordsPacketData</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d5b/union_radio_1_1packet_payload_type.html">packetPayloadType</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">selects payload type sent one of the types below is sent as the payload in a <a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html" title="This is the packet that is sent universally ALWAYS 17 bytes wide (16 bytes of data and 1 byte for fla...">radioPacket</a>  <a href="../../d2/d5b/union_radio_1_1packet_payload_type.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the packet that is sent universally ALWAYS 17 bytes wide (16 bytes of data and 1 byte for flag bits)  <a href="../../dd/dc3/struct_radio_1_1radio_packet.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8b/struct_radio_1_1time_packet_data.html">timePacketData</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:afd6ff59cbee3ae9e93f4ccadbdc0e7ee"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#afd6ff59cbee3ae9e93f4ccadbdc0e7ee">PacketPayloadTypes</a> { <br />
-&#160;&#160;<a class="el" href="../../d2/d23/class_radio.html#afd6ff59cbee3ae9e93f4ccadbdc0e7eeacf00c8777d1a1823a3221feda911f028">Float</a> = 0
-, <a class="el" href="../../d2/d23/class_radio.html#afd6ff59cbee3ae9e93f4ccadbdc0e7eea38cd8f63812a52e680f8564390780fc7">Double</a> = 1
-, <a class="el" href="../../d2/d23/class_radio.html#afd6ff59cbee3ae9e93f4ccadbdc0e7eea17c354863cfbfeb6ed771933d84d2126">Int32</a> = 2
-, <a class="el" href="../../d2/d23/class_radio.html#afd6ff59cbee3ae9e93f4ccadbdc0e7eead1953c7911a0b11171abfffb38d92b13">Int16</a> = 3
-, <br />
-&#160;&#160;<a class="el" href="../../d2/d23/class_radio.html#afd6ff59cbee3ae9e93f4ccadbdc0e7eea64f7df9d6609fd8b11c4a60bd038ecda">Int8</a> = 4
-, <a class="el" href="../../d2/d23/class_radio.html#afd6ff59cbee3ae9e93f4ccadbdc0e7eeafb134e8820a6706fdd2f2b8460c2d866">String</a> = 5
-, <a class="el" href="../../d2/d23/class_radio.html#afd6ff59cbee3ae9e93f4ccadbdc0e7eeab911ab66cea5610f8ad282afaf576e2c">Time</a> = 6
-, <a class="el" href="../../d2/d23/class_radio.html#afd6ff59cbee3ae9e93f4ccadbdc0e7eea46bc692556a9bf6a8f5a5105e92da023">GPSCoords</a> = 7
-, <br />
-&#160;&#160;<a class="el" href="../../d2/d23/class_radio.html#afd6ff59cbee3ae9e93f4ccadbdc0e7eeae11e9a3391905bbc59afc661ea1b3b12">Handshake</a> = 8
-<br />
- }</td></tr>
-<tr class="memdesc:afd6ff59cbee3ae9e93f4ccadbdc0e7ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">All the supported kinds of packets that can be sent and received.  <a href="../../d2/d23/class_radio.html#afd6ff59cbee3ae9e93f4ccadbdc0e7ee">More...</a><br /></td></tr>
-<tr class="separator:afd6ff59cbee3ae9e93f4ccadbdc0e7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa6f9cdeb21852529936f59dd12b7cac8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#aa6f9cdeb21852529936f59dd12b7cac8">Init</a> (HardwareSerial *uart, uint8_t auxPin, uint8_t m0Pin, uint8_t m1Pin)</td></tr>
 <tr class="separator:aa6f9cdeb21852529936f59dd12b7cac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fb63e8ebc78c18b4eb5a8040d684174"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#a9fb63e8ebc78c18b4eb5a8040d684174">~Radio</a> ()</td></tr>
 <tr class="separator:a9fb63e8ebc78c18b4eb5a8040d684174"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7aedae0f1fa0fb77d53e9be25f196224"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#a7aedae0f1fa0fb77d53e9be25f196224">ReceivePacketBlocking</a> (<a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;packet)</td></tr>
-<tr class="memdesc:a7aedae0f1fa0fb77d53e9be25f196224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks until it receives a packet. It will block indefinitely, there is no timeout. Be aware of that.  <a href="../../d2/d23/class_radio.html#a7aedae0f1fa0fb77d53e9be25f196224">More...</a><br /></td></tr>
-<tr class="separator:a7aedae0f1fa0fb77d53e9be25f196224"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a370fecfdef2e7c65e36669586ee3afa6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#a370fecfdef2e7c65e36669586ee3afa6">ReceivePacketBlocking</a> (<a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;packet, uint32_t timeout_ms)</td></tr>
-<tr class="memdesc:a370fecfdef2e7c65e36669586ee3afa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks until it receives a packet. It will block until the packet is received or the timeout is exceeded.  <a href="../../d2/d23/class_radio.html#a370fecfdef2e7c65e36669586ee3afa6">More...</a><br /></td></tr>
-<tr class="separator:a370fecfdef2e7c65e36669586ee3afa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46b42e776a59d682a7571e59f03c5d96"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#a46b42e776a59d682a7571e59f03c5d96">SendPacketBlocking</a> (<a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;packet, uint16_t numTries)</td></tr>
-<tr class="memdesc:a46b42e776a59d682a7571e59f03c5d96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a packet. It blocks while it waits for a Handshake packet confirmation.  <a href="../../d2/d23/class_radio.html#a46b42e776a59d682a7571e59f03c5d96">More...</a><br /></td></tr>
-<tr class="separator:a46b42e776a59d682a7571e59f03c5d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a2c32ddf76e4e439efd881235fff0295b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#a2c32ddf76e4e439efd881235fff0295b">SetPacketFlagBits</a> (<a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;packet, <a class="el" href="../../d2/d23/class_radio.html#afd6ff59cbee3ae9e93f4ccadbdc0e7ee">PacketPayloadTypes</a> type, bool bool1, bool bool2)</td></tr>
-<tr class="memdesc:a2c32ddf76e4e439efd881235fff0295b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all flag bits of the packet.  <a href="../../d2/d23/class_radio.html#a2c32ddf76e4e439efd881235fff0295b">More...</a><br /></td></tr>
-<tr class="separator:a2c32ddf76e4e439efd881235fff0295b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66a563c52ced3432b031c9047cb59a0e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#a66a563c52ced3432b031c9047cb59a0e">SetPacketFlagBits</a> (<a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;packet, uint8_t allFlagBits)</td></tr>
-<tr class="memdesc:a66a563c52ced3432b031c9047cb59a0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all flag bits of the packet.  <a href="../../d2/d23/class_radio.html#a66a563c52ced3432b031c9047cb59a0e">More...</a><br /></td></tr>
-<tr class="separator:a66a563c52ced3432b031c9047cb59a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2fe90f1d71dce87f26e5e0930898931"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#ae2fe90f1d71dce87f26e5e0930898931">SetPacketType</a> (<a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;packet, <a class="el" href="../../d2/d23/class_radio.html#afd6ff59cbee3ae9e93f4ccadbdc0e7ee">PacketPayloadTypes</a> type)</td></tr>
-<tr class="memdesc:ae2fe90f1d71dce87f26e5e0930898931"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets bits [3:0] of the flag bits. These signify the type of packet according to PacketTypes enum Does not overwrite other flag values, only sets the packet's data type.  <a href="../../d2/d23/class_radio.html#ae2fe90f1d71dce87f26e5e0930898931">More...</a><br /></td></tr>
-<tr class="separator:ae2fe90f1d71dce87f26e5e0930898931"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49d97d1a788cf6e0e2bb1ef15a6df7ce"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#a49d97d1a788cf6e0e2bb1ef15a6df7ce">SetPacketBools</a> (<a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;packet, bool bool1, bool bool2)</td></tr>
-<tr class="memdesc:a49d97d1a788cf6e0e2bb1ef15a6df7ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets bits [5:4] of the flag bits. These are the two bools sent with the packet flags Does not overwrite other flag values, only sets the two bools.  <a href="../../d2/d23/class_radio.html#a49d97d1a788cf6e0e2bb1ef15a6df7ce">More...</a><br /></td></tr>
-<tr class="separator:a49d97d1a788cf6e0e2bb1ef15a6df7ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51f446a8a0a211a4ba17756172fab24e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#a51f446a8a0a211a4ba17756172fab24e">SetPacketBool1</a> (<a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;packet, bool bool1)</td></tr>
-<tr class="memdesc:a51f446a8a0a211a4ba17756172fab24e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets bit [4] of the flag bits. This is bool1 sent with the packet flags Does not overwrite other flag values, only sets the bool1.  <a href="../../d2/d23/class_radio.html#a51f446a8a0a211a4ba17756172fab24e">More...</a><br /></td></tr>
-<tr class="separator:a51f446a8a0a211a4ba17756172fab24e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e927c9ed5a12300cfe0d5dc17ae26d0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#a4e927c9ed5a12300cfe0d5dc17ae26d0">SetPacketBool2</a> (<a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;packet, bool bool2)</td></tr>
-<tr class="memdesc:a4e927c9ed5a12300cfe0d5dc17ae26d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets bit [5] of the flag bits. This is bool2 sent with the packet flags Does not overwrite other flag values, only sets the bool2.  <a href="../../d2/d23/class_radio.html#a4e927c9ed5a12300cfe0d5dc17ae26d0">More...</a><br /></td></tr>
-<tr class="separator:a4e927c9ed5a12300cfe0d5dc17ae26d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6002f377f19a74708cabf6c12e8261ab"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d2/d23/class_radio.html#afd6ff59cbee3ae9e93f4ccadbdc0e7ee">PacketPayloadTypes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#a6002f377f19a74708cabf6c12e8261ab">GetPacketType</a> (<a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;packet)</td></tr>
-<tr class="memdesc:a6002f377f19a74708cabf6c12e8261ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns what type of data the packet contains according to PacketTypes enum These are flag bits [3:0].  <a href="../../d2/d23/class_radio.html#a6002f377f19a74708cabf6c12e8261ab">More...</a><br /></td></tr>
-<tr class="separator:a6002f377f19a74708cabf6c12e8261ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cfd9fb4dbd5748a2571e0efda0f762f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d2/d23/class_radio.html#afd6ff59cbee3ae9e93f4ccadbdc0e7ee">PacketPayloadTypes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#a7cfd9fb4dbd5748a2571e0efda0f762f">GetPacketType</a> (uint8_t flagByte)</td></tr>
-<tr class="memdesc:a7cfd9fb4dbd5748a2571e0efda0f762f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns what type of data the packet contains according to PacketTypes enum These are flag bits [3:0].  <a href="../../d2/d23/class_radio.html#a7cfd9fb4dbd5748a2571e0efda0f762f">More...</a><br /></td></tr>
-<tr class="separator:a7cfd9fb4dbd5748a2571e0efda0f762f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a803172795701b7c00c1bbd522c0011"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#a8a803172795701b7c00c1bbd522c0011">GetPacketBool1</a> (<a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;packet)</td></tr>
-<tr class="memdesc:a8a803172795701b7c00c1bbd522c0011"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of bool1 in the packet flags This is flag bit [4].  <a href="../../d2/d23/class_radio.html#a8a803172795701b7c00c1bbd522c0011">More...</a><br /></td></tr>
-<tr class="separator:a8a803172795701b7c00c1bbd522c0011"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80a635df2741f545dbe36e15e53f1713"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#a80a635df2741f545dbe36e15e53f1713">GetPacketBool1</a> (uint8_t flagByte)</td></tr>
-<tr class="memdesc:a80a635df2741f545dbe36e15e53f1713"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of bool1 in the packet flags This is flag bit [4].  <a href="../../d2/d23/class_radio.html#a80a635df2741f545dbe36e15e53f1713">More...</a><br /></td></tr>
-<tr class="separator:a80a635df2741f545dbe36e15e53f1713"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab97b6032bb9d4cd838fc45a61c76a480"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#ab97b6032bb9d4cd838fc45a61c76a480">GetPacketBool2</a> (<a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;packet)</td></tr>
-<tr class="memdesc:ab97b6032bb9d4cd838fc45a61c76a480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of bool2 in the packet flags This is flag bit [5].  <a href="../../d2/d23/class_radio.html#ab97b6032bb9d4cd838fc45a61c76a480">More...</a><br /></td></tr>
-<tr class="separator:ab97b6032bb9d4cd838fc45a61c76a480"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a916e4d1c7d9cf0d709c948de98d2c0b8"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#a916e4d1c7d9cf0d709c948de98d2c0b8">GetPacketBool2</a> (uint8_t flagByte)</td></tr>
-<tr class="memdesc:a916e4d1c7d9cf0d709c948de98d2c0b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of bool2 in the packet flags This is flag bit [5].  <a href="../../d2/d23/class_radio.html#a916e4d1c7d9cf0d709c948de98d2c0b8">More...</a><br /></td></tr>
-<tr class="separator:a916e4d1c7d9cf0d709c948de98d2c0b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee73e3be29f1db6b336a773290834fb0"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#aee73e3be29f1db6b336a773290834fb0">SetFloatPacketData</a> (<a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;packet, const float *floats)</td></tr>
-<tr class="memdesc:aee73e3be29f1db6b336a773290834fb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the passed in packet's data to be the array of floats Note that it can store 4 floats.  <a href="../../d2/d23/class_radio.html#aee73e3be29f1db6b336a773290834fb0">More...</a><br /></td></tr>
-<tr class="separator:aee73e3be29f1db6b336a773290834fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73cc10030d0ec8b7244345fbc4ba2349"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#a73cc10030d0ec8b7244345fbc4ba2349">SetFloatPacketData</a> (<a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;packet, const <a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> *packetToCopyFrom)</td></tr>
-<tr class="memdesc:a73cc10030d0ec8b7244345fbc4ba2349"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the passed in packet's data to be the array of floats Note that it can store 4 floats.  <a href="../../d2/d23/class_radio.html#a73cc10030d0ec8b7244345fbc4ba2349">More...</a><br /></td></tr>
-<tr class="separator:a73cc10030d0ec8b7244345fbc4ba2349"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6970db71a5f860323e178d6b226a0b6f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#a6970db71a5f860323e178d6b226a0b6f">SetDoublePacketData</a> (<a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;packet, const double *doubles)</td></tr>
-<tr class="memdesc:a6970db71a5f860323e178d6b226a0b6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the passed in packet's data to be the array of doubles Note that it can store 4 doubles.  <a href="../../d2/d23/class_radio.html#a6970db71a5f860323e178d6b226a0b6f">More...</a><br /></td></tr>
-<tr class="separator:a6970db71a5f860323e178d6b226a0b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1640cfca02ce6dc037b1a555e21f0db8"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#a1640cfca02ce6dc037b1a555e21f0db8">SetDoublePacketData</a> (<a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;packet, const <a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> *packetToCopyFrom)</td></tr>
-<tr class="memdesc:a1640cfca02ce6dc037b1a555e21f0db8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the passed in packet's data to be the array of doubles Note that it can store 4 doubles.  <a href="../../d2/d23/class_radio.html#a1640cfca02ce6dc037b1a555e21f0db8">More...</a><br /></td></tr>
-<tr class="separator:a1640cfca02ce6dc037b1a555e21f0db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac449c8acd94a252ce26b9feb71b7916c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#ac449c8acd94a252ce26b9feb71b7916c">SetInt32PacketData</a> (<a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;packet, const uint32_t *ints)</td></tr>
-<tr class="memdesc:ac449c8acd94a252ce26b9feb71b7916c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the passed in packet's data to be the array of 32 bit ints. Note that it can store 4 uint32_t's.  <a href="../../d2/d23/class_radio.html#ac449c8acd94a252ce26b9feb71b7916c">More...</a><br /></td></tr>
-<tr class="separator:ac449c8acd94a252ce26b9feb71b7916c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21cf3b35296a50674450468bb27b1dfd"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#a21cf3b35296a50674450468bb27b1dfd">SetInt32PacketData</a> (<a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;packet, const <a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> *packetToCopyFrom)</td></tr>
-<tr class="memdesc:a21cf3b35296a50674450468bb27b1dfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the passed in packet's data to be the array of 32 bit ints. Note that it can store 4 uint32_t's.  <a href="../../d2/d23/class_radio.html#a21cf3b35296a50674450468bb27b1dfd">More...</a><br /></td></tr>
-<tr class="separator:a21cf3b35296a50674450468bb27b1dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31ec49a0db45857fb6b1fc873af1a4a3"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#a31ec49a0db45857fb6b1fc873af1a4a3">SetInt16PacketData</a> (<a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;packet, const uint16_t *ints)</td></tr>
-<tr class="memdesc:a31ec49a0db45857fb6b1fc873af1a4a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the passed in packet's data to be the array of 16 bit ints. Note that it can store 8 uint16_t's.  <a href="../../d2/d23/class_radio.html#a31ec49a0db45857fb6b1fc873af1a4a3">More...</a><br /></td></tr>
-<tr class="separator:a31ec49a0db45857fb6b1fc873af1a4a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefe47f1d56213813db37e9ab9a887aa4"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#aefe47f1d56213813db37e9ab9a887aa4">SetInt16PacketData</a> (<a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;packet, const <a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> *packetToCopyFrom)</td></tr>
-<tr class="memdesc:aefe47f1d56213813db37e9ab9a887aa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the passed in packet's data to be the array of 16 bit ints. Note that it can store 8 uint16_t's.  <a href="../../d2/d23/class_radio.html#aefe47f1d56213813db37e9ab9a887aa4">More...</a><br /></td></tr>
-<tr class="separator:aefe47f1d56213813db37e9ab9a887aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92732be0886effb53ba7d004a545d049"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#a92732be0886effb53ba7d004a545d049">SetInt8PacketData</a> (<a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;packet, const uint8_t *ints)</td></tr>
-<tr class="memdesc:a92732be0886effb53ba7d004a545d049"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the passed in packet's data to be the array of 8 bit ints. Note that it can store 16 uint8_t's.  <a href="../../d2/d23/class_radio.html#a92732be0886effb53ba7d004a545d049">More...</a><br /></td></tr>
-<tr class="separator:a92732be0886effb53ba7d004a545d049"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf85cd2b36c9e47755f6d1fc4be50263"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#adf85cd2b36c9e47755f6d1fc4be50263">SetInt8PacketData</a> (<a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;packet, const <a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> *packetToCopyFrom)</td></tr>
-<tr class="memdesc:adf85cd2b36c9e47755f6d1fc4be50263"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the passed in packet's data to be the array of 8 bit ints. Note that it can store 16 uint8_t's.  <a href="../../d2/d23/class_radio.html#adf85cd2b36c9e47755f6d1fc4be50263">More...</a><br /></td></tr>
-<tr class="separator:adf85cd2b36c9e47755f6d1fc4be50263"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fcc5ef38cca5fd7660d949c0f7e9d63"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#a0fcc5ef38cca5fd7660d949c0f7e9d63">SetStringPacketData</a> (<a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;packet, const char *message)</td></tr>
-<tr class="memdesc:a0fcc5ef38cca5fd7660d949c0f7e9d63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the passed in packet's data to be the passed in string. Note that it can store 15 chars (16'th char is reserved for the null terminator).  <a href="../../d2/d23/class_radio.html#a0fcc5ef38cca5fd7660d949c0f7e9d63">More...</a><br /></td></tr>
-<tr class="separator:a0fcc5ef38cca5fd7660d949c0f7e9d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3266939252e88cb42ec5dafbf4c81a3e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#a3266939252e88cb42ec5dafbf4c81a3e">SetTimePacketData</a> (<a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;packet, const <a class="el" href="../../dd/d8b/struct_radio_1_1time_packet_data.html">timePacketData</a> &amp;timeData)</td></tr>
-<tr class="memdesc:a3266939252e88cb42ec5dafbf4c81a3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the passed in packet's data to be the timeData.  <a href="../../d2/d23/class_radio.html#a3266939252e88cb42ec5dafbf4c81a3e">More...</a><br /></td></tr>
-<tr class="separator:a3266939252e88cb42ec5dafbf4c81a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7808955f794f01d8facf7c85d84b550"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#ac7808955f794f01d8facf7c85d84b550">SetGPSPacketData</a> (<a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;packet, const <a class="el" href="../../d2/d10/struct_radio_1_1gps_coords_packet_data.html">gpsCoordsPacketData</a> &amp;gpsData)</td></tr>
-<tr class="memdesc:ac7808955f794f01d8facf7c85d84b550"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the passed in packet's data to be the gpsData.  <a href="../../d2/d23/class_radio.html#ac7808955f794f01d8facf7c85d84b550">More...</a><br /></td></tr>
-<tr class="separator:ac7808955f794f01d8facf7c85d84b550"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9161022fa5e4b2560b2c29f30ca74700"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#a9161022fa5e4b2560b2c29f30ca74700">PrintAllPacketData</a> (<a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;packet)</td></tr>
-<tr class="memdesc:a9161022fa5e4b2560b2c29f30ca74700"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints all the packet data. Prints the flag byte first, then the payload data.  <a href="../../d2/d23/class_radio.html#a9161022fa5e4b2560b2c29f30ca74700">More...</a><br /></td></tr>
-<tr class="separator:a9161022fa5e4b2560b2c29f30ca74700"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f32c42bb9dad76ca6a4bb3e9d509859"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#a8f32c42bb9dad76ca6a4bb3e9d509859">PrintPacketPayload</a> (<a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;pkt)</td></tr>
-<tr class="memdesc:a8f32c42bb9dad76ca6a4bb3e9d509859"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the packet payload.  <a href="../../d2/d23/class_radio.html#a8f32c42bb9dad76ca6a4bb3e9d509859">More...</a><br /></td></tr>
-<tr class="separator:a8f32c42bb9dad76ca6a4bb3e9d509859"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a856fbee450858d48635aab7ab72a91bc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#a856fbee450858d48635aab7ab72a91bc">PrintPacketFlagBits</a> (const uint8_t flagByte)</td></tr>
-<tr class="memdesc:a856fbee450858d48635aab7ab72a91bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the packet flag byte (all the flag bits)  <a href="../../d2/d23/class_radio.html#a856fbee450858d48635aab7ab72a91bc">More...</a><br /></td></tr>
-<tr class="separator:a856fbee450858d48635aab7ab72a91bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abab5190de0df1dcdaadb4f04174da387"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#abab5190de0df1dcdaadb4f04174da387">PrintPacketFlagBits</a> (<a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;packet)</td></tr>
-<tr class="memdesc:abab5190de0df1dcdaadb4f04174da387"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the packet flag byte (all the flag bits)  <a href="../../d2/d23/class_radio.html#abab5190de0df1dcdaadb4f04174da387">More...</a><br /></td></tr>
-<tr class="separator:abab5190de0df1dcdaadb4f04174da387"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12ae6ed2562d8e325afb2d5b5b8abaf8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#a12ae6ed2562d8e325afb2d5b5b8abaf8">ReceivePacketBlocking</a> (<a class="el" href="../../d5/de8/class_radio_packet.html">RadioPacket</a> &amp;packet)</td></tr>
+<tr class="memdesc:a12ae6ed2562d8e325afb2d5b5b8abaf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks until it receives a packet. It will block indefinitely, there is no timeout. Be aware of that.  <a href="../../d2/d23/class_radio.html#a12ae6ed2562d8e325afb2d5b5b8abaf8">More...</a><br /></td></tr>
+<tr class="separator:a12ae6ed2562d8e325afb2d5b5b8abaf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1335d3312304573543de5f07a9dc12a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#aa1335d3312304573543de5f07a9dc12a">ReceivePacketBlocking</a> (<a class="el" href="../../d5/de8/class_radio_packet.html">RadioPacket</a> &amp;packet, uint32_t timeout_ms)</td></tr>
+<tr class="memdesc:aa1335d3312304573543de5f07a9dc12a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks until it receives a packet. It will block until the packet is received or the timeout is exceeded.  <a href="../../d2/d23/class_radio.html#aa1335d3312304573543de5f07a9dc12a">More...</a><br /></td></tr>
+<tr class="separator:aa1335d3312304573543de5f07a9dc12a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d803c7cc4620fff0c52c6dafbd98161"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#a1d803c7cc4620fff0c52c6dafbd98161">ReceivePacketBlockingAndPrintTFT</a> (<a class="el" href="../../d5/de8/class_radio_packet.html">RadioPacket</a> &amp;packet, <a class="el" href="../../d9/d7a/class_t_f_t.html">TFT</a> &amp;tft_screen, char *tempMessageLine1, uint32_t timeout_ms)</td></tr>
+<tr class="memdesc:a1d803c7cc4620fff0c52c6dafbd98161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks until it receives a packet. It will block until the packet is received or the timeout is exceeded. Also prints the message to ILI9341 <a class="el" href="../../d9/d7a/class_t_f_t.html">TFT</a> display.  <a href="../../d2/d23/class_radio.html#a1d803c7cc4620fff0c52c6dafbd98161">More...</a><br /></td></tr>
+<tr class="separator:a1d803c7cc4620fff0c52c6dafbd98161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ddd955fda247c0d6b150024670d4734"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#a1ddd955fda247c0d6b150024670d4734">ReceivePacketBlockingAndPrintTFT</a> (<a class="el" href="../../d5/de8/class_radio_packet.html">RadioPacket</a> &amp;packet, <a class="el" href="../../d9/d7a/class_t_f_t.html">TFT</a> &amp;tft_screen, char *tempMessageLine1, char *tempMessageLine2=nullptr)</td></tr>
+<tr class="memdesc:a1ddd955fda247c0d6b150024670d4734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks until it receives a packet. It will block indefinitely, there is no timeout. Be aware of that. Also prints the message to ILI9341 <a class="el" href="../../d9/d7a/class_t_f_t.html">TFT</a> display.  <a href="../../d2/d23/class_radio.html#a1ddd955fda247c0d6b150024670d4734">More...</a><br /></td></tr>
+<tr class="separator:a1ddd955fda247c0d6b150024670d4734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54321b915b3e2ff0afcede0486e376c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#a54321b915b3e2ff0afcede0486e376c9">SendPacketBlocking</a> (<a class="el" href="../../d5/de8/class_radio_packet.html">RadioPacket</a> &amp;packet, uint16_t numTries)</td></tr>
+<tr class="memdesc:a54321b915b3e2ff0afcede0486e376c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a packet. It blocks while it waits for a Handshake packet confirmation.  <a href="../../d2/d23/class_radio.html#a54321b915b3e2ff0afcede0486e376c9">More...</a><br /></td></tr>
+<tr class="separator:a54321b915b3e2ff0afcede0486e376c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9a988793b780397de554acd15740874"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#aa9a988793b780397de554acd15740874">SendPacketBlockingAndPrintTFT</a> (<a class="el" href="../../d5/de8/class_radio_packet.html">RadioPacket</a> &amp;packet, uint16_t numTries, <a class="el" href="../../d9/d7a/class_t_f_t.html">TFT</a> &amp;tft_screen)</td></tr>
+<tr class="memdesc:aa9a988793b780397de554acd15740874"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a packet. It blocks while it waits for a Handshake packet confirmation. It prints the message to ILI9341 <a class="el" href="../../d9/d7a/class_t_f_t.html">TFT</a> display.  <a href="../../d2/d23/class_radio.html#aa9a988793b780397de554acd15740874">More...</a><br /></td></tr>
+<tr class="separator:aa9a988793b780397de554acd15740874"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="afd6ff59cbee3ae9e93f4ccadbdc0e7ee" name="afd6ff59cbee3ae9e93f4ccadbdc0e7ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd6ff59cbee3ae9e93f4ccadbdc0e7ee">&#9670;&nbsp;</a></span>PacketPayloadTypes</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="../../d2/d23/class_radio.html#afd6ff59cbee3ae9e93f4ccadbdc0e7ee">Radio::PacketPayloadTypes</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>All the supported kinds of packets that can be sent and received. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="afd6ff59cbee3ae9e93f4ccadbdc0e7eeacf00c8777d1a1823a3221feda911f028" name="afd6ff59cbee3ae9e93f4ccadbdc0e7eeacf00c8777d1a1823a3221feda911f028"></a>Float&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="afd6ff59cbee3ae9e93f4ccadbdc0e7eea38cd8f63812a52e680f8564390780fc7" name="afd6ff59cbee3ae9e93f4ccadbdc0e7eea38cd8f63812a52e680f8564390780fc7"></a>Double&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="afd6ff59cbee3ae9e93f4ccadbdc0e7eea17c354863cfbfeb6ed771933d84d2126" name="afd6ff59cbee3ae9e93f4ccadbdc0e7eea17c354863cfbfeb6ed771933d84d2126"></a>Int32&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="afd6ff59cbee3ae9e93f4ccadbdc0e7eead1953c7911a0b11171abfffb38d92b13" name="afd6ff59cbee3ae9e93f4ccadbdc0e7eead1953c7911a0b11171abfffb38d92b13"></a>Int16&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="afd6ff59cbee3ae9e93f4ccadbdc0e7eea64f7df9d6609fd8b11c4a60bd038ecda" name="afd6ff59cbee3ae9e93f4ccadbdc0e7eea64f7df9d6609fd8b11c4a60bd038ecda"></a>Int8&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="afd6ff59cbee3ae9e93f4ccadbdc0e7eeafb134e8820a6706fdd2f2b8460c2d866" name="afd6ff59cbee3ae9e93f4ccadbdc0e7eeafb134e8820a6706fdd2f2b8460c2d866"></a>String&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="afd6ff59cbee3ae9e93f4ccadbdc0e7eeab911ab66cea5610f8ad282afaf576e2c" name="afd6ff59cbee3ae9e93f4ccadbdc0e7eeab911ab66cea5610f8ad282afaf576e2c"></a>Time&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="afd6ff59cbee3ae9e93f4ccadbdc0e7eea46bc692556a9bf6a8f5a5105e92da023" name="afd6ff59cbee3ae9e93f4ccadbdc0e7eea46bc692556a9bf6a8f5a5105e92da023"></a>GPSCoords&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="afd6ff59cbee3ae9e93f4ccadbdc0e7eeae11e9a3391905bbc59afc661ea1b3b12" name="afd6ff59cbee3ae9e93f4ccadbdc0e7eeae11e9a3391905bbc59afc661ea1b3b12"></a>Handshake&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9fb63e8ebc78c18b4eb5a8040d684174" name="a9fb63e8ebc78c18b4eb5a8040d684174"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9fb63e8ebc78c18b4eb5a8040d684174">&#9670;&nbsp;</a></span>~Radio()</h2>
@@ -287,210 +143,6 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8a803172795701b7c00c1bbd522c0011" name="a8a803172795701b7c00c1bbd522c0011"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a803172795701b7c00c1bbd522c0011">&#9670;&nbsp;</a></span>GetPacketBool1() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Radio::GetPacketBool1 </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;&#160;</td>
-          <td class="paramname"><em>packet</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of bool1 in the packet flags This is flag bit [4]. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">packet</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a80a635df2741f545dbe36e15e53f1713" name="a80a635df2741f545dbe36e15e53f1713"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80a635df2741f545dbe36e15e53f1713">&#9670;&nbsp;</a></span>GetPacketBool1() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Radio::GetPacketBool1 </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>flagByte</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of bool1 in the packet flags This is flag bit [4]. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">flagByte</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ab97b6032bb9d4cd838fc45a61c76a480" name="ab97b6032bb9d4cd838fc45a61c76a480"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab97b6032bb9d4cd838fc45a61c76a480">&#9670;&nbsp;</a></span>GetPacketBool2() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Radio::GetPacketBool2 </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;&#160;</td>
-          <td class="paramname"><em>packet</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of bool2 in the packet flags This is flag bit [5]. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">packet</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a916e4d1c7d9cf0d709c948de98d2c0b8" name="a916e4d1c7d9cf0d709c948de98d2c0b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a916e4d1c7d9cf0d709c948de98d2c0b8">&#9670;&nbsp;</a></span>GetPacketBool2() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Radio::GetPacketBool2 </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>flagByte</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of bool2 in the packet flags This is flag bit [5]. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">flagByte</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a6002f377f19a74708cabf6c12e8261ab" name="a6002f377f19a74708cabf6c12e8261ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6002f377f19a74708cabf6c12e8261ab">&#9670;&nbsp;</a></span>GetPacketType() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d2/d23/class_radio.html#afd6ff59cbee3ae9e93f4ccadbdc0e7ee">Radio::PacketPayloadTypes</a> Radio::GetPacketType </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;&#160;</td>
-          <td class="paramname"><em>packet</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns what type of data the packet contains according to PacketTypes enum These are flag bits [3:0]. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">packet</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a7cfd9fb4dbd5748a2571e0efda0f762f" name="a7cfd9fb4dbd5748a2571e0efda0f762f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7cfd9fb4dbd5748a2571e0efda0f762f">&#9670;&nbsp;</a></span>GetPacketType() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d2/d23/class_radio.html#afd6ff59cbee3ae9e93f4ccadbdc0e7ee">Radio::PacketPayloadTypes</a> Radio::GetPacketType </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>flagByte</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns what type of data the packet contains according to PacketTypes enum These are flag bits [3:0]. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">flagByte</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="aa6f9cdeb21852529936f59dd12b7cac8" name="aa6f9cdeb21852529936f59dd12b7cac8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa6f9cdeb21852529936f59dd12b7cac8">&#9670;&nbsp;</a></span>Init()</h2>
 
@@ -531,144 +183,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9161022fa5e4b2560b2c29f30ca74700" name="a9161022fa5e4b2560b2c29f30ca74700"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9161022fa5e4b2560b2c29f30ca74700">&#9670;&nbsp;</a></span>PrintAllPacketData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Radio::PrintAllPacketData </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;&#160;</td>
-          <td class="paramname"><em>pkt</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Prints all the packet data. Prints the flag byte first, then the payload data. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pkt</td><td>The packet whose data will be printed </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a856fbee450858d48635aab7ab72a91bc" name="a856fbee450858d48635aab7ab72a91bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a856fbee450858d48635aab7ab72a91bc">&#9670;&nbsp;</a></span>PrintPacketFlagBits() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Radio::PrintPacketFlagBits </td>
-          <td>(</td>
-          <td class="paramtype">const uint8_t&#160;</td>
-          <td class="paramname"><em>flagByte</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Prints the packet flag byte (all the flag bits) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">packet</td><td>The packet whose data will be printed </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="abab5190de0df1dcdaadb4f04174da387" name="abab5190de0df1dcdaadb4f04174da387"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abab5190de0df1dcdaadb4f04174da387">&#9670;&nbsp;</a></span>PrintPacketFlagBits() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Radio::PrintPacketFlagBits </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;&#160;</td>
-          <td class="paramname"><em>packet</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Prints the packet flag byte (all the flag bits) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">packet</td><td>The packet whose data will be printed </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a8f32c42bb9dad76ca6a4bb3e9d509859" name="a8f32c42bb9dad76ca6a4bb3e9d509859"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f32c42bb9dad76ca6a4bb3e9d509859">&#9670;&nbsp;</a></span>PrintPacketPayload()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Radio::PrintPacketPayload </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;&#160;</td>
-          <td class="paramname"><em>pkt</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Prints the packet payload. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pkt</td><td>The packet whose data will be printed </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a7aedae0f1fa0fb77d53e9be25f196224" name="a7aedae0f1fa0fb77d53e9be25f196224"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7aedae0f1fa0fb77d53e9be25f196224">&#9670;&nbsp;</a></span>ReceivePacketBlocking() <span class="overload">[1/2]</span></h2>
+<a id="a12ae6ed2562d8e325afb2d5b5b8abaf8" name="a12ae6ed2562d8e325afb2d5b5b8abaf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12ae6ed2562d8e325afb2d5b5b8abaf8">&#9670;&nbsp;</a></span>ReceivePacketBlocking() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -676,7 +192,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">bool Radio::ReceivePacketBlocking </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/de8/class_radio_packet.html">RadioPacket</a> &amp;&#160;</td>
           <td class="paramname"><em>packet</em></td><td>)</td>
           <td></td>
         </tr>
@@ -694,8 +210,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a370fecfdef2e7c65e36669586ee3afa6" name="a370fecfdef2e7c65e36669586ee3afa6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a370fecfdef2e7c65e36669586ee3afa6">&#9670;&nbsp;</a></span>ReceivePacketBlocking() <span class="overload">[2/2]</span></h2>
+<a id="aa1335d3312304573543de5f07a9dc12a" name="aa1335d3312304573543de5f07a9dc12a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1335d3312304573543de5f07a9dc12a">&#9670;&nbsp;</a></span>ReceivePacketBlocking() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -703,7 +219,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">bool Radio::ReceivePacketBlocking </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/de8/class_radio_packet.html">RadioPacket</a> &amp;&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
         </tr>
         <tr>
@@ -732,8 +248,112 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a46b42e776a59d682a7571e59f03c5d96" name="a46b42e776a59d682a7571e59f03c5d96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46b42e776a59d682a7571e59f03c5d96">&#9670;&nbsp;</a></span>SendPacketBlocking()</h2>
+<a id="a1ddd955fda247c0d6b150024670d4734" name="a1ddd955fda247c0d6b150024670d4734"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ddd955fda247c0d6b150024670d4734">&#9670;&nbsp;</a></span>ReceivePacketBlockingAndPrintTFT() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Radio::ReceivePacketBlockingAndPrintTFT </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/de8/class_radio_packet.html">RadioPacket</a> &amp;&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d7a/class_t_f_t.html">TFT</a> &amp;&#160;</td>
+          <td class="paramname"><em>tft_screen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>tempMessageLine1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>tempMessageLine2</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Blocks until it receives a packet. It will block indefinitely, there is no timeout. Be aware of that. Also prints the message to ILI9341 <a class="el" href="../../d9/d7a/class_t_f_t.html">TFT</a> display. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">packet</td><td>The packet whose data will be set </td></tr>
+    <tr><td class="paramname">tft_screen</td><td>The object for the <a class="el" href="../../d9/d7a/class_t_f_t.html">TFT</a> ILI9341 screen that the message will be displayed on </td></tr>
+    <tr><td class="paramname">tempMessageLine1</td><td>The temporary msg to display on line1 while it waits for a package to come in. ex: "waiting for confirmation of landing" </td></tr>
+    <tr><td class="paramname">tempMessageLine2</td><td>Optional. The temporary msg to display on line2 while it waits for a package to come in. If param is ignored will print "Block for: infinity"</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if a packet was received. False if a packet was not received (the timeout was hit) </dd></dl>
+
+</div>
+</div>
+<a id="a1d803c7cc4620fff0c52c6dafbd98161" name="a1d803c7cc4620fff0c52c6dafbd98161"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d803c7cc4620fff0c52c6dafbd98161">&#9670;&nbsp;</a></span>ReceivePacketBlockingAndPrintTFT() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Radio::ReceivePacketBlockingAndPrintTFT </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/de8/class_radio_packet.html">RadioPacket</a> &amp;&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d7a/class_t_f_t.html">TFT</a> &amp;&#160;</td>
+          <td class="paramname"><em>tft_screen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>tempMessageLine1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeout_ms</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Blocks until it receives a packet. It will block until the packet is received or the timeout is exceeded. Also prints the message to ILI9341 <a class="el" href="../../d9/d7a/class_t_f_t.html">TFT</a> display. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">packet</td><td>The packet whose data will be set </td></tr>
+    <tr><td class="paramname">tft_screen</td><td>The object for the <a class="el" href="../../d9/d7a/class_t_f_t.html">TFT</a> ILI9341 screen that the message will be displayed on </td></tr>
+    <tr><td class="paramname">tempMessageLine1</td><td>The temporary msg to display on line1 while it waits for a package to come in. ex: "waiting for confirmation of landing" </td></tr>
+    <tr><td class="paramname">timeout_ms</td><td>The timeout in milliseconds</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if a packet was received. False if a packet was not received (the timeout was hit) </dd></dl>
+
+</div>
+</div>
+<a id="a54321b915b3e2ff0afcede0486e376c9" name="a54321b915b3e2ff0afcede0486e376c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54321b915b3e2ff0afcede0486e376c9">&#9670;&nbsp;</a></span>SendPacketBlocking()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -741,7 +361,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">bool Radio::SendPacketBlocking </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/de8/class_radio_packet.html">RadioPacket</a> &amp;&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
         </tr>
         <tr>
@@ -770,26 +390,29 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6970db71a5f860323e178d6b226a0b6f" name="a6970db71a5f860323e178d6b226a0b6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6970db71a5f860323e178d6b226a0b6f">&#9670;&nbsp;</a></span>SetDoublePacketData() <span class="overload">[1/2]</span></h2>
+<a id="aa9a988793b780397de554acd15740874" name="aa9a988793b780397de554acd15740874"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9a988793b780397de554acd15740874">&#9670;&nbsp;</a></span>SendPacketBlockingAndPrintTFT()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Radio::SetDoublePacketData </td>
+          <td class="memname">bool Radio::SendPacketBlockingAndPrintTFT </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/de8/class_radio_packet.html">RadioPacket</a> &amp;&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double *&#160;</td>
-          <td class="paramname"><em>doubles</em>&#160;</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>numTries</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d7a/class_t_f_t.html">TFT</a> &amp;&#160;</td>
+          <td class="paramname"><em>tft_screen</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -797,865 +420,18 @@ Static Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Sets the passed in packet's data to be the array of doubles Note that it can store 4 doubles. </p>
+<p>Sends a packet. It blocks while it waits for a Handshake packet confirmation. It prints the message to ILI9341 <a class="el" href="../../d9/d7a/class_t_f_t.html">TFT</a> display. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">packet</td><td>The packet whose data will be set </td></tr>
-    <tr><td class="paramname">doubles</td><td>The array of doubles that will be deep copied inside the packet</td></tr>
+    <tr><td class="paramname">numTries</td><td>The number of times it will send a Handshake packet if no Handshake packet is received. </td></tr>
+    <tr><td class="paramname">tft_screen</td><td>The object for the <a class="el" href="../../d9/d7a/class_t_f_t.html">TFT</a> ILI9341 screen that the message will be displayed on</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the packet type was correct. False if the packet type was incorrect and data was not written to the packet </dd></dl>
-
-</div>
-</div>
-<a id="a1640cfca02ce6dc037b1a555e21f0db8" name="a1640cfca02ce6dc037b1a555e21f0db8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1640cfca02ce6dc037b1a555e21f0db8">&#9670;&nbsp;</a></span>SetDoublePacketData() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Radio::SetDoublePacketData </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;&#160;</td>
-          <td class="paramname"><em>packet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> *&#160;</td>
-          <td class="paramname"><em>packetToCopyFrom</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the passed in packet's data to be the array of doubles Note that it can store 4 doubles. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">packet</td><td>The packet whose data will be set </td></tr>
-    <tr><td class="paramname">packetToCopyFrom</td><td>The <a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html" title="This is the packet that is sent universally ALWAYS 17 bytes wide (16 bytes of data and 1 byte for fla...">radioPacket</a> to copy the data from</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the packet type was correct. False if the packet type was incorrect and data was not written to the packet </dd></dl>
-
-</div>
-</div>
-<a id="aee73e3be29f1db6b336a773290834fb0" name="aee73e3be29f1db6b336a773290834fb0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee73e3be29f1db6b336a773290834fb0">&#9670;&nbsp;</a></span>SetFloatPacketData() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Radio::SetFloatPacketData </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;&#160;</td>
-          <td class="paramname"><em>packet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>floats</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the passed in packet's data to be the array of floats Note that it can store 4 floats. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">packet</td><td>The packet whose data will be set </td></tr>
-    <tr><td class="paramname">floats</td><td>The array of floats that will be deep copied inside the packet</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the packet type was correct. False if the packet type was incorrect and data was not written to the packet </dd></dl>
-
-</div>
-</div>
-<a id="a73cc10030d0ec8b7244345fbc4ba2349" name="a73cc10030d0ec8b7244345fbc4ba2349"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73cc10030d0ec8b7244345fbc4ba2349">&#9670;&nbsp;</a></span>SetFloatPacketData() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Radio::SetFloatPacketData </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;&#160;</td>
-          <td class="paramname"><em>packet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> *&#160;</td>
-          <td class="paramname"><em>packetToCopyFrom</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the passed in packet's data to be the array of floats Note that it can store 4 floats. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">packet</td><td>The packet whose data will be set </td></tr>
-    <tr><td class="paramname">packetToCopyFrom</td><td>The <a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html" title="This is the packet that is sent universally ALWAYS 17 bytes wide (16 bytes of data and 1 byte for fla...">radioPacket</a> to copy the data from</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the packet type was correct. False if the packet type was incorrect and data was not written to the packet </dd></dl>
-
-</div>
-</div>
-<a id="ac7808955f794f01d8facf7c85d84b550" name="ac7808955f794f01d8facf7c85d84b550"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7808955f794f01d8facf7c85d84b550">&#9670;&nbsp;</a></span>SetGPSPacketData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Radio::SetGPSPacketData </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;&#160;</td>
-          <td class="paramname"><em>packet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../d2/d10/struct_radio_1_1gps_coords_packet_data.html">gpsCoordsPacketData</a> &amp;&#160;</td>
-          <td class="paramname"><em>gpsData</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the passed in packet's data to be the gpsData. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">packet</td><td>The packet whose data will be set </td></tr>
-    <tr><td class="paramname">gpsData</td><td>The struct that will be deep copied inside the packet</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the packet type was correct. False if the packet type was incorrect and data was not written to the packet </dd></dl>
-
-</div>
-</div>
-<a id="aefe47f1d56213813db37e9ab9a887aa4" name="aefe47f1d56213813db37e9ab9a887aa4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefe47f1d56213813db37e9ab9a887aa4">&#9670;&nbsp;</a></span>SetInt16PacketData() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Radio::SetInt16PacketData </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;&#160;</td>
-          <td class="paramname"><em>packet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> *&#160;</td>
-          <td class="paramname"><em>packetToCopyFrom</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the passed in packet's data to be the array of 16 bit ints. Note that it can store 8 uint16_t's. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">packet</td><td>The packet whose data will be set </td></tr>
-    <tr><td class="paramname">packetToCopyFrom</td><td>The <a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html" title="This is the packet that is sent universally ALWAYS 17 bytes wide (16 bytes of data and 1 byte for fla...">radioPacket</a> to copy the data from</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the packet type was correct. False if the packet type was incorrect and data was not written to the packet </dd></dl>
-
-</div>
-</div>
-<a id="a31ec49a0db45857fb6b1fc873af1a4a3" name="a31ec49a0db45857fb6b1fc873af1a4a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31ec49a0db45857fb6b1fc873af1a4a3">&#9670;&nbsp;</a></span>SetInt16PacketData() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Radio::SetInt16PacketData </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;&#160;</td>
-          <td class="paramname"><em>packet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const uint16_t *&#160;</td>
-          <td class="paramname"><em>ints</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the passed in packet's data to be the array of 16 bit ints. Note that it can store 8 uint16_t's. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">packet</td><td>The packet whose data will be set </td></tr>
-    <tr><td class="paramname">ints</td><td>The array of 16 bit ints that will be deep copied inside the packet</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the packet type was correct. False if the packet type was incorrect and data was not written to the packet </dd></dl>
-
-</div>
-</div>
-<a id="a21cf3b35296a50674450468bb27b1dfd" name="a21cf3b35296a50674450468bb27b1dfd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21cf3b35296a50674450468bb27b1dfd">&#9670;&nbsp;</a></span>SetInt32PacketData() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Radio::SetInt32PacketData </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;&#160;</td>
-          <td class="paramname"><em>packet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> *&#160;</td>
-          <td class="paramname"><em>packetToCopyFrom</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the passed in packet's data to be the array of 32 bit ints. Note that it can store 4 uint32_t's. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">packet</td><td>The packet whose data will be set </td></tr>
-    <tr><td class="paramname">packetToCopyFrom</td><td>The <a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html" title="This is the packet that is sent universally ALWAYS 17 bytes wide (16 bytes of data and 1 byte for fla...">radioPacket</a> to copy the data from</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the packet type was correct. False if the packet type was incorrect and data was not written to the packet </dd></dl>
-
-</div>
-</div>
-<a id="ac449c8acd94a252ce26b9feb71b7916c" name="ac449c8acd94a252ce26b9feb71b7916c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac449c8acd94a252ce26b9feb71b7916c">&#9670;&nbsp;</a></span>SetInt32PacketData() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Radio::SetInt32PacketData </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;&#160;</td>
-          <td class="paramname"><em>packet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const uint32_t *&#160;</td>
-          <td class="paramname"><em>ints</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the passed in packet's data to be the array of 32 bit ints. Note that it can store 4 uint32_t's. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">packet</td><td>The packet whose data will be set </td></tr>
-    <tr><td class="paramname">ints</td><td>The array of 32 bit ints that will be deep copied inside the packet</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the packet type was correct. False if the packet type was incorrect and data was not written to the packet </dd></dl>
-
-</div>
-</div>
-<a id="adf85cd2b36c9e47755f6d1fc4be50263" name="adf85cd2b36c9e47755f6d1fc4be50263"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf85cd2b36c9e47755f6d1fc4be50263">&#9670;&nbsp;</a></span>SetInt8PacketData() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Radio::SetInt8PacketData </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;&#160;</td>
-          <td class="paramname"><em>packet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> *&#160;</td>
-          <td class="paramname"><em>packetToCopyFrom</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the passed in packet's data to be the array of 8 bit ints. Note that it can store 16 uint8_t's. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">packet</td><td>The packet whose data will be set </td></tr>
-    <tr><td class="paramname">packetToCopyFrom</td><td>The <a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html" title="This is the packet that is sent universally ALWAYS 17 bytes wide (16 bytes of data and 1 byte for fla...">radioPacket</a> to copy the data from</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the packet type was correct. False if the packet type was incorrect and data was not written to the packet </dd></dl>
-
-</div>
-</div>
-<a id="a92732be0886effb53ba7d004a545d049" name="a92732be0886effb53ba7d004a545d049"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92732be0886effb53ba7d004a545d049">&#9670;&nbsp;</a></span>SetInt8PacketData() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Radio::SetInt8PacketData </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;&#160;</td>
-          <td class="paramname"><em>packet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>ints</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the passed in packet's data to be the array of 8 bit ints. Note that it can store 16 uint8_t's. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">packet</td><td>The packet whose data will be set </td></tr>
-    <tr><td class="paramname">ints</td><td>The array of 8 bit ints that will be deep copied inside the packet</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the packet type was correct. False if the packet type was incorrect and data was not written to the packet </dd></dl>
-
-</div>
-</div>
-<a id="a51f446a8a0a211a4ba17756172fab24e" name="a51f446a8a0a211a4ba17756172fab24e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51f446a8a0a211a4ba17756172fab24e">&#9670;&nbsp;</a></span>SetPacketBool1()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Radio::SetPacketBool1 </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;&#160;</td>
-          <td class="paramname"><em>packet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bool1</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets bit [4] of the flag bits. This is bool1 sent with the packet flags Does not overwrite other flag values, only sets the bool1. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">packet</td><td></td></tr>
-    <tr><td class="paramname">bool1</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a4e927c9ed5a12300cfe0d5dc17ae26d0" name="a4e927c9ed5a12300cfe0d5dc17ae26d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e927c9ed5a12300cfe0d5dc17ae26d0">&#9670;&nbsp;</a></span>SetPacketBool2()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Radio::SetPacketBool2 </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;&#160;</td>
-          <td class="paramname"><em>packet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bool2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets bit [5] of the flag bits. This is bool2 sent with the packet flags Does not overwrite other flag values, only sets the bool2. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">packet</td><td></td></tr>
-    <tr><td class="paramname">bool2</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a49d97d1a788cf6e0e2bb1ef15a6df7ce" name="a49d97d1a788cf6e0e2bb1ef15a6df7ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49d97d1a788cf6e0e2bb1ef15a6df7ce">&#9670;&nbsp;</a></span>SetPacketBools()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Radio::SetPacketBools </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;&#160;</td>
-          <td class="paramname"><em>packet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bool1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bool2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets bits [5:4] of the flag bits. These are the two bools sent with the packet flags Does not overwrite other flag values, only sets the two bools. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">packet</td><td></td></tr>
-    <tr><td class="paramname">bool1</td><td></td></tr>
-    <tr><td class="paramname">bool2</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a2c32ddf76e4e439efd881235fff0295b" name="a2c32ddf76e4e439efd881235fff0295b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c32ddf76e4e439efd881235fff0295b">&#9670;&nbsp;</a></span>SetPacketFlagBits() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Radio::SetPacketFlagBits </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;&#160;</td>
-          <td class="paramname"><em>packet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d2/d23/class_radio.html#afd6ff59cbee3ae9e93f4ccadbdc0e7ee">PacketPayloadTypes</a>&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bool1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bool2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets all flag bits of the packet. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">packet</td><td></td></tr>
-    <tr><td class="paramname">type</td><td></td></tr>
-    <tr><td class="paramname">bool1</td><td></td></tr>
-    <tr><td class="paramname">bool2</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a66a563c52ced3432b031c9047cb59a0e" name="a66a563c52ced3432b031c9047cb59a0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66a563c52ced3432b031c9047cb59a0e">&#9670;&nbsp;</a></span>SetPacketFlagBits() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Radio::SetPacketFlagBits </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;&#160;</td>
-          <td class="paramname"><em>packet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>allFlagBits</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets all flag bits of the packet. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">packet</td><td></td></tr>
-    <tr><td class="paramname">allFlagBits</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ae2fe90f1d71dce87f26e5e0930898931" name="ae2fe90f1d71dce87f26e5e0930898931"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2fe90f1d71dce87f26e5e0930898931">&#9670;&nbsp;</a></span>SetPacketType()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Radio::SetPacketType </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;&#160;</td>
-          <td class="paramname"><em>packet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d2/d23/class_radio.html#afd6ff59cbee3ae9e93f4ccadbdc0e7ee">PacketPayloadTypes</a>&#160;</td>
-          <td class="paramname"><em>type</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets bits [3:0] of the flag bits. These signify the type of packet according to PacketTypes enum Does not overwrite other flag values, only sets the packet's data type. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">packet</td><td></td></tr>
-    <tr><td class="paramname">packetType</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a0fcc5ef38cca5fd7660d949c0f7e9d63" name="a0fcc5ef38cca5fd7660d949c0f7e9d63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fcc5ef38cca5fd7660d949c0f7e9d63">&#9670;&nbsp;</a></span>SetStringPacketData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Radio::SetStringPacketData </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;&#160;</td>
-          <td class="paramname"><em>packet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>message</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the passed in packet's data to be the passed in string. Note that it can store 15 chars (16'th char is reserved for the null terminator). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">packet</td><td>The packet whose data will be set </td></tr>
-    <tr><td class="paramname">message</td><td>The string that will be deep copied inside the packet</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the packet type was correct. False if the packet type was incorrect and data was not written to the packet </dd></dl>
-
-</div>
-</div>
-<a id="a3266939252e88cb42ec5dafbf4c81a3e" name="a3266939252e88cb42ec5dafbf4c81a3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3266939252e88cb42ec5dafbf4c81a3e">&#9670;&nbsp;</a></span>SetTimePacketData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Radio::SetTimePacketData </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dd/dc3/struct_radio_1_1radio_packet.html">radioPacket</a> &amp;&#160;</td>
-          <td class="paramname"><em>packet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../dd/d8b/struct_radio_1_1time_packet_data.html">timePacketData</a> &amp;&#160;</td>
-          <td class="paramname"><em>timeData</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the passed in packet's data to be the timeData. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">packet</td><td>The packet whose data will be set </td></tr>
-    <tr><td class="paramname">timeData</td><td>The struct that will be deep copied inside the packet</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the packet type was correct. False if the packet type was incorrect and data was not written to the packet </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if a Handshake packet was received back (meaning other side confirmed it got the data). False if no Handshake packet was read </dd></dl>
 
 </div>
 </div>

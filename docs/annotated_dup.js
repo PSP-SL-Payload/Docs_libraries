@@ -7,9 +7,12 @@ var annotated_dup =
     [ "IMU", "dd/d3c/class_i_m_u.html", "dd/d3c/class_i_m_u" ],
     [ "Logger", "d3/d42/class_logger.html", "d3/d42/class_logger" ],
     [ "Radio", "d2/d23/class_radio.html", "d2/d23/class_radio" ],
+    [ "RadioPacket", "d5/de8/class_radio_packet.html", "d5/de8/class_radio_packet" ],
     [ "RealTimeClock", "d5/dd2/class_real_time_clock.html", "d5/dd2/class_real_time_clock" ],
     [ "SDCard", "dd/df7/class_s_d_card.html", "dd/df7/class_s_d_card" ],
     [ "SerialInterface", "d8/dec/class_serial_interface.html", "d8/dec/class_serial_interface" ],
+    [ "TFT", "d9/d7a/class_t_f_t.html", "d9/d7a/class_t_f_t" ],
+    [ "TypeConversions", "df/d2f/class_type_conversions.html", null ],
     [ "Vector", "d5/db2/class_vector.html", "d5/db2/class_vector" ],
     [ "VectorIterator", "da/dbc/class_vector_iterator.html", "da/dbc/class_vector_iterator" ]
 ];

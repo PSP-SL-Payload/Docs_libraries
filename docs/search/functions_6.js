@@ -7,9 +7,11 @@ var searchData=
   ['getgyrovals_4',['GetGyroVals',['../dd/d3c/class_i_m_u.html#ad4539482326bf6562ecd8c2db285e03f',1,'IMU']]],
   ['getlocation_5',['GetLocation',['../d1/d58/class_g_p_s.html#a041af96581cc8c5d2b5a8c7d100591ee',1,'GPS']]],
   ['getnetaccel_6',['GetNetAccel',['../dd/d3c/class_i_m_u.html#a8ef00d63fdc09cc37bada61d8520a64c',1,'IMU']]],
-  ['getpacketbool1_7',['GetPacketBool1',['../d2/d23/class_radio.html#a8a803172795701b7c00c1bbd522c0011',1,'Radio::GetPacketBool1(radioPacket &amp;packet)'],['../d2/d23/class_radio.html#a80a635df2741f545dbe36e15e53f1713',1,'Radio::GetPacketBool1(uint8_t flagByte)']]],
-  ['getpacketbool2_8',['GetPacketBool2',['../d2/d23/class_radio.html#ab97b6032bb9d4cd838fc45a61c76a480',1,'Radio::GetPacketBool2(radioPacket &amp;packet)'],['../d2/d23/class_radio.html#a916e4d1c7d9cf0d709c948de98d2c0b8',1,'Radio::GetPacketBool2(uint8_t flagByte)']]],
-  ['getpackettype_9',['GetPacketType',['../d2/d23/class_radio.html#a6002f377f19a74708cabf6c12e8261ab',1,'Radio::GetPacketType(radioPacket &amp;packet)'],['../d2/d23/class_radio.html#a7cfd9fb4dbd5748a2571e0efda0f762f',1,'Radio::GetPacketType(uint8_t flagByte)']]],
+  ['getpacketbool1_7',['GetPacketBool1',['../d5/de8/class_radio_packet.html#a48359badb6fbce9f689b60c9cc7f04be',1,'RadioPacket::GetPacketBool1()'],['../d5/de8/class_radio_packet.html#a62504b562e947c868a96277ae2788946',1,'RadioPacket::GetPacketBool1(const uint8_t flagByte)']]],
+  ['getpacketbool2_8',['GetPacketBool2',['../d5/de8/class_radio_packet.html#a7cde418d6c9c5380abea309f0601053a',1,'RadioPacket::GetPacketBool2()'],['../d5/de8/class_radio_packet.html#add99dee698c4736c4428ec39bc578b3c',1,'RadioPacket::GetPacketBool2(const uint8_t flagByte)']]],
+  ['getpackettype_9',['GetPacketType',['../d5/de8/class_radio_packet.html#a2be41d117dd4be0974b8a351463055ae',1,'RadioPacket::GetPacketType()'],['../d5/de8/class_radio_packet.html#a7c63f5f1ac250b05bc1a665d5b59d51f',1,'RadioPacket::GetPacketType(const uint8_t flagByte)']]],
   ['getpressure_10',['GetPressure',['../d6/d76/class_altimeter.html#a244b55d05771f7a5dc6a0abd326a6266',1,'Altimeter']]],
-  ['gettemp_11',['GetTemp',['../d5/dd2/class_real_time_clock.html#ad3bc8e753f394500902adb1688bdc97f',1,'RealTimeClock']]]
+  ['getstringforpacketmode_11',['GetStringForPacketMode',['../d9/d7a/class_t_f_t.html#ad9352bd480daead6a006d45d49d2ecc7',1,'TFT']]],
+  ['gettemp_12',['GetTemp',['../d5/dd2/class_real_time_clock.html#ad3bc8e753f394500902adb1688bdc97f',1,'RealTimeClock']]],
+  ['gettemperature_13',['GetTemperature',['../d6/d76/class_altimeter.html#a6908a760d03234487c72d3ef11c68283',1,'Altimeter']]]
 ];

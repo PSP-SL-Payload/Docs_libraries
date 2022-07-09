@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['flagbits_0',['flagBits',['../dd/dc3/struct_radio_1_1radio_packet.html#a5aa2fddd6acb014dd4d7e5fc249eb4e9',1,'Radio::radioPacket']]],
-  ['floatdata_1',['floatData',['../d2/d5b/union_radio_1_1packet_payload_type.html#a0b9f9c1a9e56ab78b8aada4ce5ffe799',1,'Radio::packetPayloadType']]]
+  ['flagbits_0',['flagBits',['../d5/dc4/struct_radio_packet_1_1radio_packet.html#adfd4d623550eaa7a998265aedc0cd9a3',1,'RadioPacket::radioPacket']]],
+  ['floatdata_1',['floatData',['../d2/d55/union_radio_packet_1_1packet_payload_type.html#ad517b2bd35f287984eb4335aaf45679a',1,'RadioPacket::packetPayloadType']]]
 ];

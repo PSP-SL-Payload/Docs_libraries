@@ -128,6 +128,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad278ad43b9d85b0bddd0e977fcceaae0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d58/class_g_p_s.html#ad278ad43b9d85b0bddd0e977fcceaae0">BlockUntilLocationAquired</a> ()</td></tr>
 <tr class="memdesc:ad278ad43b9d85b0bddd0e977fcceaae0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks until the <a class="el" href="../../d1/d58/class_g_p_s.html" title="GPS class that controls the Sparkfun u-blox SAM-M8Q.">GPS</a> has successfully aquired it's current location.  <a href="../../d1/d58/class_g_p_s.html#ad278ad43b9d85b0bddd0e977fcceaae0">More...</a><br /></td></tr>
 <tr class="separator:ad278ad43b9d85b0bddd0e977fcceaae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab131d32a9cf0eb6fbfa983e8c8189c80"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d58/class_g_p_s.html#ab131d32a9cf0eb6fbfa983e8c8189c80">BlockUntilLocationAquired</a> (uint32_t timeout_ms)</td></tr>
+<tr class="memdesc:ab131d32a9cf0eb6fbfa983e8c8189c80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks until the <a class="el" href="../../d1/d58/class_g_p_s.html" title="GPS class that controls the Sparkfun u-blox SAM-M8Q.">GPS</a> has successfully aquired it's current location or the timout runs out.  <a href="../../d1/d58/class_g_p_s.html#ab131d32a9cf0eb6fbfa983e8c8189c80">More...</a><br /></td></tr>
+<tr class="separator:ab131d32a9cf0eb6fbfa983e8c8189c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -170,7 +173,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad278ad43b9d85b0bddd0e977fcceaae0" name="ad278ad43b9d85b0bddd0e977fcceaae0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad278ad43b9d85b0bddd0e977fcceaae0">&#9670;&nbsp;</a></span>BlockUntilLocationAquired()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad278ad43b9d85b0bddd0e977fcceaae0">&#9670;&nbsp;</a></span>BlockUntilLocationAquired() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -185,6 +188,33 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Blocks until the <a class="el" href="../../d1/d58/class_g_p_s.html" title="GPS class that controls the Sparkfun u-blox SAM-M8Q.">GPS</a> has successfully aquired it's current location. </p>
+
+</div>
+</div>
+<a id="ab131d32a9cf0eb6fbfa983e8c8189c80" name="ab131d32a9cf0eb6fbfa983e8c8189c80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab131d32a9cf0eb6fbfa983e8c8189c80">&#9670;&nbsp;</a></span>BlockUntilLocationAquired() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GPS::BlockUntilLocationAquired </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeout_ms</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Blocks until the <a class="el" href="../../d1/d58/class_g_p_s.html" title="GPS class that controls the Sparkfun u-blox SAM-M8Q.">GPS</a> has successfully aquired it's current location or the timout runs out. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeout_ms</td><td>the timeout in milliseconds to wait before giving up looking for gps location</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the gps location was found. false if the location was not found before timout_ms was exceeded </dd></dl>
 
 </div>
 </div>

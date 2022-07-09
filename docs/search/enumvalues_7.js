@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['time_0',['Time',['../d2/d23/class_radio.html#afd6ff59cbee3ae9e93f4ccadbdc0e7eeab911ab66cea5610f8ad282afaf576e2c',1,'Radio']]]
+  ['rx_0',['RX',['../d9/d7a/class_t_f_t.html#a4225719b502bc02af5d4baae4f156509a207168d9bf0445d9354691bbd14bfbd0',1,'TFT']]]
 ];

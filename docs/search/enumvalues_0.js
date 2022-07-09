@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['double_0',['Double',['../d2/d23/class_radio.html#afd6ff59cbee3ae9e93f4ccadbdc0e7eea38cd8f63812a52e680f8564390780fc7',1,'Radio']]]
+  ['double_0',['Double',['../d5/de8/class_radio_packet.html#a5a7be65f764c7136a7807392383e28f4aa824f472c50c212cdefa3318d62d8135',1,'RadioPacket']]]
 ];
