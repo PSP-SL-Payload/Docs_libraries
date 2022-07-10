@@ -13,7 +13,8 @@ var class_radio_packet =
       [ "String", "d5/de8/class_radio_packet.html#a5a7be65f764c7136a7807392383e28f4a2d0db8828abaed9b27c2ae65c33d12a0", null ],
       [ "Time", "d5/de8/class_radio_packet.html#a5a7be65f764c7136a7807392383e28f4a459bd23dcaae87285e5f1c05bb52c528", null ],
       [ "GPSCoords", "d5/de8/class_radio_packet.html#a5a7be65f764c7136a7807392383e28f4acddd17a1fdb4f6365fc9c61ce6521ee4", null ],
-      [ "Handshake", "d5/de8/class_radio_packet.html#a5a7be65f764c7136a7807392383e28f4a58bfef99bd10934b86836021d180d7de", null ]
+      [ "Handshake", "d5/de8/class_radio_packet.html#a5a7be65f764c7136a7807392383e28f4a58bfef99bd10934b86836021d180d7de", null ],
+      [ "Stage", "d5/de8/class_radio_packet.html#a5a7be65f764c7136a7807392383e28f4a777a58e115f66dd2287b34c5553e1e9a", null ]
     ] ],
     [ "RadioPacket", "d5/de8/class_radio_packet.html#acc7ed23504700fcce262a725bab379d0", null ],
     [ "RadioPacket", "d5/de8/class_radio_packet.html#acd287841467904dae38b3a2239edb4ba", null ],

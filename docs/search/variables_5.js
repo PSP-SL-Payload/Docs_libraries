@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['hour_0',['hour',['../dc/db2/struct_g_p_s_1_1gps_date_time.html#a9649096d67f8224772e52ef01fbde07f',1,'GPS::gpsDateTime::hour()'],['../db/d0d/struct_logger_1_1_log_time_struct.html#a8bb4519a6ddb3c0cbd28e4184218998a',1,'Logger::LogTimeStruct::hour()'],['../d7/d5a/struct_radio_packet_1_1time_packet_data.html#a806caa893077dba494f422d91ae0d94f',1,'RadioPacket::timePacketData::hour()']]]
+  ['int1_0',['int1',['../de/db1/struct_serial_interface_1_1_test_packet_data.html#a903cc6e82faadf434ab1ddb03a003b19',1,'SerialInterface::TestPacketData']]],
+  ['int16data_1',['int16Data',['../d2/d55/union_radio_packet_1_1packet_payload_type.html#aab0e2c6f1f02cde423351c8015a3670a',1,'RadioPacket::packetPayloadType']]],
+  ['int32data_2',['int32Data',['../d2/d55/union_radio_packet_1_1packet_payload_type.html#a7b70fd2fc58983d2e23c9acbd849871a',1,'RadioPacket::packetPayloadType']]],
+  ['int8data_3',['int8Data',['../d2/d55/union_radio_packet_1_1packet_payload_type.html#a4584e97d74c3f4ffb566a8c82e472ec2',1,'RadioPacket::packetPayloadType']]]
 ];

@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['data_0',['data',['../d5/dc4/struct_radio_packet_1_1radio_packet.html#abd7c811510a422edc0ad2029edf73a7b',1,'RadioPacket::radioPacket::data()'],['../dc/d4f/struct_serial_interface_1_1_serial_packet_node.html#ab1682a2bcf05937f328e13db554ae693',1,'SerialInterface::SerialPacketNode::data()']]],
-  ['day_1',['day',['../dc/db2/struct_g_p_s_1_1gps_date_time.html#a306eef4462158ec90a2e65c8156a0019',1,'GPS::gpsDateTime::day()'],['../d7/d5a/struct_radio_packet_1_1time_packet_data.html#abad3eaec13b2703e1f0d1b88aef5bf5c',1,'RadioPacket::timePacketData::day()']]],
-  ['double1_2',['double1',['../de/db1/struct_serial_interface_1_1_test_packet_data.html#a0e7f4d040422d9416b418061983b11a4',1,'SerialInterface::TestPacketData']]],
-  ['double2_3',['double2',['../de/db1/struct_serial_interface_1_1_test_packet_data.html#ad8a95a4d72153ae2b57f285b488eb860',1,'SerialInterface::TestPacketData']]],
-  ['doubledata_4',['doubleData',['../d2/d55/union_radio_packet_1_1packet_payload_type.html#a498420db9927bef66f288d418867e772',1,'RadioPacket::packetPayloadType']]]
+  ['flagbits_0',['flagBits',['../d5/dc4/struct_radio_packet_1_1radio_packet.html#adfd4d623550eaa7a998265aedc0cd9a3',1,'RadioPacket::radioPacket']]],
+  ['floatdata_1',['floatData',['../d2/d55/union_radio_packet_1_1packet_payload_type.html#ad517b2bd35f287984eb4335aaf45679a',1,'RadioPacket::packetPayloadType']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['msgpacketdata_0',['MsgPacketData',['../d7/d43/struct_serial_interface_1_1_msg_packet_data.html',1,'SerialInterface']]]
+  ['packetpayloadtype_0',['packetPayloadType',['../d2/d55/union_radio_packet_1_1packet_payload_type.html',1,'RadioPacket']]]
 ];
