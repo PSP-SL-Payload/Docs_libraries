@@ -2,7 +2,7 @@ var searchData=
 [
   ['parsepacket_0',['ParsePacket',['../d5/de8/class_radio_packet.html#a01047ace102e6892b9697335c799f832',1,'RadioPacket']]],
   ['pop_5fback_1',['pop_back',['../d5/db2/class_vector.html#adcba035109febbe55cba2a25f8483ba6',1,'Vector']]],
-  ['print_2',['Print',['../d3/d42/class_logger.html#ad1cd558b1eebf32fe8c266e6136833fa',1,'Logger::Print(char *string, LogLevel logLevel=LOG_INFO, const LogTimeStruct *timeToLog=nullptr, bool shouldHaveNewLine=true)'],['../d3/d42/class_logger.html#a3e843e2ea0f996e75906ccd33af0a97d',1,'Logger::Print(char *string, LogLevel logLevel=LOG_INFO, const LogTimeStruct *timeToLog=nullptr, bool shouldHaveNewLine=true)']]],
+  ['print_2',['Print',['../d3/d42/class_logger.html#ad1cd558b1eebf32fe8c266e6136833fa',1,'Logger']]],
   ['printallpacketdata_3',['PrintAllPacketData',['../d5/de8/class_radio_packet.html#ac940ca552de756cdcdf0563b3f3a5c71',1,'RadioPacket']]],
   ['printallreadings_4',['PrintAllReadings',['../d6/d76/class_altimeter.html#a274b6fb8f1abd163f4b1f084b90811ab',1,'Altimeter']]],
   ['printdatetime_5',['PrintDateTime',['../d1/d58/class_g_p_s.html#ac954848ac4b4d88b09aa90b20f25225a',1,'GPS']]],
