@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('d2/d23/class_radio.html','../../'); in
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa6f9cdeb21852529936f59dd12b7cac8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#aa6f9cdeb21852529936f59dd12b7cac8">Init</a> (HardwareSerial *uart, uint8_t auxPin, uint8_t m0Pin, uint8_t m1Pin)</td></tr>
+<tr class="memdesc:aa6f9cdeb21852529936f59dd12b7cac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the 433T30D radio module. <b>This must be run before any other radio method</b>  <a href="../../d2/d23/class_radio.html#aa6f9cdeb21852529936f59dd12b7cac8">More...</a><br /></td></tr>
 <tr class="separator:aa6f9cdeb21852529936f59dd12b7cac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fb63e8ebc78c18b4eb5a8040d684174"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d23/class_radio.html#a9fb63e8ebc78c18b4eb5a8040d684174">~Radio</a> ()</td></tr>
 <tr class="separator:a9fb63e8ebc78c18b4eb5a8040d684174"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,6 +181,17 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Initializes the 433T30D radio module. <b>This must be run before any other radio method</b> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uart</td><td>The uart bus to use. *If using the MKRZERO pins 13+14, pass in &amp;Serial1 here </td></tr>
+    <tr><td class="paramname">auxPin</td><td>The radio modules AUX pin </td></tr>
+    <tr><td class="paramname">m0Pin</td><td>The radio modules M0 pin </td></tr>
+    <tr><td class="paramname">m1Pin</td><td>The radio modules M1 pin </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

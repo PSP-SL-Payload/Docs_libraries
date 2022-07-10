@@ -97,10 +97,10 @@ $(document).ready(function(){initNavTree('d8/dec/class_serial_interface.html','.
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d4f/struct_serial_interface_1_1_serial_packet_node.html">SerialPacketNode</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The structure that all serial packets received are read into. All serial packets written over the serial port must also be in a <a class="el" href="../../dc/d4f/struct_serial_interface_1_1_serial_packet_node.html" title="The structure that all serial packets received are read into. All serial packets written over the ser...">SerialPacketNode</a>.  <a href="../../dc/d4f/struct_serial_interface_1_1_serial_packet_node.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d0b/struct_serial_interface_1_1serial_packet_node.html">serialPacketNode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The structure that all serial packets received are read into. All serial packets written over the serial port must also be in a <a class="el" href="../../de/d0b/struct_serial_interface_1_1serial_packet_node.html" title="The structure that all serial packets received are read into. All serial packets written over the ser...">serialPacketNode</a>.  <a href="../../de/d0b/struct_serial_interface_1_1serial_packet_node.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db1/struct_serial_interface_1_1_test_packet_data.html">TestPacketData</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d60/struct_serial_interface_1_1test_packet_data.html">testPacketData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -127,12 +127,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af55eaf3eeed107d7abfa3f0ea8ad00b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#af55eaf3eeed107d7abfa3f0ea8ad00b3">ReadSerial</a> ()</td></tr>
 <tr class="memdesc:af55eaf3eeed107d7abfa3f0ea8ad00b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a single byte from the serial port and when a full packet has been read, it parses the data into packet form and places it into a buffer.  <a href="../../d8/dec/class_serial_interface.html#af55eaf3eeed107d7abfa3f0ea8ad00b3">More...</a><br /></td></tr>
 <tr class="separator:af55eaf3eeed107d7abfa3f0ea8ad00b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac148ca847b49a08e54c6281dbf824e11"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#ac148ca847b49a08e54c6281dbf824e11">WaitForPacket</a> (<a class="el" href="../../dc/d4f/struct_serial_interface_1_1_serial_packet_node.html">SerialPacketNode</a> &amp;packet, uint32_t packetID, uint32_t timeoutMilliseconds=<a class="el" href="../../d8/dec/class_serial_interface.html#a2abf75ccabe2dd6dd38dc99a065738b0">TIMEOUT_INFINITY</a>)</td></tr>
-<tr class="memdesc:ac148ca847b49a08e54c6281dbf824e11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks and waits for a packet to be received over the serial COM port that matches packetID.  <a href="../../d8/dec/class_serial_interface.html#ac148ca847b49a08e54c6281dbf824e11">More...</a><br /></td></tr>
-<tr class="separator:ac148ca847b49a08e54c6281dbf824e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8377e1dbf5e32977e8bcace78455f2b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#a8377e1dbf5e32977e8bcace78455f2b6">WritePacket</a> (<a class="el" href="../../dc/d4f/struct_serial_interface_1_1_serial_packet_node.html">SerialPacketNode</a> &amp;node)</td></tr>
-<tr class="memdesc:a8377e1dbf5e32977e8bcace78455f2b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a packet over the serial interface.  <a href="../../d8/dec/class_serial_interface.html#a8377e1dbf5e32977e8bcace78455f2b6">More...</a><br /></td></tr>
-<tr class="separator:a8377e1dbf5e32977e8bcace78455f2b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca9d659a9133c131ee392c5836a301ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#aca9d659a9133c131ee392c5836a301ac">WaitForPacket</a> (<a class="el" href="../../de/d0b/struct_serial_interface_1_1serial_packet_node.html">serialPacketNode</a> &amp;packet, uint32_t packetID, uint32_t timeoutMilliseconds=<a class="el" href="../../d8/dec/class_serial_interface.html#a2abf75ccabe2dd6dd38dc99a065738b0">TIMEOUT_INFINITY</a>)</td></tr>
+<tr class="memdesc:aca9d659a9133c131ee392c5836a301ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks and waits for a packet to be received over the serial COM port that matches packetID.  <a href="../../d8/dec/class_serial_interface.html#aca9d659a9133c131ee392c5836a301ac">More...</a><br /></td></tr>
+<tr class="separator:aca9d659a9133c131ee392c5836a301ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d9af747d813c8e285d6f9ba0eebfed2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#a3d9af747d813c8e285d6f9ba0eebfed2">WritePacket</a> (<a class="el" href="../../de/d0b/struct_serial_interface_1_1serial_packet_node.html">serialPacketNode</a> &amp;node)</td></tr>
+<tr class="memdesc:a3d9af747d813c8e285d6f9ba0eebfed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a packet over the serial interface.  <a href="../../d8/dec/class_serial_interface.html#a3d9af747d813c8e285d6f9ba0eebfed2">More...</a><br /></td></tr>
+<tr class="separator:a3d9af747d813c8e285d6f9ba0eebfed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa657afa677c3d4f9d81912e12e58485"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#afa657afa677c3d4f9d81912e12e58485">WritePacket</a> (void *packetData, uint32_t packetID)</td></tr>
 <tr class="memdesc:afa657afa677c3d4f9d81912e12e58485"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a packet over the serial interface.  <a href="../../d8/dec/class_serial_interface.html#afa657afa677c3d4f9d81912e12e58485">More...</a><br /></td></tr>
 <tr class="separator:afa657afa677c3d4f9d81912e12e58485"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,9 +148,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a33abd8d4b0f31d48e570315fd5bc11dc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d8/dec/class_serial_interface.html">SerialInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#a33abd8d4b0f31d48e570315fd5bc11dc">Instance</a> ()</td></tr>
 <tr class="memdesc:a33abd8d4b0f31d48e570315fd5bc11dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Serial Interface instance.  <a href="../../d8/dec/class_serial_interface.html#a33abd8d4b0f31d48e570315fd5bc11dc">More...</a><br /></td></tr>
 <tr class="separator:a33abd8d4b0f31d48e570315fd5bc11dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fb78d6b847204d77afdef65828cfd9f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#a8fb78d6b847204d77afdef65828cfd9f">PrintPacket</a> (const <a class="el" href="../../dc/d4f/struct_serial_interface_1_1_serial_packet_node.html">SerialPacketNode</a> &amp;packet, bool printNewline=true)</td></tr>
-<tr class="memdesc:a8fb78d6b847204d77afdef65828cfd9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the packet.  <a href="../../d8/dec/class_serial_interface.html#a8fb78d6b847204d77afdef65828cfd9f">More...</a><br /></td></tr>
-<tr class="separator:a8fb78d6b847204d77afdef65828cfd9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac14b7edaded4e1e390fe2c8c8ac15f8d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#ac14b7edaded4e1e390fe2c8c8ac15f8d">PrintPacket</a> (const <a class="el" href="../../de/d0b/struct_serial_interface_1_1serial_packet_node.html">serialPacketNode</a> &amp;packet, bool printNewline=true)</td></tr>
+<tr class="memdesc:ac14b7edaded4e1e390fe2c8c8ac15f8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the packet.  <a href="../../d8/dec/class_serial_interface.html#ac14b7edaded4e1e390fe2c8c8ac15f8d">More...</a><br /></td></tr>
+<tr class="separator:ac14b7edaded4e1e390fe2c8c8ac15f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -231,8 +231,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a8fb78d6b847204d77afdef65828cfd9f" name="a8fb78d6b847204d77afdef65828cfd9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8fb78d6b847204d77afdef65828cfd9f">&#9670;&nbsp;</a></span>PrintPacket()</h2>
+<a id="ac14b7edaded4e1e390fe2c8c8ac15f8d" name="ac14b7edaded4e1e390fe2c8c8ac15f8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac14b7edaded4e1e390fe2c8c8ac15f8d">&#9670;&nbsp;</a></span>PrintPacket()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -243,7 +243,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void SerialInterface::PrintPacket </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../dc/d4f/struct_serial_interface_1_1_serial_packet_node.html">SerialPacketNode</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../de/d0b/struct_serial_interface_1_1serial_packet_node.html">serialPacketNode</a> &amp;&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
         </tr>
         <tr>
@@ -314,8 +314,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ac148ca847b49a08e54c6281dbf824e11" name="ac148ca847b49a08e54c6281dbf824e11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac148ca847b49a08e54c6281dbf824e11">&#9670;&nbsp;</a></span>WaitForPacket()</h2>
+<a id="aca9d659a9133c131ee392c5836a301ac" name="aca9d659a9133c131ee392c5836a301ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca9d659a9133c131ee392c5836a301ac">&#9670;&nbsp;</a></span>WaitForPacket()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -323,7 +323,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">bool SerialInterface::WaitForPacket </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d4f/struct_serial_interface_1_1_serial_packet_node.html">SerialPacketNode</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../de/d0b/struct_serial_interface_1_1serial_packet_node.html">serialPacketNode</a> &amp;&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
         </tr>
         <tr>
@@ -359,8 +359,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a8377e1dbf5e32977e8bcace78455f2b6" name="a8377e1dbf5e32977e8bcace78455f2b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8377e1dbf5e32977e8bcace78455f2b6">&#9670;&nbsp;</a></span>WritePacket() <span class="overload">[1/2]</span></h2>
+<a id="a3d9af747d813c8e285d6f9ba0eebfed2" name="a3d9af747d813c8e285d6f9ba0eebfed2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d9af747d813c8e285d6f9ba0eebfed2">&#9670;&nbsp;</a></span>WritePacket() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -368,7 +368,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void SerialInterface::WritePacket </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d4f/struct_serial_interface_1_1_serial_packet_node.html">SerialInterface::SerialPacketNode</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../de/d0b/struct_serial_interface_1_1serial_packet_node.html">SerialInterface::serialPacketNode</a> &amp;&#160;</td>
           <td class="paramname"><em>node</em></td><td>)</td>
           <td></td>
         </tr>

@@ -110,36 +110,45 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad14d17252b154446277a1c0ffa0b3fc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d7a/class_t_f_t.html#ad14d17252b154446277a1c0ffa0b3fc2">Init</a> (uint8_t cs, uint8_t dc, uint8_t mosi, uint8_t clk, uint8_t rst, uint8_t miso)</td></tr>
+<tr class="memdesc:ad14d17252b154446277a1c0ffa0b3fc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the <a class="el" href="../../d9/d7a/class_t_f_t.html">TFT</a> display. <b>This must be run before any other <a class="el" href="../../d9/d7a/class_t_f_t.html">TFT</a> method</b>  <a href="../../d9/d7a/class_t_f_t.html#ad14d17252b154446277a1c0ffa0b3fc2">More...</a><br /></td></tr>
 <tr class="separator:ad14d17252b154446277a1c0ffa0b3fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4991dd6ec64b12c38f2fc1c6088a615c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d7a/class_t_f_t.html#a4991dd6ec64b12c38f2fc1c6088a615c">~TFT</a> ()</td></tr>
 <tr class="separator:a4991dd6ec64b12c38f2fc1c6088a615c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab27086ec48a592c4fd90d0b5588b68f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d7a/class_t_f_t.html#ab27086ec48a592c4fd90d0b5588b68f9">LogNewLine</a> (const char *line1, const char *line2, <a class="el" href="../../d9/d7a/class_t_f_t.html#a4225719b502bc02af5d4baae4f156509">radioPacketMode</a> packetMode=<a class="el" href="../../d9/d7a/class_t_f_t.html#a4225719b502bc02af5d4baae4f156509aabe86639baf614afc794d424d16b8abc">Undefined</a>, <a class="el" href="../../d9/d7a/class_t_f_t.html#aba1420b1c7b1cd0a914a5febed9cbfcf">radioPacketModeColor</a> packetColor=<a class="el" href="../../d9/d7a/class_t_f_t.html#aba1420b1c7b1cd0a914a5febed9cbfcfae217f86ee6377f3a4f0612ac9b4009be">None</a>)</td></tr>
-<tr class="separator:ab27086ec48a592c4fd90d0b5588b68f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1bf5ef43131af2ad5441576d87c0c11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d7a/class_t_f_t.html#ab1bf5ef43131af2ad5441576d87c0c11">WriteAllPrintedItems</a> ()</td></tr>
-<tr class="separator:ab1bf5ef43131af2ad5441576d87c0c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefc212397f35bb0acdf74a02621bcd60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d7a/class_t_f_t.html#aefc212397f35bb0acdf74a02621bcd60">WriteNewLine</a> (const char *line1, const char *line2, <a class="el" href="../../d9/d7a/class_t_f_t.html#a4225719b502bc02af5d4baae4f156509">radioPacketMode</a> packetMode=<a class="el" href="../../d9/d7a/class_t_f_t.html#a4225719b502bc02af5d4baae4f156509aabe86639baf614afc794d424d16b8abc">Undefined</a>, <a class="el" href="../../d9/d7a/class_t_f_t.html#aba1420b1c7b1cd0a914a5febed9cbfcf">radioPacketModeColor</a> packetColor=<a class="el" href="../../d9/d7a/class_t_f_t.html#aba1420b1c7b1cd0a914a5febed9cbfcfae217f86ee6377f3a4f0612ac9b4009be">None</a>)</td></tr>
+<tr class="memdesc:aefc212397f35bb0acdf74a02621bcd60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a new line to the <a class="el" href="../../d9/d7a/class_t_f_t.html">TFT</a> screen. This is usually used for logging radio packets that are sent or received.  <a href="../../d9/d7a/class_t_f_t.html#aefc212397f35bb0acdf74a02621bcd60">More...</a><br /></td></tr>
+<tr class="separator:aefc212397f35bb0acdf74a02621bcd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f16c62a26fa69366049a6f0560afb0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d7a/class_t_f_t.html#a3f16c62a26fa69366049a6f0560afb0c">ClearAllPrintedItems</a> ()</td></tr>
+<tr class="memdesc:a3f16c62a26fa69366049a6f0560afb0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all the printed items on the screen. It doesn't deleted them from the queue though.  <a href="../../d9/d7a/class_t_f_t.html#a3f16c62a26fa69366049a6f0560afb0c">More...</a><br /></td></tr>
 <tr class="separator:a3f16c62a26fa69366049a6f0560afb0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0c522a5fd64ca4d7ec1547f3f0b4b69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d7a/class_t_f_t.html#ac0c522a5fd64ca4d7ec1547f3f0b4b69">DrawGPSIconSearching</a> ()</td></tr>
+<tr class="memdesc:ac0c522a5fd64ca4d7ec1547f3f0b4b69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the <a class="el" href="../../d1/d58/class_g_p_s.html" title="GPS class that controls the Sparkfun u-blox SAM-M8Q.">GPS</a> icon as yellow (searching for location)  <a href="../../d9/d7a/class_t_f_t.html#ac0c522a5fd64ca4d7ec1547f3f0b4b69">More...</a><br /></td></tr>
 <tr class="separator:ac0c522a5fd64ca4d7ec1547f3f0b4b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0ac96f5b55fdc6ba34869c3bf05c7b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d7a/class_t_f_t.html#ae0ac96f5b55fdc6ba34869c3bf05c7b1">DrawGPSIconAcquired</a> ()</td></tr>
+<tr class="memdesc:ae0ac96f5b55fdc6ba34869c3bf05c7b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the <a class="el" href="../../d1/d58/class_g_p_s.html" title="GPS class that controls the Sparkfun u-blox SAM-M8Q.">GPS</a> icon as green (location was successfully found)  <a href="../../d9/d7a/class_t_f_t.html#ae0ac96f5b55fdc6ba34869c3bf05c7b1">More...</a><br /></td></tr>
 <tr class="separator:ae0ac96f5b55fdc6ba34869c3bf05c7b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8375724f166ab8057c8dfd4170ac4153"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d7a/class_t_f_t.html#a8375724f166ab8057c8dfd4170ac4153">DrawGPSIconFailed</a> ()</td></tr>
+<tr class="memdesc:a8375724f166ab8057c8dfd4170ac4153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the <a class="el" href="../../d1/d58/class_g_p_s.html" title="GPS class that controls the Sparkfun u-blox SAM-M8Q.">GPS</a> icon as red (location was NOT found)  <a href="../../d9/d7a/class_t_f_t.html#a8375724f166ab8057c8dfd4170ac4153">More...</a><br /></td></tr>
 <tr class="separator:a8375724f166ab8057c8dfd4170ac4153"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24a4c27e48ac991afa0c339f442e199d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d7a/class_t_f_t.html#a24a4c27e48ac991afa0c339f442e199d">DrawStartingScreen</a> ()</td></tr>
+<tr class="memdesc:a24a4c27e48ac991afa0c339f442e199d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the starting screen of the <a class="el" href="../../d9/d7a/class_t_f_t.html">TFT</a>. This includes the <a class="el" href="../../d1/d58/class_g_p_s.html" title="GPS class that controls the Sparkfun u-blox SAM-M8Q.">GPS</a> icon being yellow and the header line.  <a href="../../d9/d7a/class_t_f_t.html#a24a4c27e48ac991afa0c339f442e199d">More...</a><br /></td></tr>
 <tr class="separator:a24a4c27e48ac991afa0c339f442e199d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3b8d3a98752c63c84089cbf5a468204"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d7a/class_t_f_t.html#ac3b8d3a98752c63c84089cbf5a468204">DrawGPSIcon</a> (uint16_t color)</td></tr>
+<tr class="memdesc:ac3b8d3a98752c63c84089cbf5a468204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the <a class="el" href="../../d1/d58/class_g_p_s.html" title="GPS class that controls the Sparkfun u-blox SAM-M8Q.">GPS</a> icon.  <a href="../../d9/d7a/class_t_f_t.html#ac3b8d3a98752c63c84089cbf5a468204">More...</a><br /></td></tr>
 <tr class="separator:ac3b8d3a98752c63c84089cbf5a468204"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4f3fde4e1aa969a6dcce9e7309dcdf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d7a/class_t_f_t.html#ae4f3fde4e1aa969a6dcce9e7309dcdf2">SetPrintedItem</a> (uint8_t index, uint16_t color)</td></tr>
-<tr class="separator:ae4f3fde4e1aa969a6dcce9e7309dcdf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9352bd480daead6a006d45d49d2ecc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d7a/class_t_f_t.html#ad9352bd480daead6a006d45d49d2ecc7">GetStringForPacketMode</a> (char *modeString, <a class="el" href="../../d9/d7a/class_t_f_t.html#a4225719b502bc02af5d4baae4f156509">radioPacketMode</a> packetMode)</td></tr>
-<tr class="separator:ad9352bd480daead6a006d45d49d2ecc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a301f61e9d01d3e0f057f279e22e9b993"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d7a/class_t_f_t.html#a301f61e9d01d3e0f057f279e22e9b993">WriteItemToScreen</a> (uint8_t index, uint16_t color)</td></tr>
+<tr class="memdesc:a301f61e9d01d3e0f057f279e22e9b993"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the item to the screen. Pass in the index of the item and it will be written to the screen.  <a href="../../d9/d7a/class_t_f_t.html#a301f61e9d01d3e0f057f279e22e9b993">More...</a><br /></td></tr>
+<tr class="separator:a301f61e9d01d3e0f057f279e22e9b993"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46626557471be88c1f304496b59158e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d7a/class_t_f_t.html#a46626557471be88c1f304496b59158e6">DrawAltimeterData</a> (<a class="el" href="../../d6/d76/class_altimeter.html">Altimeter</a> &amp;altimeter)</td></tr>
+<tr class="memdesc:a46626557471be88c1f304496b59158e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the altitude and temperature on the <a class="el" href="../../d9/d7a/class_t_f_t.html">TFT</a> screen. Will print something regardless of if it is valid data or not.  <a href="../../d9/d7a/class_t_f_t.html#a46626557471be88c1f304496b59158e6">More...</a><br /></td></tr>
 <tr class="separator:a46626557471be88c1f304496b59158e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31fb4cb9e2b86d0a4a1f9ba6a60f9497"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d7a/class_t_f_t.html#a31fb4cb9e2b86d0a4a1f9ba6a60f9497">DrawGPSData</a> (<a class="el" href="../../d1/d58/class_g_p_s.html">GPS</a> &amp;gps)</td></tr>
+<tr class="memdesc:a31fb4cb9e2b86d0a4a1f9ba6a60f9497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the gps data on the <a class="el" href="../../d9/d7a/class_t_f_t.html">TFT</a> screen. This includes updating the <a class="el" href="../../d1/d58/class_g_p_s.html" title="GPS class that controls the Sparkfun u-blox SAM-M8Q.">GPS</a> icon color and printing the date. If the gps does not find a position lock within GPS_TIME_TO_WAIT_FOR_LOCATION_MS milliseconds, it changes the <a class="el" href="../../d1/d58/class_g_p_s.html" title="GPS class that controls the Sparkfun u-blox SAM-M8Q.">GPS</a> icon color to red and continues on.  <a href="../../d9/d7a/class_t_f_t.html#a31fb4cb9e2b86d0a4a1f9ba6a60f9497">More...</a><br /></td></tr>
 <tr class="separator:a31fb4cb9e2b86d0a4a1f9ba6a60f9497"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2983d17f477a7f4a5497f6cf5fad0a0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d7a/class_t_f_t.html#a2983d17f477a7f4a5497f6cf5fad0a0e">ChangeLastPrintedItemStatusColor</a> (<a class="el" href="../../d9/d7a/class_t_f_t.html#aba1420b1c7b1cd0a914a5febed9cbfcf">radioPacketModeColor</a> newColor)</td></tr>
+<tr class="memdesc:a2983d17f477a7f4a5497f6cf5fad0a0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the color of the packetMode ([RX] or [TX]) of the most recent line written to the screen.  <a href="../../d9/d7a/class_t_f_t.html#a2983d17f477a7f4a5497f6cf5fad0a0e">More...</a><br /></td></tr>
 <tr class="separator:a2983d17f477a7f4a5497f6cf5fad0a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01c2959f5a7461f33d944e6a7a2bb371"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d7a/class_t_f_t.html#a01c2959f5a7461f33d944e6a7a2bb371">DeleteLastPrintedItem</a> ()</td></tr>
+<tr class="memdesc:a01c2959f5a7461f33d944e6a7a2bb371"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the most recently written line.  <a href="../../d9/d7a/class_t_f_t.html#a01c2959f5a7461f33d944e6a7a2bb371">More...</a><br /></td></tr>
 <tr class="separator:a01c2959f5a7461f33d944e6a7a2bb371"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
@@ -225,6 +234,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Changes the color of the packetMode ([RX] or [TX]) of the most recent line written to the screen. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newColor</td><td>The color to change it to. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a3f16c62a26fa69366049a6f0560afb0c" name="a3f16c62a26fa69366049a6f0560afb0c"></a>
@@ -242,6 +259,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Clears all the printed items on the screen. It doesn't deleted them from the queue though. </p>
+
 </div>
 </div>
 <a id="a01c2959f5a7461f33d944e6a7a2bb371" name="a01c2959f5a7461f33d944e6a7a2bb371"></a>
@@ -258,6 +277,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Deletes the most recently written line. </p>
 
 </div>
 </div>
@@ -277,6 +298,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Draws the altitude and temperature on the <a class="el" href="../../d9/d7a/class_t_f_t.html">TFT</a> screen. Will print something regardless of if it is valid data or not. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">altimeter</td><td>The altimeter object </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a31fb4cb9e2b86d0a4a1f9ba6a60f9497" name="a31fb4cb9e2b86d0a4a1f9ba6a60f9497"></a>
@@ -294,6 +323,14 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Draws the gps data on the <a class="el" href="../../d9/d7a/class_t_f_t.html">TFT</a> screen. This includes updating the <a class="el" href="../../d1/d58/class_g_p_s.html" title="GPS class that controls the Sparkfun u-blox SAM-M8Q.">GPS</a> icon color and printing the date. If the gps does not find a position lock within GPS_TIME_TO_WAIT_FOR_LOCATION_MS milliseconds, it changes the <a class="el" href="../../d1/d58/class_g_p_s.html" title="GPS class that controls the Sparkfun u-blox SAM-M8Q.">GPS</a> icon color to red and continues on. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gps</td><td>The gps object </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -313,6 +350,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Draws the <a class="el" href="../../d1/d58/class_g_p_s.html" title="GPS class that controls the Sparkfun u-blox SAM-M8Q.">GPS</a> icon. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>The color to make the icon </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ae0ac96f5b55fdc6ba34869c3bf05c7b1" name="ae0ac96f5b55fdc6ba34869c3bf05c7b1"></a>
@@ -329,6 +374,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Draws the <a class="el" href="../../d1/d58/class_g_p_s.html" title="GPS class that controls the Sparkfun u-blox SAM-M8Q.">GPS</a> icon as green (location was successfully found) </p>
 
 </div>
 </div>
@@ -347,6 +394,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Draws the <a class="el" href="../../d1/d58/class_g_p_s.html" title="GPS class that controls the Sparkfun u-blox SAM-M8Q.">GPS</a> icon as red (location was NOT found) </p>
+
 </div>
 </div>
 <a id="ac0c522a5fd64ca4d7ec1547f3f0b4b69" name="ac0c522a5fd64ca4d7ec1547f3f0b4b69"></a>
@@ -363,6 +412,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Draws the <a class="el" href="../../d1/d58/class_g_p_s.html" title="GPS class that controls the Sparkfun u-blox SAM-M8Q.">GPS</a> icon as yellow (searching for location) </p>
 
 </div>
 </div>
@@ -381,33 +432,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="ad9352bd480daead6a006d45d49d2ecc7" name="ad9352bd480daead6a006d45d49d2ecc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9352bd480daead6a006d45d49d2ecc7">&#9670;&nbsp;</a></span>GetStringForPacketMode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TFT::GetStringForPacketMode </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>modeString</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d9/d7a/class_t_f_t.html#a4225719b502bc02af5d4baae4f156509">radioPacketMode</a>&#160;</td>
-          <td class="paramname"><em>packetMode</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Draws the starting screen of the <a class="el" href="../../d9/d7a/class_t_f_t.html">TFT</a>. This includes the <a class="el" href="../../d1/d58/class_g_p_s.html" title="GPS class that controls the Sparkfun u-blox SAM-M8Q.">GPS</a> icon being yellow and the header line. </p>
 
 </div>
 </div>
@@ -461,16 +486,66 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Initializes the <a class="el" href="../../d9/d7a/class_t_f_t.html">TFT</a> display. <b>This must be run before any other <a class="el" href="../../d9/d7a/class_t_f_t.html">TFT</a> method</b> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cs</td><td></td></tr>
+    <tr><td class="paramname">dc</td><td></td></tr>
+    <tr><td class="paramname">mosi</td><td></td></tr>
+    <tr><td class="paramname">clk</td><td></td></tr>
+    <tr><td class="paramname">rst</td><td></td></tr>
+    <tr><td class="paramname">miso</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="ab27086ec48a592c4fd90d0b5588b68f9" name="ab27086ec48a592c4fd90d0b5588b68f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab27086ec48a592c4fd90d0b5588b68f9">&#9670;&nbsp;</a></span>LogNewLine()</h2>
+<a id="a301f61e9d01d3e0f057f279e22e9b993" name="a301f61e9d01d3e0f057f279e22e9b993"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a301f61e9d01d3e0f057f279e22e9b993">&#9670;&nbsp;</a></span>WriteItemToScreen()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TFT::LogNewLine </td>
+          <td class="memname">void TFT::WriteItemToScreen </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes the item to the screen. Pass in the index of the item and it will be written to the screen. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>the index of the item </td></tr>
+    <tr><td class="paramname">color</td><td>the color of the message's [RX] or [TX] banner </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aefc212397f35bb0acdf74a02621bcd60" name="aefc212397f35bb0acdf74a02621bcd60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefc212397f35bb0acdf74a02621bcd60">&#9670;&nbsp;</a></span>WriteNewLine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TFT::WriteNewLine </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>line1</em>, </td>
@@ -501,50 +576,16 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="ae4f3fde4e1aa969a6dcce9e7309dcdf2" name="ae4f3fde4e1aa969a6dcce9e7309dcdf2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4f3fde4e1aa969a6dcce9e7309dcdf2">&#9670;&nbsp;</a></span>SetPrintedItem()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TFT::SetPrintedItem </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>index</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>color</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab1bf5ef43131af2ad5441576d87c0c11" name="ab1bf5ef43131af2ad5441576d87c0c11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1bf5ef43131af2ad5441576d87c0c11">&#9670;&nbsp;</a></span>WriteAllPrintedItems()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TFT::WriteAllPrintedItems </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Write a new line to the <a class="el" href="../../d9/d7a/class_t_f_t.html">TFT</a> screen. This is usually used for logging radio packets that are sent or received. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">line1</td><td>The first line to log in the message </td></tr>
+    <tr><td class="paramname">line2</td><td>The second line to log in the message </td></tr>
+    <tr><td class="paramname">packetMode</td><td>The mode of the packet. Indicates RX, TX, etc. </td></tr>
+    <tr><td class="paramname">packetColor</td><td>The color of the printed packetMode. This colors the [TX] or [RX] that is printed. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

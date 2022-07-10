@@ -22,9 +22,7 @@ var class_t_f_t =
     [ "DrawGPSIconFailed", "d9/d7a/class_t_f_t.html#a8375724f166ab8057c8dfd4170ac4153", null ],
     [ "DrawGPSIconSearching", "d9/d7a/class_t_f_t.html#ac0c522a5fd64ca4d7ec1547f3f0b4b69", null ],
     [ "DrawStartingScreen", "d9/d7a/class_t_f_t.html#a24a4c27e48ac991afa0c339f442e199d", null ],
-    [ "GetStringForPacketMode", "d9/d7a/class_t_f_t.html#ad9352bd480daead6a006d45d49d2ecc7", null ],
     [ "Init", "d9/d7a/class_t_f_t.html#ad14d17252b154446277a1c0ffa0b3fc2", null ],
-    [ "LogNewLine", "d9/d7a/class_t_f_t.html#ab27086ec48a592c4fd90d0b5588b68f9", null ],
-    [ "SetPrintedItem", "d9/d7a/class_t_f_t.html#ae4f3fde4e1aa969a6dcce9e7309dcdf2", null ],
-    [ "WriteAllPrintedItems", "d9/d7a/class_t_f_t.html#ab1bf5ef43131af2ad5441576d87c0c11", null ]
+    [ "WriteItemToScreen", "d9/d7a/class_t_f_t.html#a301f61e9d01d3e0f057f279e22e9b993", null ],
+    [ "WriteNewLine", "d9/d7a/class_t_f_t.html#aefc212397f35bb0acdf74a02621bcd60", null ]
 ];
