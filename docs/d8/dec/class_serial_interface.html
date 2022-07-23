@@ -83,108 +83,117 @@ $(document).ready(function(){initNavTree('d8/dec/class_serial_interface.html','.
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="../../d5/d8b/class_serial_interface-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">SerialInterface Class Reference</div></div>
+  <div class="headertitle"><div class="title">SerialInterface Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
+<p>This is a purely abstract class for a Serial Interface. It MUST be inherited.  
+ <a href="../../d8/dec/class_serial_interface.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="../../d2/d21/_serial_interface_8h_source.html">SerialInterface.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d0b/struct_serial_interface_1_1serial_packet_node.html">serialPacketNode</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The structure that all serial packets received are read into. All serial packets written over the serial port must also be in a <a class="el" href="../../de/d0b/struct_serial_interface_1_1serial_packet_node.html" title="The structure that all serial packets received are read into. All serial packets written over the ser...">serialPacketNode</a>.  <a href="../../de/d0b/struct_serial_interface_1_1serial_packet_node.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d60/struct_serial_interface_1_1test_packet_data.html">testPacketData</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a66e8916a60fd7e51680e2330ee46ae89"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#a66e8916a60fd7e51680e2330ee46ae89">SerialPacketIDs</a> { <br />
-&#160;&#160;<a class="el" href="../../d8/dec/class_serial_interface.html#a66e8916a60fd7e51680e2330ee46ae89a453b65711326e03ad6e7f5b24e05d23c">RADIO_FLOAT_PACKET_ID</a> = 0
-, <a class="el" href="../../d8/dec/class_serial_interface.html#a66e8916a60fd7e51680e2330ee46ae89a050eba1ba9008e295859ddcd7ff981fc">RADIO_DOUBLE_PACKET_ID</a> = 1
-, <a class="el" href="../../d8/dec/class_serial_interface.html#a66e8916a60fd7e51680e2330ee46ae89a3c29d34460d829592a3847ec85fa4fc9">RADIO_INT32_PACKET_ID</a> = 2
-, <a class="el" href="../../d8/dec/class_serial_interface.html#a66e8916a60fd7e51680e2330ee46ae89ab7d683bcb26b9cfa35fe8f98b6b5efee">RADIO_INT16_PACKET_ID</a> = 3
-, <br />
-&#160;&#160;<a class="el" href="../../d8/dec/class_serial_interface.html#a66e8916a60fd7e51680e2330ee46ae89acb9f0fa650622111ab9cd4013bf465c1">RADIO_INT8_PACKET_ID</a> = 4
-, <a class="el" href="../../d8/dec/class_serial_interface.html#a66e8916a60fd7e51680e2330ee46ae89ac5fd30e5c71ea7fe963e88dde8260603">RADIO_STRING_PACKET_ID</a> = 5
-, <a class="el" href="../../d8/dec/class_serial_interface.html#a66e8916a60fd7e51680e2330ee46ae89a8d82ef76f6cc79981b45ed1375edb578">RADIO_TIME_PACKET_ID</a> = 6
-, <a class="el" href="../../d8/dec/class_serial_interface.html#a66e8916a60fd7e51680e2330ee46ae89a559dfd3aceb1631a0aaa36f823484569">RADIO_GPSCOORDS_PACKET_ID</a> = 7
-, <br />
-&#160;&#160;<a class="el" href="../../d8/dec/class_serial_interface.html#a66e8916a60fd7e51680e2330ee46ae89abe3d35bb99ba08d5546deae89d8e8572">RADIO_HANDSHAKE_PACKET_ID</a> = 8
-, <a class="el" href="../../d8/dec/class_serial_interface.html#a66e8916a60fd7e51680e2330ee46ae89ae916584ba5d0cc6153b4693f7128095f">TEST_PACKET_ID</a> = 499
-<br />
- }</td></tr>
-<tr class="separator:a66e8916a60fd7e51680e2330ee46ae89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af55eaf3eeed107d7abfa3f0ea8ad00b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#af55eaf3eeed107d7abfa3f0ea8ad00b3">ReadSerial</a> ()</td></tr>
 <tr class="memdesc:af55eaf3eeed107d7abfa3f0ea8ad00b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a single byte from the serial port and when a full packet has been read, it parses the data into packet form and places it into a buffer.  <a href="../../d8/dec/class_serial_interface.html#af55eaf3eeed107d7abfa3f0ea8ad00b3">More...</a><br /></td></tr>
 <tr class="separator:af55eaf3eeed107d7abfa3f0ea8ad00b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca9d659a9133c131ee392c5836a301ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#aca9d659a9133c131ee392c5836a301ac">WaitForPacket</a> (<a class="el" href="../../de/d0b/struct_serial_interface_1_1serial_packet_node.html">serialPacketNode</a> &amp;packet, uint32_t packetID, uint32_t timeoutMilliseconds=<a class="el" href="../../d8/dec/class_serial_interface.html#a2abf75ccabe2dd6dd38dc99a065738b0">TIMEOUT_INFINITY</a>)</td></tr>
-<tr class="memdesc:aca9d659a9133c131ee392c5836a301ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks and waits for a packet to be received over the serial COM port that matches packetID.  <a href="../../d8/dec/class_serial_interface.html#aca9d659a9133c131ee392c5836a301ac">More...</a><br /></td></tr>
-<tr class="separator:aca9d659a9133c131ee392c5836a301ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d9af747d813c8e285d6f9ba0eebfed2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#a3d9af747d813c8e285d6f9ba0eebfed2">WritePacket</a> (<a class="el" href="../../de/d0b/struct_serial_interface_1_1serial_packet_node.html">serialPacketNode</a> &amp;node)</td></tr>
-<tr class="memdesc:a3d9af747d813c8e285d6f9ba0eebfed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a packet over the serial interface.  <a href="../../d8/dec/class_serial_interface.html#a3d9af747d813c8e285d6f9ba0eebfed2">More...</a><br /></td></tr>
-<tr class="separator:a3d9af747d813c8e285d6f9ba0eebfed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ce6eae2eae7f0522f5e8ef76a848a87"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#a2ce6eae2eae7f0522f5e8ef76a848a87">WaitForPacket</a> (<a class="el" href="../../d2/d58/struct_serial_packets_1_1serial_packet_node.html">SerialPackets::serialPacketNode</a> &amp;packet, <a class="el" href="../../d6/dde/class_serial_packets.html#a7e5a9aedd3d91a8b3c26f6d998edba34">SerialPackets::SerialPacketIDs</a> packetID, uint32_t timeoutMilliseconds=<a class="el" href="../../d8/dec/class_serial_interface.html#a2abf75ccabe2dd6dd38dc99a065738b0">TIMEOUT_INFINITY</a>)</td></tr>
+<tr class="memdesc:a2ce6eae2eae7f0522f5e8ef76a848a87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks and waits for a packet to be received over the serial COM port that matches packetID.  <a href="../../d8/dec/class_serial_interface.html#a2ce6eae2eae7f0522f5e8ef76a848a87">More...</a><br /></td></tr>
+<tr class="separator:a2ce6eae2eae7f0522f5e8ef76a848a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04652e720c1e40da5511df06dce8d323"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#a04652e720c1e40da5511df06dce8d323">WaitForPacket</a> (<a class="el" href="../../d2/d58/struct_serial_packets_1_1serial_packet_node.html">SerialPackets::serialPacketNode</a> &amp;packet, uint32_t packetID, uint32_t timeoutMilliseconds=<a class="el" href="../../d8/dec/class_serial_interface.html#a2abf75ccabe2dd6dd38dc99a065738b0">TIMEOUT_INFINITY</a>)</td></tr>
+<tr class="memdesc:a04652e720c1e40da5511df06dce8d323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks and waits for a packet to be received over the serial COM port that matches packetID.  <a href="../../d8/dec/class_serial_interface.html#a04652e720c1e40da5511df06dce8d323">More...</a><br /></td></tr>
+<tr class="separator:a04652e720c1e40da5511df06dce8d323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7a5e6889bd0acd2b145e6512091f3d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#ab7a5e6889bd0acd2b145e6512091f3d2">WritePacket</a> (<a class="el" href="../../d2/d58/struct_serial_packets_1_1serial_packet_node.html">SerialPackets::serialPacketNode</a> &amp;node)</td></tr>
+<tr class="memdesc:ab7a5e6889bd0acd2b145e6512091f3d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a packet over the serial interface.  <a href="../../d8/dec/class_serial_interface.html#ab7a5e6889bd0acd2b145e6512091f3d2">More...</a><br /></td></tr>
+<tr class="separator:ab7a5e6889bd0acd2b145e6512091f3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54e3fd4efa1215f5ca6e1b8c8563a7d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#a54e3fd4efa1215f5ca6e1b8c8563a7d9">WritePacket</a> (void *packetData, <a class="el" href="../../d6/dde/class_serial_packets.html#a7e5a9aedd3d91a8b3c26f6d998edba34">SerialPackets::SerialPacketIDs</a> packetID)</td></tr>
+<tr class="memdesc:a54e3fd4efa1215f5ca6e1b8c8563a7d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a packet over the serial interface.  <a href="../../d8/dec/class_serial_interface.html#a54e3fd4efa1215f5ca6e1b8c8563a7d9">More...</a><br /></td></tr>
+<tr class="separator:a54e3fd4efa1215f5ca6e1b8c8563a7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa657afa677c3d4f9d81912e12e58485"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#afa657afa677c3d4f9d81912e12e58485">WritePacket</a> (void *packetData, uint32_t packetID)</td></tr>
 <tr class="memdesc:afa657afa677c3d4f9d81912e12e58485"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a packet over the serial interface.  <a href="../../d8/dec/class_serial_interface.html#afa657afa677c3d4f9d81912e12e58485">More...</a><br /></td></tr>
 <tr class="separator:afa657afa677c3d4f9d81912e12e58485"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2521188c0b35b2f38ef0a63c9b3343c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#a2521188c0b35b2f38ef0a63c9b3343c4">PrintPacketsInBuffer</a> ()</td></tr>
 <tr class="memdesc:a2521188c0b35b2f38ef0a63c9b3343c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints all the packets that are currently in the buffer.  <a href="../../d8/dec/class_serial_interface.html#a2521188c0b35b2f38ef0a63c9b3343c4">More...</a><br /></td></tr>
 <tr class="separator:a2521188c0b35b2f38ef0a63c9b3343c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad64df53b5a57ebadd950c216113e7e48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#ad64df53b5a57ebadd950c216113e7e48">PrintPacket</a> (const <a class="el" href="../../d2/d58/struct_serial_packets_1_1serial_packet_node.html">SerialPackets::serialPacketNode</a> &amp;packet, bool printNewline=true)</td></tr>
+<tr class="memdesc:ad64df53b5a57ebadd950c216113e7e48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the packet.  <a href="../../d8/dec/class_serial_interface.html#ad64df53b5a57ebadd950c216113e7e48">More...</a><br /></td></tr>
+<tr class="separator:ad64df53b5a57ebadd950c216113e7e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa073a68fede10af41e7c1eee57f1ac54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#aa073a68fede10af41e7c1eee57f1ac54">ClearBuffer</a> ()</td></tr>
 <tr class="memdesc:aa073a68fede10af41e7c1eee57f1ac54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Completely empties the packet buffer.  <a href="../../d8/dec/class_serial_interface.html#aa073a68fede10af41e7c1eee57f1ac54">More...</a><br /></td></tr>
 <tr class="separator:aa073a68fede10af41e7c1eee57f1ac54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a33abd8d4b0f31d48e570315fd5bc11dc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d8/dec/class_serial_interface.html">SerialInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#a33abd8d4b0f31d48e570315fd5bc11dc">Instance</a> ()</td></tr>
-<tr class="memdesc:a33abd8d4b0f31d48e570315fd5bc11dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Serial Interface instance.  <a href="../../d8/dec/class_serial_interface.html#a33abd8d4b0f31d48e570315fd5bc11dc">More...</a><br /></td></tr>
-<tr class="separator:a33abd8d4b0f31d48e570315fd5bc11dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac14b7edaded4e1e390fe2c8c8ac15f8d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#ac14b7edaded4e1e390fe2c8c8ac15f8d">PrintPacket</a> (const <a class="el" href="../../de/d0b/struct_serial_interface_1_1serial_packet_node.html">serialPacketNode</a> &amp;packet, bool printNewline=true)</td></tr>
-<tr class="memdesc:ac14b7edaded4e1e390fe2c8c8ac15f8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the packet.  <a href="../../d8/dec/class_serial_interface.html#ac14b7edaded4e1e390fe2c8c8ac15f8d">More...</a><br /></td></tr>
-<tr class="separator:ac14b7edaded4e1e390fe2c8c8ac15f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a2abf75ccabe2dd6dd38dc99a065738b0"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#a2abf75ccabe2dd6dd38dc99a065738b0">TIMEOUT_INFINITY</a> = 0</td></tr>
 <tr class="separator:a2abf75ccabe2dd6dd38dc99a065738b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:afe661e681b05f94306b3e657226c7aa9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#afe661e681b05f94306b3e657226c7aa9">ParseDouble</a> (char *buffer, uint16_t *bufferStart)</td></tr>
+<tr class="memdesc:afe661e681b05f94306b3e657226c7aa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a double from the first bytes of the buffer. It starts at index bufferStart then parses sizeof(double) bytes.  <a href="../../d8/dec/class_serial_interface.html#afe661e681b05f94306b3e657226c7aa9">More...</a><br /></td></tr>
+<tr class="separator:afe661e681b05f94306b3e657226c7aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8abd9fc66b0bbd5567e38843119e31f1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#a8abd9fc66b0bbd5567e38843119e31f1">ParseFloat</a> (char *buffer, uint16_t *bufferStart)</td></tr>
+<tr class="memdesc:a8abd9fc66b0bbd5567e38843119e31f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a float from the first bytes of the buffer. It starts at index bufferStart then parses sizeof(float) bytes.  <a href="../../d8/dec/class_serial_interface.html#a8abd9fc66b0bbd5567e38843119e31f1">More...</a><br /></td></tr>
+<tr class="separator:a8abd9fc66b0bbd5567e38843119e31f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e5bac313261db5dfe93580be90eb7aa"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#a6e5bac313261db5dfe93580be90eb7aa">ParseUInt64</a> (char *buffer, uint16_t *bufferStart)</td></tr>
+<tr class="memdesc:a6e5bac313261db5dfe93580be90eb7aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a uint64_t from the first bytes of the buffer. It starts at index bufferStart then parses sizeof(uint64_t) bytes.  <a href="../../d8/dec/class_serial_interface.html#a6e5bac313261db5dfe93580be90eb7aa">More...</a><br /></td></tr>
+<tr class="separator:a6e5bac313261db5dfe93580be90eb7aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30ef6831864f8772cb760bf18a1e0f75"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#a30ef6831864f8772cb760bf18a1e0f75">ParseUInt32</a> (char *buffer, uint16_t *bufferStart)</td></tr>
+<tr class="memdesc:a30ef6831864f8772cb760bf18a1e0f75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a uint32_t from the first bytes of the buffer. It starts at index bufferStart then parses sizeof(uint32_t) bytes.  <a href="../../d8/dec/class_serial_interface.html#a30ef6831864f8772cb760bf18a1e0f75">More...</a><br /></td></tr>
+<tr class="separator:a30ef6831864f8772cb760bf18a1e0f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbc601c4844512a9f3b2083534ecdea6"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#afbc601c4844512a9f3b2083534ecdea6">ParseUInt16</a> (char *buffer, uint16_t *bufferStart)</td></tr>
+<tr class="memdesc:afbc601c4844512a9f3b2083534ecdea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a uint16_t from the first bytes of the buffer. It starts at index bufferStart then parses sizeof(uint16_t) bytes.  <a href="../../d8/dec/class_serial_interface.html#afbc601c4844512a9f3b2083534ecdea6">More...</a><br /></td></tr>
+<tr class="separator:afbc601c4844512a9f3b2083534ecdea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5876b42315d7db4a2f516a7ee5d0515e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#a5876b42315d7db4a2f516a7ee5d0515e">ParseUInt8</a> (char *buffer, uint16_t *bufferStart)</td></tr>
+<tr class="memdesc:a5876b42315d7db4a2f516a7ee5d0515e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a uint8_t from the first bytes of the buffer. It starts at index bufferStart then parses sizeof(uint8_t) bytes.  <a href="../../d8/dec/class_serial_interface.html#a5876b42315d7db4a2f516a7ee5d0515e">More...</a><br /></td></tr>
+<tr class="separator:a5876b42315d7db4a2f516a7ee5d0515e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb6aa94ea044e37715f472df427be243"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#acb6aa94ea044e37715f472df427be243">ParseChar</a> (char *buffer, uint16_t *bufferStart)</td></tr>
+<tr class="memdesc:acb6aa94ea044e37715f472df427be243"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a char from the first byte of the buffer. It starts at index bufferStart then parses sizeof(char) bytes.  <a href="../../d8/dec/class_serial_interface.html#acb6aa94ea044e37715f472df427be243">More...</a><br /></td></tr>
+<tr class="separator:acb6aa94ea044e37715f472df427be243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24b14c7a8dbc18e1066ca30683e3784a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#a24b14c7a8dbc18e1066ca30683e3784a">ParseString</a> (char *buffer, uint16_t *bufferStart, char *stringRead, uint32_t strLen)</td></tr>
+<tr class="memdesc:a24b14c7a8dbc18e1066ca30683e3784a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a string from the first bytes of the buffer. It starts at index bufferStart then parses strlen bytes.  <a href="../../d8/dec/class_serial_interface.html#a24b14c7a8dbc18e1066ca30683e3784a">More...</a><br /></td></tr>
+<tr class="separator:a24b14c7a8dbc18e1066ca30683e3784a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4325207c3ef54acf6b11ce1e907a1414"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#a4325207c3ef54acf6b11ce1e907a1414">PrintParsePacketError</a> (uint16_t actualBufferLen, uint16_t targetBufferLen, uint16_t commandNumber)</td></tr>
+<tr class="memdesc:a4325207c3ef54acf6b11ce1e907a1414"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the error message displayed when a packet is parsed unsuccessfully.  <a href="../../d8/dec/class_serial_interface.html#a4325207c3ef54acf6b11ce1e907a1414">More...</a><br /></td></tr>
+<tr class="separator:a4325207c3ef54acf6b11ce1e907a1414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb5199c2d4a43bdd4f51c67fe9e49c27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#aeb5199c2d4a43bdd4f51c67fe9e49c27">SerialWriteUInt64_t</a> (uint64_t val)</td></tr>
+<tr class="separator:aeb5199c2d4a43bdd4f51c67fe9e49c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8569470889b2e7838fe7f8799ccadc0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#a8569470889b2e7838fe7f8799ccadc0f">SerialWriteUInt32_t</a> (uint32_t val)</td></tr>
+<tr class="separator:a8569470889b2e7838fe7f8799ccadc0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fcf41e115b329fb5a5480485f8d316e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#a7fcf41e115b329fb5a5480485f8d316e">SerialWriteUInt16_t</a> (uint16_t val)</td></tr>
+<tr class="separator:a7fcf41e115b329fb5a5480485f8d316e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac769a6c25e9ddad370c3237d8604a24b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#ac769a6c25e9ddad370c3237d8604a24b">SerialWriteUInt8_t</a> (uint8_t val)</td></tr>
+<tr class="separator:ac769a6c25e9ddad370c3237d8604a24b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86601cd7e8cc670bc9691ef9501dd33d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#a86601cd7e8cc670bc9691ef9501dd33d">SerialWriteDouble</a> (double val)</td></tr>
+<tr class="separator:a86601cd7e8cc670bc9691ef9501dd33d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58b0ed931196697fc4f4e091e21bf219"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#a58b0ed931196697fc4f4e091e21bf219">SerialWriteFloat</a> (float val)</td></tr>
+<tr class="separator:a58b0ed931196697fc4f4e091e21bf219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a314b9140b6e292f769f3c1d5a1d74d30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#a314b9140b6e292f769f3c1d5a1d74d30">SerialWriteChar</a> (char val)</td></tr>
+<tr class="separator:a314b9140b6e292f769f3c1d5a1d74d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b9c7cf89a73075be9ca0c1d7db6b27e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#a0b9c7cf89a73075be9ca0c1d7db6b27e">SerialWriteString</a> (char *val, uint32_t len)</td></tr>
+<tr class="separator:a0b9c7cf89a73075be9ca0c1d7db6b27e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a8ab46d4a447cf149a21be6aaa8675e3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d58/struct_serial_packets_1_1serial_packet_node.html">SerialPackets::serialPacketNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#a8ab46d4a447cf149a21be6aaa8675e3c">storage_array</a> [<a class="el" href="../../d8/dec/class_serial_interface.html#a83067102ffb9f6bf59aae66775584a5b">NUMBER_OF_STORED_NODES</a>]</td></tr>
+<tr class="separator:a8ab46d4a447cf149a21be6aaa8675e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45eccd9abb91d628ef8380100b15fede"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/db2/class_vector.html">Vector</a>&lt; <a class="el" href="../../d2/d58/struct_serial_packets_1_1serial_packet_node.html">SerialPackets::serialPacketNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#a45eccd9abb91d628ef8380100b15fede">packetsRead</a></td></tr>
+<tr class="separator:a45eccd9abb91d628ef8380100b15fede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:a83067102ffb9f6bf59aae66775584a5b"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#a83067102ffb9f6bf59aae66775584a5b">NUMBER_OF_STORED_NODES</a> = 100</td></tr>
+<tr class="separator:a83067102ffb9f6bf59aae66775584a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a66e8916a60fd7e51680e2330ee46ae89" name="a66e8916a60fd7e51680e2330ee46ae89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66e8916a60fd7e51680e2330ee46ae89">&#9670;&nbsp;</a></span>SerialPacketIDs</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="../../d8/dec/class_serial_interface.html#a66e8916a60fd7e51680e2330ee46ae89">SerialInterface::SerialPacketIDs</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a66e8916a60fd7e51680e2330ee46ae89a453b65711326e03ad6e7f5b24e05d23c" name="a66e8916a60fd7e51680e2330ee46ae89a453b65711326e03ad6e7f5b24e05d23c"></a>RADIO_FLOAT_PACKET_ID&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a66e8916a60fd7e51680e2330ee46ae89a050eba1ba9008e295859ddcd7ff981fc" name="a66e8916a60fd7e51680e2330ee46ae89a050eba1ba9008e295859ddcd7ff981fc"></a>RADIO_DOUBLE_PACKET_ID&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a66e8916a60fd7e51680e2330ee46ae89a3c29d34460d829592a3847ec85fa4fc9" name="a66e8916a60fd7e51680e2330ee46ae89a3c29d34460d829592a3847ec85fa4fc9"></a>RADIO_INT32_PACKET_ID&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a66e8916a60fd7e51680e2330ee46ae89ab7d683bcb26b9cfa35fe8f98b6b5efee" name="a66e8916a60fd7e51680e2330ee46ae89ab7d683bcb26b9cfa35fe8f98b6b5efee"></a>RADIO_INT16_PACKET_ID&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a66e8916a60fd7e51680e2330ee46ae89acb9f0fa650622111ab9cd4013bf465c1" name="a66e8916a60fd7e51680e2330ee46ae89acb9f0fa650622111ab9cd4013bf465c1"></a>RADIO_INT8_PACKET_ID&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a66e8916a60fd7e51680e2330ee46ae89ac5fd30e5c71ea7fe963e88dde8260603" name="a66e8916a60fd7e51680e2330ee46ae89ac5fd30e5c71ea7fe963e88dde8260603"></a>RADIO_STRING_PACKET_ID&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a66e8916a60fd7e51680e2330ee46ae89a8d82ef76f6cc79981b45ed1375edb578" name="a66e8916a60fd7e51680e2330ee46ae89a8d82ef76f6cc79981b45ed1375edb578"></a>RADIO_TIME_PACKET_ID&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a66e8916a60fd7e51680e2330ee46ae89a559dfd3aceb1631a0aaa36f823484569" name="a66e8916a60fd7e51680e2330ee46ae89a559dfd3aceb1631a0aaa36f823484569"></a>RADIO_GPSCOORDS_PACKET_ID&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a66e8916a60fd7e51680e2330ee46ae89abe3d35bb99ba08d5546deae89d8e8572" name="a66e8916a60fd7e51680e2330ee46ae89abe3d35bb99ba08d5546deae89d8e8572"></a>RADIO_HANDSHAKE_PACKET_ID&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a66e8916a60fd7e51680e2330ee46ae89ae916584ba5d0cc6153b4693f7128095f" name="a66e8916a60fd7e51680e2330ee46ae89ae916584ba5d0cc6153b4693f7128095f"></a>TEST_PACKET_ID&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >This is a purely abstract class for a Serial Interface. It MUST be inherited. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa073a68fede10af41e7c1eee57f1ac54" name="aa073a68fede10af41e7c1eee57f1ac54"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa073a68fede10af41e7c1eee57f1ac54">&#9670;&nbsp;</a></span>ClearBuffer()</h2>
 
@@ -204,8 +213,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a33abd8d4b0f31d48e570315fd5bc11dc" name="a33abd8d4b0f31d48e570315fd5bc11dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33abd8d4b0f31d48e570315fd5bc11dc">&#9670;&nbsp;</a></span>Instance()</h2>
+<a id="acb6aa94ea044e37715f472df427be243" name="acb6aa94ea044e37715f472df427be243"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb6aa94ea044e37715f472df427be243">&#9670;&nbsp;</a></span>ParseChar()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -214,25 +223,44 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="../../d8/dec/class_serial_interface.html">SerialInterface</a> * SerialInterface::Instance </td>
+          <td class="memname">char SerialInterface::ParseChar </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>bufferStart</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the Serial Interface instance. </p>
+<p>Parse a char from the first byte of the buffer. It starts at index bufferStart then parses sizeof(char) bytes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>The buffer to read data bytes from </td></tr>
+    <tr><td class="paramname">bufferStart</td><td>The starting index in buffer to start reading data bytes from. This is overwritten with the first index in buffer where there is new bytes to be read after the data has been read. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The char read from the buffer </dd></dl>
 
 </div>
 </div>
-<a id="ac14b7edaded4e1e390fe2c8c8ac15f8d" name="ac14b7edaded4e1e390fe2c8c8ac15f8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac14b7edaded4e1e390fe2c8c8ac15f8d">&#9670;&nbsp;</a></span>PrintPacket()</h2>
+<a id="afe661e681b05f94306b3e657226c7aa9" name="afe661e681b05f94306b3e657226c7aa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe661e681b05f94306b3e657226c7aa9">&#9670;&nbsp;</a></span>ParseDouble()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -241,9 +269,341 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
+          <td class="memname">double SerialInterface::ParseDouble </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>bufferStart</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parse a double from the first bytes of the buffer. It starts at index bufferStart then parses sizeof(double) bytes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>The buffer to read data bytes from </td></tr>
+    <tr><td class="paramname">bufferStart</td><td>The starting index in buffer to start reading data bytes from. This is overwritten with the first index in buffer where there is new bytes to be read after the data has been read. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The double read from the buffer </dd></dl>
+
+</div>
+</div>
+<a id="a8abd9fc66b0bbd5567e38843119e31f1" name="a8abd9fc66b0bbd5567e38843119e31f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8abd9fc66b0bbd5567e38843119e31f1">&#9670;&nbsp;</a></span>ParseFloat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float SerialInterface::ParseFloat </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>bufferStart</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parse a float from the first bytes of the buffer. It starts at index bufferStart then parses sizeof(float) bytes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>The buffer to read data bytes from </td></tr>
+    <tr><td class="paramname">bufferStart</td><td>The starting index in buffer to start reading data bytes from. This is overwritten with the first index in buffer where there is new bytes to be read after the data has been read. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The float read from the buffer </dd></dl>
+
+</div>
+</div>
+<a id="a24b14c7a8dbc18e1066ca30683e3784a" name="a24b14c7a8dbc18e1066ca30683e3784a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24b14c7a8dbc18e1066ca30683e3784a">&#9670;&nbsp;</a></span>ParseString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SerialInterface::ParseString </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>bufferStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>stringRead</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>strLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parse a string from the first bytes of the buffer. It starts at index bufferStart then parses strlen bytes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>The buffer to read data bytes from </td></tr>
+    <tr><td class="paramname">bufferStart</td><td>The starting index in buffer to start reading data bytes from. This is overwritten with the first index in buffer where there is new bytes to be read after the data has been read. </td></tr>
+    <tr><td class="paramname">stringRead</td><td>[out] The string read from the buffer. </td></tr>
+    <tr><td class="paramname">strLen</td><td>The length of the string to read in (doesn't include the null terminator) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afbc601c4844512a9f3b2083534ecdea6" name="afbc601c4844512a9f3b2083534ecdea6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbc601c4844512a9f3b2083534ecdea6">&#9670;&nbsp;</a></span>ParseUInt16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t SerialInterface::ParseUInt16 </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>bufferStart</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parse a uint16_t from the first bytes of the buffer. It starts at index bufferStart then parses sizeof(uint16_t) bytes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>The buffer to read data bytes from </td></tr>
+    <tr><td class="paramname">bufferStart</td><td>The starting index in buffer to start reading data bytes from. This is overwritten with the first index in buffer where there is new bytes to be read after the data has been read. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The uint16_t read from the buffer </dd></dl>
+
+</div>
+</div>
+<a id="a30ef6831864f8772cb760bf18a1e0f75" name="a30ef6831864f8772cb760bf18a1e0f75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30ef6831864f8772cb760bf18a1e0f75">&#9670;&nbsp;</a></span>ParseUInt32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SerialInterface::ParseUInt32 </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>bufferStart</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parse a uint32_t from the first bytes of the buffer. It starts at index bufferStart then parses sizeof(uint32_t) bytes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>The buffer to read data bytes from </td></tr>
+    <tr><td class="paramname">bufferStart</td><td>The starting index in buffer to start reading data bytes from. This is overwritten with the first index in buffer where there is new bytes to be read after the data has been read. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The uint32_t read from the buffer </dd></dl>
+
+</div>
+</div>
+<a id="a6e5bac313261db5dfe93580be90eb7aa" name="a6e5bac313261db5dfe93580be90eb7aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e5bac313261db5dfe93580be90eb7aa">&#9670;&nbsp;</a></span>ParseUInt64()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t SerialInterface::ParseUInt64 </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>bufferStart</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parse a uint64_t from the first bytes of the buffer. It starts at index bufferStart then parses sizeof(uint64_t) bytes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>The buffer to read data bytes from </td></tr>
+    <tr><td class="paramname">bufferStart</td><td>The starting index in buffer to start reading data bytes from. This is overwritten with the first index in buffer where there is new bytes to be read after the data has been read. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The uint64_t read from the buffer </dd></dl>
+
+</div>
+</div>
+<a id="a5876b42315d7db4a2f516a7ee5d0515e" name="a5876b42315d7db4a2f516a7ee5d0515e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5876b42315d7db4a2f516a7ee5d0515e">&#9670;&nbsp;</a></span>ParseUInt8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t SerialInterface::ParseUInt8 </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>bufferStart</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parse a uint8_t from the first bytes of the buffer. It starts at index bufferStart then parses sizeof(uint8_t) bytes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>The buffer to read data bytes from </td></tr>
+    <tr><td class="paramname">bufferStart</td><td>The starting index in buffer to start reading data bytes from. This is overwritten with the first index in buffer where there is new bytes to be read after the data has been read. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The uint8_t read from the buffer </dd></dl>
+
+</div>
+</div>
+<a id="ad64df53b5a57ebadd950c216113e7e48" name="ad64df53b5a57ebadd950c216113e7e48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad64df53b5a57ebadd950c216113e7e48">&#9670;&nbsp;</a></span>PrintPacket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
           <td class="memname">void SerialInterface::PrintPacket </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../de/d0b/struct_serial_interface_1_1serial_packet_node.html">serialPacketNode</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d2/d58/struct_serial_packets_1_1serial_packet_node.html">SerialPackets::serialPacketNode</a> &amp;&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
         </tr>
         <tr>
@@ -258,11 +618,6 @@ Static Public Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Prints the packet. </p>
@@ -295,6 +650,58 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a4325207c3ef54acf6b11ce1e907a1414" name="a4325207c3ef54acf6b11ce1e907a1414"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4325207c3ef54acf6b11ce1e907a1414">&#9670;&nbsp;</a></span>PrintParsePacketError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SerialInterface::PrintParsePacketError </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>actualBufferLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>targetBufferLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>packetID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Prints the error message displayed when a packet is parsed unsuccessfully. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">actualBufferLen</td><td>The buffer length that was read through the serial port </td></tr>
+    <tr><td class="paramname">targetBufferLen</td><td>The buffer length that is needed to successfully parse the packet </td></tr>
+    <tr><td class="paramname">packetID</td><td>The packet ID that it tried to parse </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="af55eaf3eeed107d7abfa3f0ea8ad00b3" name="af55eaf3eeed107d7abfa3f0ea8ad00b3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af55eaf3eeed107d7abfa3f0ea8ad00b3">&#9670;&nbsp;</a></span>ReadSerial()</h2>
 
@@ -314,8 +721,226 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aca9d659a9133c131ee392c5836a301ac" name="aca9d659a9133c131ee392c5836a301ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca9d659a9133c131ee392c5836a301ac">&#9670;&nbsp;</a></span>WaitForPacket()</h2>
+<a id="a314b9140b6e292f769f3c1d5a1d74d30" name="a314b9140b6e292f769f3c1d5a1d74d30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a314b9140b6e292f769f3c1d5a1d74d30">&#9670;&nbsp;</a></span>SerialWriteChar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SerialInterface::SerialWriteChar </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a86601cd7e8cc670bc9691ef9501dd33d" name="a86601cd7e8cc670bc9691ef9501dd33d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86601cd7e8cc670bc9691ef9501dd33d">&#9670;&nbsp;</a></span>SerialWriteDouble()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SerialInterface::SerialWriteDouble </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a58b0ed931196697fc4f4e091e21bf219" name="a58b0ed931196697fc4f4e091e21bf219"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58b0ed931196697fc4f4e091e21bf219">&#9670;&nbsp;</a></span>SerialWriteFloat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SerialInterface::SerialWriteFloat </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0b9c7cf89a73075be9ca0c1d7db6b27e" name="a0b9c7cf89a73075be9ca0c1d7db6b27e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b9c7cf89a73075be9ca0c1d7db6b27e">&#9670;&nbsp;</a></span>SerialWriteString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SerialInterface::SerialWriteString </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7fcf41e115b329fb5a5480485f8d316e" name="a7fcf41e115b329fb5a5480485f8d316e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fcf41e115b329fb5a5480485f8d316e">&#9670;&nbsp;</a></span>SerialWriteUInt16_t()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SerialInterface::SerialWriteUInt16_t </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8569470889b2e7838fe7f8799ccadc0f" name="a8569470889b2e7838fe7f8799ccadc0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8569470889b2e7838fe7f8799ccadc0f">&#9670;&nbsp;</a></span>SerialWriteUInt32_t()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SerialInterface::SerialWriteUInt32_t </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb5199c2d4a43bdd4f51c67fe9e49c27" name="aeb5199c2d4a43bdd4f51c67fe9e49c27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb5199c2d4a43bdd4f51c67fe9e49c27">&#9670;&nbsp;</a></span>SerialWriteUInt64_t()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SerialInterface::SerialWriteUInt64_t </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac769a6c25e9ddad370c3237d8604a24b" name="ac769a6c25e9ddad370c3237d8604a24b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac769a6c25e9ddad370c3237d8604a24b">&#9670;&nbsp;</a></span>SerialWriteUInt8_t()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SerialInterface::SerialWriteUInt8_t </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2ce6eae2eae7f0522f5e8ef76a848a87" name="a2ce6eae2eae7f0522f5e8ef76a848a87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ce6eae2eae7f0522f5e8ef76a848a87">&#9670;&nbsp;</a></span>WaitForPacket() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -323,7 +948,52 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">bool SerialInterface::WaitForPacket </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../de/d0b/struct_serial_interface_1_1serial_packet_node.html">serialPacketNode</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d2/d58/struct_serial_packets_1_1serial_packet_node.html">SerialPackets::serialPacketNode</a> &amp;&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/dde/class_serial_packets.html#a7e5a9aedd3d91a8b3c26f6d998edba34">SerialPackets::SerialPacketIDs</a>&#160;</td>
+          <td class="paramname"><em>packetID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeoutMilliseconds</em> = <code><a class="el" href="../../d8/dec/class_serial_interface.html#a2abf75ccabe2dd6dd38dc99a065738b0">TIMEOUT_INFINITY</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Blocks and waits for a packet to be received over the serial COM port that matches packetID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">packet</td><td>The variable that the read packet will be stored in. </td></tr>
+    <tr><td class="paramname">packetID</td><td>The packet ID to wait for, any other packets read before it will be discarded. </td></tr>
+    <tr><td class="paramname">timeoutMilliseconds</td><td>The duration to wait before timing out if the packet has not been read yet. It's defaulted to TIMEOUT_INFINITY.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns true if the packet was read, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a04652e720c1e40da5511df06dce8d323" name="a04652e720c1e40da5511df06dce8d323"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04652e720c1e40da5511df06dce8d323">&#9670;&nbsp;</a></span>WaitForPacket() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SerialInterface::WaitForPacket </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d58/struct_serial_packets_1_1serial_packet_node.html">SerialPackets::serialPacketNode</a> &amp;&#160;</td>
           <td class="paramname"><em>packet</em>, </td>
         </tr>
         <tr>
@@ -359,8 +1029,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a3d9af747d813c8e285d6f9ba0eebfed2" name="a3d9af747d813c8e285d6f9ba0eebfed2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d9af747d813c8e285d6f9ba0eebfed2">&#9670;&nbsp;</a></span>WritePacket() <span class="overload">[1/2]</span></h2>
+<a id="ab7a5e6889bd0acd2b145e6512091f3d2" name="ab7a5e6889bd0acd2b145e6512091f3d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7a5e6889bd0acd2b145e6512091f3d2">&#9670;&nbsp;</a></span>WritePacket() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -368,7 +1038,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void SerialInterface::WritePacket </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../de/d0b/struct_serial_interface_1_1serial_packet_node.html">SerialInterface::serialPacketNode</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d2/d58/struct_serial_packets_1_1serial_packet_node.html">SerialPackets::serialPacketNode</a> &amp;&#160;</td>
           <td class="paramname"><em>node</em></td><td>)</td>
           <td></td>
         </tr>
@@ -385,8 +1055,45 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a54e3fd4efa1215f5ca6e1b8c8563a7d9" name="a54e3fd4efa1215f5ca6e1b8c8563a7d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54e3fd4efa1215f5ca6e1b8c8563a7d9">&#9670;&nbsp;</a></span>WritePacket() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SerialInterface::WritePacket </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>packetData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/dde/class_serial_packets.html#a7e5a9aedd3d91a8b3c26f6d998edba34">SerialPackets::SerialPacketIDs</a>&#160;</td>
+          <td class="paramname"><em>packetID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes a packet over the serial interface. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">packetData</td><td>The data to use when placing into a packet </td></tr>
+    <tr><td class="paramname">packetID</td><td>The packet ID to use when placing into a packet </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="afa657afa677c3d4f9d81912e12e58485" name="afa657afa677c3d4f9d81912e12e58485"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa657afa677c3d4f9d81912e12e58485">&#9670;&nbsp;</a></span>WritePacket() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afa657afa677c3d4f9d81912e12e58485">&#9670;&nbsp;</a></span>WritePacket() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -423,6 +1130,72 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a83067102ffb9f6bf59aae66775584a5b" name="a83067102ffb9f6bf59aae66775584a5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83067102ffb9f6bf59aae66775584a5b">&#9670;&nbsp;</a></span>NUMBER_OF_STORED_NODES</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t SerialInterface::NUMBER_OF_STORED_NODES = 100</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a45eccd9abb91d628ef8380100b15fede" name="a45eccd9abb91d628ef8380100b15fede"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45eccd9abb91d628ef8380100b15fede">&#9670;&nbsp;</a></span>packetsRead</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/db2/class_vector.html">Vector</a>&lt;<a class="el" href="../../d2/d58/struct_serial_packets_1_1serial_packet_node.html">SerialPackets::serialPacketNode</a>&gt; SerialInterface::packetsRead</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8ab46d4a447cf149a21be6aaa8675e3c" name="a8ab46d4a447cf149a21be6aaa8675e3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ab46d4a447cf149a21be6aaa8675e3c">&#9670;&nbsp;</a></span>storage_array</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d58/struct_serial_packets_1_1serial_packet_node.html">SerialPackets::serialPacketNode</a> SerialInterface::storage_array[<a class="el" href="../../d8/dec/class_serial_interface.html#a83067102ffb9f6bf59aae66775584a5b">NUMBER_OF_STORED_NODES</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2abf75ccabe2dd6dd38dc99a065738b0" name="a2abf75ccabe2dd6dd38dc99a065738b0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2abf75ccabe2dd6dd38dc99a065738b0">&#9670;&nbsp;</a></span>TIMEOUT_INFINITY</h2>
 

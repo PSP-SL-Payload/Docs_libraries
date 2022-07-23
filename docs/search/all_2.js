@@ -6,5 +6,7 @@ var searchData=
   ['clearallprinteditems_3',['ClearAllPrintedItems',['../d9/d7a/class_t_f_t.html#a3f16c62a26fa69366049a6f0560afb0c',1,'TFT']]],
   ['clearbuffer_4',['ClearBuffer',['../d8/dec/class_serial_interface.html#aa073a68fede10af41e7c1eee57f1ac54',1,'SerialInterface']]],
   ['const_5fiterator_5',['const_iterator',['../d5/db2/class_vector.html#abdd7288ae4a03995b2c7328eeeb4caff',1,'Vector']]],
-  ['conversions_6',['Conversions',['../d3/d98/class_conversions.html',1,'']]]
+  ['conversions_6',['Conversions',['../d3/d98/class_conversions.html',1,'']]],
+  ['convertinttoserialpacketid_7',['ConvertIntToSerialPacketId',['../d6/dde/class_serial_packets.html#a2b4dd5291190d8942654bee1be6b9a4e',1,'SerialPackets']]],
+  ['convertserialpacketidtoint_8',['ConvertSerialPacketIdToInt',['../d6/dde/class_serial_packets.html#ab743db6fd59f03339cbb972f88fb4ffb',1,'SerialPackets']]]
 ];

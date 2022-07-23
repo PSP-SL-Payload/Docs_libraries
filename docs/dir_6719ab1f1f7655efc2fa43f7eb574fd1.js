@@ -10,6 +10,7 @@ var dir_6719ab1f1f7655efc2fa43f7eb574fd1 =
     [ "RTC_DS3231", "dir_689f558d99f0ec90ce659257d3c8999a.html", "dir_689f558d99f0ec90ce659257d3c8999a" ],
     [ "SDCard", "dir_f744d11da08f813d4d01b5268efa6f1a.html", "dir_f744d11da08f813d4d01b5268efa6f1a" ],
     [ "SerialInterface", "dir_cc194449d4f37bf8a85ac47cb7216acf.html", "dir_cc194449d4f37bf8a85ac47cb7216acf" ],
+    [ "SerialPackets", "dir_2134da4e3d8650cd911e591467b967ee.html", "dir_2134da4e3d8650cd911e591467b967ee" ],
     [ "TFT_ILI9341", "dir_f80470523907a96763960921bd085bf3.html", "dir_f80470523907a96763960921bd085bf3" ],
     [ "Timer_ATSAMD21G18", "dir_7e9964f165d2de986759ae3104b33708.html", "dir_7e9964f165d2de986759ae3104b33708" ],
     [ "TypeConversions", "dir_830c58a2f637d234458a850df434a8ee.html", "dir_830c58a2f637d234458a850df434a8ee" ],
