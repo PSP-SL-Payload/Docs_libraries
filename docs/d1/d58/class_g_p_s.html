@@ -87,14 +87,23 @@ $(document).ready(function(){initNavTree('d1/d58/class_g_p_s.html','../../'); in
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="../../d9/d0b/class_g_p_s-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">GPS Class Reference</div></div>
+  <div class="headertitle"><div class="title">GPS Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="../../d1/d58/class_g_p_s.html" title="GPS class that controls the Sparkfun u-blox SAM-M8Q.">GPS</a> class that controls the Sparkfun u-blox SAM-M8Q.  
+<p>The abstract class to use when creating new <a class="el" href="../../d1/d58/class_g_p_s.html" title="The abstract class to use when creating new GPS classes Have all derived GPS classes inherit this cla...">GPS</a> classes Have all derived <a class="el" href="../../d1/d58/class_g_p_s.html" title="The abstract class to use when creating new GPS classes Have all derived GPS classes inherit this cla...">GPS</a> classes inherit this class. All these methods, structs, and variables will be available in it. This standardizes all <a class="el" href="../../d1/d58/class_g_p_s.html" title="The abstract class to use when creating new GPS classes Have all derived GPS classes inherit this cla...">GPS</a> modules we use.  
  <a href="../../d1/d58/class_g_p_s.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="../../d2/d2b/_g_p_s___s_a_m___m8_q_8h_source.html">GPS_SAM_M8Q.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../db/d56/_g_p_s_8h_source.html">GPS.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for GPS:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="../../d1/d58/class_g_p_s.png" usemap="#GPS_map" alt=""/>
+  <map id="GPS_map" name="GPS_map">
+<area href="../../da/d17/class_g_p_s___s_a_m___m8_q.html" title="GPS class that controls the Sparkfun u-blox SAM-M8Q." alt="GPS_SAM_M8Q" shape="rect" coords="0,56,107,80"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -107,30 +116,27 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aec1af1db5cb6fb3aa9423894d07c2145"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d58/class_g_p_s.html#aec1af1db5cb6fb3aa9423894d07c2145">Init</a> (uint8_t navUpdateFreq=1)</td></tr>
-<tr class="memdesc:aec1af1db5cb6fb3aa9423894d07c2145"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the sensor. You must run this method before any others!  <a href="../../d1/d58/class_g_p_s.html#aec1af1db5cb6fb3aa9423894d07c2145">More...</a><br /></td></tr>
-<tr class="separator:aec1af1db5cb6fb3aa9423894d07c2145"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe84b00ea93254fcb8b84a0f2b240c9d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d58/class_g_p_s.html#afe84b00ea93254fcb8b84a0f2b240c9d">~GPS</a> ()</td></tr>
-<tr class="memdesc:afe84b00ea93254fcb8b84a0f2b240c9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean up allocated memory.  <a href="../../d1/d58/class_g_p_s.html#afe84b00ea93254fcb8b84a0f2b240c9d">More...</a><br /></td></tr>
-<tr class="separator:afe84b00ea93254fcb8b84a0f2b240c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a041af96581cc8c5d2b5a8c7d100591ee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d58/class_g_p_s.html#a041af96581cc8c5d2b5a8c7d100591ee">GetLocation</a> (<a class="el" href="../../dd/d56/struct_g_p_s_1_1gps_location.html">gpsLocation</a> &amp;loc)</td></tr>
-<tr class="memdesc:a041af96581cc8c5d2b5a8c7d100591ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current location in degrees.  <a href="../../d1/d58/class_g_p_s.html#a041af96581cc8c5d2b5a8c7d100591ee">More...</a><br /></td></tr>
-<tr class="separator:a041af96581cc8c5d2b5a8c7d100591ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa81805e904880e19b581085bf5d0948e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d58/class_g_p_s.html#aa81805e904880e19b581085bf5d0948e">GetDateTime</a> (<a class="el" href="../../dc/db2/struct_g_p_s_1_1gps_date_time.html">gpsDateTime</a> &amp;dateTime)</td></tr>
-<tr class="memdesc:aa81805e904880e19b581085bf5d0948e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current date and time.  <a href="../../d1/d58/class_g_p_s.html#aa81805e904880e19b581085bf5d0948e">More...</a><br /></td></tr>
-<tr class="separator:aa81805e904880e19b581085bf5d0948e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4efb007e891474ff5e3c9634f4aec11d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d58/class_g_p_s.html#a4efb007e891474ff5e3c9634f4aec11d">GetAltitude</a> ()</td></tr>
-<tr class="memdesc:a4efb007e891474ff5e3c9634f4aec11d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the altitude in meters Not super precise because we're chopping off anything less than 1 meter.  <a href="../../d1/d58/class_g_p_s.html#a4efb007e891474ff5e3c9634f4aec11d">More...</a><br /></td></tr>
-<tr class="separator:a4efb007e891474ff5e3c9634f4aec11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab347a075e87cb313ef2a7cea81effc19"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d58/class_g_p_s.html#ab347a075e87cb313ef2a7cea81effc19">IsLocationAquired</a> ()</td></tr>
-<tr class="memdesc:ab347a075e87cb313ef2a7cea81effc19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks to see if the <a class="el" href="../../d1/d58/class_g_p_s.html" title="GPS class that controls the Sparkfun u-blox SAM-M8Q.">GPS</a> has successfully aquired it's current location.  <a href="../../d1/d58/class_g_p_s.html#ab347a075e87cb313ef2a7cea81effc19">More...</a><br /></td></tr>
-<tr class="separator:ab347a075e87cb313ef2a7cea81effc19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad278ad43b9d85b0bddd0e977fcceaae0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d58/class_g_p_s.html#ad278ad43b9d85b0bddd0e977fcceaae0">BlockUntilLocationAquired</a> ()</td></tr>
-<tr class="memdesc:ad278ad43b9d85b0bddd0e977fcceaae0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks until the <a class="el" href="../../d1/d58/class_g_p_s.html" title="GPS class that controls the Sparkfun u-blox SAM-M8Q.">GPS</a> has successfully aquired it's current location.  <a href="../../d1/d58/class_g_p_s.html#ad278ad43b9d85b0bddd0e977fcceaae0">More...</a><br /></td></tr>
+<tr class="memitem:ad278ad43b9d85b0bddd0e977fcceaae0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d58/class_g_p_s.html#ad278ad43b9d85b0bddd0e977fcceaae0">BlockUntilLocationAquired</a> ()</td></tr>
+<tr class="memdesc:ad278ad43b9d85b0bddd0e977fcceaae0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks until the <a class="el" href="../../d1/d58/class_g_p_s.html" title="The abstract class to use when creating new GPS classes Have all derived GPS classes inherit this cla...">GPS</a> has successfully aquired it's current location.  <a href="../../d1/d58/class_g_p_s.html#ad278ad43b9d85b0bddd0e977fcceaae0">More...</a><br /></td></tr>
 <tr class="separator:ad278ad43b9d85b0bddd0e977fcceaae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab131d32a9cf0eb6fbfa983e8c8189c80"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d58/class_g_p_s.html#ab131d32a9cf0eb6fbfa983e8c8189c80">BlockUntilLocationAquired</a> (uint32_t timeout_ms)</td></tr>
-<tr class="memdesc:ab131d32a9cf0eb6fbfa983e8c8189c80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks until the <a class="el" href="../../d1/d58/class_g_p_s.html" title="GPS class that controls the Sparkfun u-blox SAM-M8Q.">GPS</a> has successfully aquired it's current location or the timout runs out.  <a href="../../d1/d58/class_g_p_s.html#ab131d32a9cf0eb6fbfa983e8c8189c80">More...</a><br /></td></tr>
+<tr class="memitem:ab131d32a9cf0eb6fbfa983e8c8189c80"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d58/class_g_p_s.html#ab131d32a9cf0eb6fbfa983e8c8189c80">BlockUntilLocationAquired</a> (uint32_t timeout_ms)</td></tr>
+<tr class="memdesc:ab131d32a9cf0eb6fbfa983e8c8189c80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks until the <a class="el" href="../../d1/d58/class_g_p_s.html" title="The abstract class to use when creating new GPS classes Have all derived GPS classes inherit this cla...">GPS</a> has successfully aquired it's current location or the timout runs out.  <a href="../../d1/d58/class_g_p_s.html#ab131d32a9cf0eb6fbfa983e8c8189c80">More...</a><br /></td></tr>
 <tr class="separator:ab131d32a9cf0eb6fbfa983e8c8189c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78a4635f935daffe293e038fb970291f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d58/class_g_p_s.html#a78a4635f935daffe293e038fb970291f">Init</a> (uint8_t navUpdateFreq=1)=0</td></tr>
+<tr class="memdesc:a78a4635f935daffe293e038fb970291f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the sensor. You must run this method before any others!  <a href="../../d1/d58/class_g_p_s.html#a78a4635f935daffe293e038fb970291f">More...</a><br /></td></tr>
+<tr class="separator:a78a4635f935daffe293e038fb970291f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab884d5ba1bd75746d8b1fa9ba3c8f4c6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d58/class_g_p_s.html#ab884d5ba1bd75746d8b1fa9ba3c8f4c6">GetLocation</a> (<a class="el" href="../../dd/d56/struct_g_p_s_1_1gps_location.html">gpsLocation</a> &amp;loc)=0</td></tr>
+<tr class="memdesc:ab884d5ba1bd75746d8b1fa9ba3c8f4c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current location in degrees.  <a href="../../d1/d58/class_g_p_s.html#ab884d5ba1bd75746d8b1fa9ba3c8f4c6">More...</a><br /></td></tr>
+<tr class="separator:ab884d5ba1bd75746d8b1fa9ba3c8f4c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed7c3e7b0d4262c6759ea298ced19c4c"><td class="memItemLeft" align="right" valign="top">virtual uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d58/class_g_p_s.html#aed7c3e7b0d4262c6759ea298ced19c4c">GetAltitude</a> ()=0</td></tr>
+<tr class="memdesc:aed7c3e7b0d4262c6759ea298ced19c4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the altitude in meters Not super precise because we're chopping off anything less than 1 meter.  <a href="../../d1/d58/class_g_p_s.html#aed7c3e7b0d4262c6759ea298ced19c4c">More...</a><br /></td></tr>
+<tr class="separator:aed7c3e7b0d4262c6759ea298ced19c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70900a1c7985dc48504e24f908b12f2d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d58/class_g_p_s.html#a70900a1c7985dc48504e24f908b12f2d">GetDateTime</a> (<a class="el" href="../../dc/db2/struct_g_p_s_1_1gps_date_time.html">gpsDateTime</a> &amp;dateTime)=0</td></tr>
+<tr class="memdesc:a70900a1c7985dc48504e24f908b12f2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current date and time.  <a href="../../d1/d58/class_g_p_s.html#a70900a1c7985dc48504e24f908b12f2d">More...</a><br /></td></tr>
+<tr class="separator:a70900a1c7985dc48504e24f908b12f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2d90796c7c43e79b3a2293cc95bcc40"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d58/class_g_p_s.html#ac2d90796c7c43e79b3a2293cc95bcc40">IsLocationAquired</a> ()=0</td></tr>
+<tr class="memdesc:ac2d90796c7c43e79b3a2293cc95bcc40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks to see if the <a class="el" href="../../d1/d58/class_g_p_s.html" title="The abstract class to use when creating new GPS classes Have all derived GPS classes inherit this cla...">GPS</a> has successfully aquired it's current location.  <a href="../../d1/d58/class_g_p_s.html#ac2d90796c7c43e79b3a2293cc95bcc40">More...</a><br /></td></tr>
+<tr class="separator:ac2d90796c7c43e79b3a2293cc95bcc40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -142,10 +148,11 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ac954848ac4b4d88b09aa90b20f25225a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p ><a class="el" href="../../d1/d58/class_g_p_s.html" title="GPS class that controls the Sparkfun u-blox SAM-M8Q.">GPS</a> class that controls the Sparkfun u-blox SAM-M8Q. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="afe84b00ea93254fcb8b84a0f2b240c9d" name="afe84b00ea93254fcb8b84a0f2b240c9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe84b00ea93254fcb8b84a0f2b240c9d">&#9670;&nbsp;</a></span>~GPS()</h2>
+<div class="textblock"><p >The abstract class to use when creating new <a class="el" href="../../d1/d58/class_g_p_s.html" title="The abstract class to use when creating new GPS classes Have all derived GPS classes inherit this cla...">GPS</a> classes Have all derived <a class="el" href="../../d1/d58/class_g_p_s.html" title="The abstract class to use when creating new GPS classes Have all derived GPS classes inherit this cla...">GPS</a> classes inherit this class. All these methods, structs, and variables will be available in it. This standardizes all <a class="el" href="../../d1/d58/class_g_p_s.html" title="The abstract class to use when creating new GPS classes Have all derived GPS classes inherit this cla...">GPS</a> modules we use. </p>
+<p >Additionally, have all functions that need a <a class="el" href="../../d1/d58/class_g_p_s.html" title="The abstract class to use when creating new GPS classes Have all derived GPS classes inherit this cla...">GPS</a> module take this class as a param. This way any <a class="el" href="../../d1/d58/class_g_p_s.html" title="The abstract class to use when creating new GPS classes Have all derived GPS classes inherit this cla...">GPS</a> class that inherits this one will be able to be passed in </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad278ad43b9d85b0bddd0e977fcceaae0" name="ad278ad43b9d85b0bddd0e977fcceaae0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad278ad43b9d85b0bddd0e977fcceaae0">&#9670;&nbsp;</a></span>BlockUntilLocationAquired() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -154,7 +161,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">GPS::~GPS </td>
+          <td class="memname">void GPS::BlockUntilLocationAquired </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -167,27 +174,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Clean up allocated memory. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad278ad43b9d85b0bddd0e977fcceaae0" name="ad278ad43b9d85b0bddd0e977fcceaae0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad278ad43b9d85b0bddd0e977fcceaae0">&#9670;&nbsp;</a></span>BlockUntilLocationAquired() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GPS::BlockUntilLocationAquired </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Blocks until the <a class="el" href="../../d1/d58/class_g_p_s.html" title="GPS class that controls the Sparkfun u-blox SAM-M8Q.">GPS</a> has successfully aquired it's current location. </p>
+<p>Blocks until the <a class="el" href="../../d1/d58/class_g_p_s.html" title="The abstract class to use when creating new GPS classes Have all derived GPS classes inherit this cla...">GPS</a> has successfully aquired it's current location. </p>
 
 </div>
 </div>
@@ -196,6 +183,9 @@ Static Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool GPS::BlockUntilLocationAquired </td>
@@ -205,9 +195,14 @@ Static Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Blocks until the <a class="el" href="../../d1/d58/class_g_p_s.html" title="GPS class that controls the Sparkfun u-blox SAM-M8Q.">GPS</a> has successfully aquired it's current location or the timout runs out. </p>
+<p>Blocks until the <a class="el" href="../../d1/d58/class_g_p_s.html" title="The abstract class to use when creating new GPS classes Have all derived GPS classes inherit this cla...">GPS</a> has successfully aquired it's current location or the timout runs out. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">timeout_ms</td><td>the timeout in milliseconds to wait before giving up looking for gps location</td></tr>
@@ -218,40 +213,58 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4efb007e891474ff5e3c9634f4aec11d" name="a4efb007e891474ff5e3c9634f4aec11d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4efb007e891474ff5e3c9634f4aec11d">&#9670;&nbsp;</a></span>GetAltitude()</h2>
+<a id="aed7c3e7b0d4262c6759ea298ced19c4c" name="aed7c3e7b0d4262c6759ea298ced19c4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed7c3e7b0d4262c6759ea298ced19c4c">&#9670;&nbsp;</a></span>GetAltitude()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t GPS::GetAltitude </td>
+          <td class="memname">virtual uint16_t GPS::GetAltitude </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Gets the altitude in meters Not super precise because we're chopping off anything less than 1 meter. </p>
 <dl class="section return"><dt>Returns</dt><dd>uint16_t - altitude in meters </dd></dl>
 
+<p>Implemented in <a class="el" href="../../da/d17/class_g_p_s___s_a_m___m8_q.html#a8ed8b41b29af359639e8d62aeb902b98">GPS_SAM_M8Q</a>.</p>
+
 </div>
 </div>
-<a id="aa81805e904880e19b581085bf5d0948e" name="aa81805e904880e19b581085bf5d0948e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa81805e904880e19b581085bf5d0948e">&#9670;&nbsp;</a></span>GetDateTime()</h2>
+<a id="a70900a1c7985dc48504e24f908b12f2d" name="a70900a1c7985dc48504e24f908b12f2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70900a1c7985dc48504e24f908b12f2d">&#9670;&nbsp;</a></span>GetDateTime()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool GPS::GetDateTime </td>
+          <td class="memname">virtual bool GPS::GetDateTime </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../dc/db2/struct_g_p_s_1_1gps_date_time.html">gpsDateTime</a> &amp;&#160;</td>
           <td class="paramname"><em>dateTime</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Gets the current date and time. </p>
@@ -263,22 +276,32 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool - returns true if dateTime is valid, false if not </dd></dl>
 
+<p>Implemented in <a class="el" href="../../da/d17/class_g_p_s___s_a_m___m8_q.html#af87300c02f43655e5cefcbc321ee6f6d">GPS_SAM_M8Q</a>.</p>
+
 </div>
 </div>
-<a id="a041af96581cc8c5d2b5a8c7d100591ee" name="a041af96581cc8c5d2b5a8c7d100591ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a041af96581cc8c5d2b5a8c7d100591ee">&#9670;&nbsp;</a></span>GetLocation()</h2>
+<a id="ab884d5ba1bd75746d8b1fa9ba3c8f4c6" name="ab884d5ba1bd75746d8b1fa9ba3c8f4c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab884d5ba1bd75746d8b1fa9ba3c8f4c6">&#9670;&nbsp;</a></span>GetLocation()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool GPS::GetLocation </td>
+          <td class="memname">virtual bool GPS::GetLocation </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../dd/d56/struct_g_p_s_1_1gps_location.html">gpsLocation</a> &amp;&#160;</td>
           <td class="paramname"><em>loc</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Gets the current location in degrees. </p>
@@ -290,22 +313,32 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool - true if location is valid, false if not </dd></dl>
 
+<p>Implemented in <a class="el" href="../../da/d17/class_g_p_s___s_a_m___m8_q.html#a600c9ad267c95f8a5045e971f0608cf5">GPS_SAM_M8Q</a>.</p>
+
 </div>
 </div>
-<a id="aec1af1db5cb6fb3aa9423894d07c2145" name="aec1af1db5cb6fb3aa9423894d07c2145"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec1af1db5cb6fb3aa9423894d07c2145">&#9670;&nbsp;</a></span>Init()</h2>
+<a id="a78a4635f935daffe293e038fb970291f" name="a78a4635f935daffe293e038fb970291f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78a4635f935daffe293e038fb970291f">&#9670;&nbsp;</a></span>Init()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void GPS::Init </td>
+          <td class="memname">virtual void GPS::Init </td>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>navUpdateFreq</em> = <code>1</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Initializes the sensor. You must run this method before any others! </p>
@@ -316,25 +349,37 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Implemented in <a class="el" href="../../da/d17/class_g_p_s___s_a_m___m8_q.html#a84f59e20f010c2618f2e2baaaaaf8904">GPS_SAM_M8Q</a>.</p>
+
 </div>
 </div>
-<a id="ab347a075e87cb313ef2a7cea81effc19" name="ab347a075e87cb313ef2a7cea81effc19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab347a075e87cb313ef2a7cea81effc19">&#9670;&nbsp;</a></span>IsLocationAquired()</h2>
+<a id="ac2d90796c7c43e79b3a2293cc95bcc40" name="ac2d90796c7c43e79b3a2293cc95bcc40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2d90796c7c43e79b3a2293cc95bcc40">&#9670;&nbsp;</a></span>IsLocationAquired()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool GPS::IsLocationAquired </td>
+          <td class="memname">virtual bool GPS::IsLocationAquired </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Checks to see if the <a class="el" href="../../d1/d58/class_g_p_s.html" title="GPS class that controls the Sparkfun u-blox SAM-M8Q.">GPS</a> has successfully aquired it's current location. </p>
+<p>Checks to see if the <a class="el" href="../../d1/d58/class_g_p_s.html" title="The abstract class to use when creating new GPS classes Have all derived GPS classes inherit this cla...">GPS</a> has successfully aquired it's current location. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if location is found, false if not </dd></dl>
+
+<p>Implemented in <a class="el" href="../../da/d17/class_g_p_s___s_a_m___m8_q.html#a3b495c6852d50e5df9c0bb61d55049e6">GPS_SAM_M8Q</a>.</p>
 
 </div>
 </div>
@@ -407,8 +452,8 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/PSP/libraries/libs/GPS_SAM_M8Q/<a class="el" href="../../d2/d2b/_g_p_s___s_a_m___m8_q_8h_source.html">GPS_SAM_M8Q.h</a></li>
-<li>C:/PSP/libraries/libs/GPS_SAM_M8Q/<a class="el" href="../../dd/d5e/_g_p_s___s_a_m___m8_q_8cpp.html">GPS_SAM_M8Q.cpp</a></li>
+<li>C:/PSP/libraries/libs/GPS/<a class="el" href="../../db/d56/_g_p_s_8h_source.html">GPS.h</a></li>
+<li>C:/PSP/libraries/libs/GPS/<a class="el" href="../../df/dc5/_g_p_s_8cpp.html">GPS.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -87,7 +87,7 @@ $(document).ready(function(){initNavTree('d2/da2/_radio_packet_8h.html','../../'
   <div class="headertitle"><div class="title">RadioPacket.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;Arduino.h&quot;</code><br />
+<div class="textblock"><code>#include &lt;Arduino.h&gt;</code><br />
 </div>
 <p><a href="../../d2/da2/_radio_packet_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -96,14 +96,16 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de8/class_radio_packet.html">RadioPacket</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/struct_radio_packet_1_1time_packet_data.html">RadioPacket::timePacketData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The payload structure for time data NOTE: The properties are arranged in a specific order to make this struct 16 bytes wide. DO NOT change the width or order of properties. ALL payload data structs MUST be 16 bytes wide Also #pragma pack(1) was used before, but the ILI9341 TFT display seg faults whenever pragma pack is used here... can't figure out why.  <a href="../../d7/d5a/struct_radio_packet_1_1time_packet_data.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d64/struct_radio_packet_1_1gps_coords_packet_data.html">RadioPacket::gpsCoordsPacketData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The payload structure for <a class="el" href="../../d1/d58/class_g_p_s.html" title="The abstract class to use when creating new GPS classes Have all derived GPS classes inherit this cla...">GPS</a> data NOTE: The properties are arranged in a specific order to make this struct 16 bytes wide. DO NOT change the width or order of properties. ALL payload data structs MUST be 16 bytes wide Also #pragma pack(1) was used before, but the ILI9341 TFT display seg faults whenever pragma pack is used here... can't figure out why.  <a href="../../df/d64/struct_radio_packet_1_1gps_coords_packet_data.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/union_radio_packet_1_1packet_payload_type.html">RadioPacket::packetPayloadType</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">selects payload type sent one of the types below is sent as the payload in a <a class="el" href="../../d5/dc4/struct_radio_packet_1_1radio_packet.html" title="This is the packet that is sent universally ALWAYS 17 bytes wide (16 bytes of data and 1 byte for fla...">radioPacket</a>  <a href="../../d2/d55/union_radio_packet_1_1packet_payload_type.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc4/struct_radio_packet_1_1radio_packet.html">RadioPacket::radioPacket</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the packet that is sent universally ALWAYS 17 bytes wide (16 bytes of data and 1 byte for flag bits)  <a href="../../d5/dc4/struct_radio_packet_1_1radio_packet.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the packet that is sent universally ALWAYS 17 bytes wide (16 bytes of data and 1 byte for flag bits) Without #pragma pack(1), this structure is actually 24 bytes, but the contents add to 17 (cause of padding)  <a href="../../d5/dc4/struct_radio_packet_1_1radio_packet.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

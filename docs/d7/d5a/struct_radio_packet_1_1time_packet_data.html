@@ -89,6 +89,9 @@ $(document).ready(function(){initNavTree('d7/d5a/struct_radio_packet_1_1time_pac
 </div><!--header-->
 <div class="contents">
 
+<p>The payload structure for time data NOTE: The properties are arranged in a specific order to make this struct 16 bytes wide. DO NOT change the width or order of properties. ALL payload data structs MUST be 16 bytes wide Also #pragma pack(1) was used before, but the ILI9341 TFT display seg faults whenever pragma pack is used here... can't figure out why.  
+ <a href="../../d7/d5a/struct_radio_packet_1_1time_packet_data.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="../../d2/da2/_radio_packet_8h_source.html">RadioPacket.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -105,16 +108,18 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a60caae17924f7099bc663a7ffe386780"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa20d8d6de0b5c4062e9afd96f34935f5"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/struct_radio_packet_1_1time_packet_data.html#aa20d8d6de0b5c4062e9afd96f34935f5">second</a></td></tr>
 <tr class="separator:aa20d8d6de0b5c4062e9afd96f34935f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e782e11bca01973d3084d6169e7821f"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/struct_radio_packet_1_1time_packet_data.html#a9e782e11bca01973d3084d6169e7821f">milliseconds</a></td></tr>
-<tr class="separator:a9e782e11bca01973d3084d6169e7821f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab09be24fd1a766ef25b18a55fdc5aaba"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/struct_radio_packet_1_1time_packet_data.html#ab09be24fd1a766ef25b18a55fdc5aaba">unused1</a></td></tr>
 <tr class="separator:ab09be24fd1a766ef25b18a55fdc5aaba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e782e11bca01973d3084d6169e7821f"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/struct_radio_packet_1_1time_packet_data.html#a9e782e11bca01973d3084d6169e7821f">milliseconds</a></td></tr>
+<tr class="separator:a9e782e11bca01973d3084d6169e7821f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae7a0fc5bcba537258bff4555618d91b"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/struct_radio_packet_1_1time_packet_data.html#aae7a0fc5bcba537258bff4555618d91b">unused2</a></td></tr>
 <tr class="separator:aae7a0fc5bcba537258bff4555618d91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3063cf71134d8ba61c3e08ea5aae7402"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/struct_radio_packet_1_1time_packet_data.html#a3063cf71134d8ba61c3e08ea5aae7402">unused3</a></td></tr>
 <tr class="separator:a3063cf71134d8ba61c3e08ea5aae7402"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >The payload structure for time data NOTE: The properties are arranged in a specific order to make this struct 16 bytes wide. DO NOT change the width or order of properties. ALL payload data structs MUST be 16 bytes wide Also #pragma pack(1) was used before, but the ILI9341 TFT display seg faults whenever pragma pack is used here... can't figure out why. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="abad3eaec13b2703e1f0d1b88aef5bf5c" name="abad3eaec13b2703e1f0d1b88aef5bf5c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abad3eaec13b2703e1f0d1b88aef5bf5c">&#9670;&nbsp;</a></span>day</h2>
 

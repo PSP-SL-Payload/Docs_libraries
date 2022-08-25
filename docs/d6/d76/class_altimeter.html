@@ -86,15 +86,25 @@ $(document).ready(function(){initNavTree('d6/d76/class_altimeter.html','../../')
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d0/d0d/class_altimeter-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Altimeter Class Reference</div></div>
+  <div class="headertitle"><div class="title">Altimeter Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="../../d6/d76/class_altimeter.html" title="Altimeter class that controls the Adafruit BMP280 module.">Altimeter</a> class that controls the Adafruit BMP280 module.  
+<p>The abstract class to use when creating new <a class="el" href="../../d6/d76/class_altimeter.html" title="The abstract class to use when creating new Altimeter classes Have all derived Altimeter classes inhe...">Altimeter</a> classes Have all derived <a class="el" href="../../d6/d76/class_altimeter.html" title="The abstract class to use when creating new Altimeter classes Have all derived Altimeter classes inhe...">Altimeter</a> classes inherit this class. All these methods, structs, and variables will be available in it. This standardizes all <a class="el" href="../../d6/d76/class_altimeter.html" title="The abstract class to use when creating new Altimeter classes Have all derived Altimeter classes inhe...">Altimeter</a> modules we use.  
  <a href="../../d6/d76/class_altimeter.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="../../da/da7/_altimeter___b_m_p280_8h_source.html">Altimeter_BMP280.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../d6/dbd/_altimeter_8h_source.html">Altimeter.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Altimeter:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="../../d6/d76/class_altimeter.png" usemap="#Altimeter_map" alt=""/>
+  <map id="Altimeter_map" name="Altimeter_map">
+<area href="../../db/dea/class_altimeter___b_m_p280.html" title="Altimeter class that controls the Adafruit BMP280 module." alt="Altimeter_BMP280" shape="rect" coords="0,56,116,80"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -104,39 +114,42 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3bbdc8ccf80f99f37e348d07440950aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d76/class_altimeter.html#a3bbdc8ccf80f99f37e348d07440950aa">Init</a> ()</td></tr>
-<tr class="memdesc:a3bbdc8ccf80f99f37e348d07440950aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the altimeter module for reading.  <a href="../../d6/d76/class_altimeter.html#a3bbdc8ccf80f99f37e348d07440950aa">More...</a><br /></td></tr>
-<tr class="separator:a3bbdc8ccf80f99f37e348d07440950aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64f3de04588e3b5f5b8da09c31569960"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d76/class_altimeter.html#a64f3de04588e3b5f5b8da09c31569960">Init</a> (<a class="el" href="../../d2/d9a/class_buzzer.html">Buzzer</a> &amp;buzzer)</td></tr>
-<tr class="memdesc:a64f3de04588e3b5f5b8da09c31569960"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the altimeter module for reading.  <a href="../../d6/d76/class_altimeter.html#a64f3de04588e3b5f5b8da09c31569960">More...</a><br /></td></tr>
-<tr class="separator:a64f3de04588e3b5f5b8da09c31569960"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d229256f53046d836e748045ebcd3d7"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d76/class_altimeter.html#a8d229256f53046d836e748045ebcd3d7">~Altimeter</a> ()</td></tr>
-<tr class="memdesc:a8d229256f53046d836e748045ebcd3d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean up allocated memory.  <a href="../../d6/d76/class_altimeter.html#a8d229256f53046d836e748045ebcd3d7">More...</a><br /></td></tr>
-<tr class="separator:a8d229256f53046d836e748045ebcd3d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2d2f7e03c59604e9883139d6caf038e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d76/class_altimeter.html#ac2d2f7e03c59604e9883139d6caf038e">GetAltimeterReadings</a> (<a class="el" href="../../d2/d35/struct_altimeter_1_1_altimeter_readings.html">AltimeterReadings</a> &amp;altReadings)</td></tr>
+<tr class="memitem:ac2d2f7e03c59604e9883139d6caf038e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d76/class_altimeter.html#ac2d2f7e03c59604e9883139d6caf038e">GetAltimeterReadings</a> (<a class="el" href="../../d2/d35/struct_altimeter_1_1_altimeter_readings.html">AltimeterReadings</a> &amp;altReadings)</td></tr>
 <tr class="memdesc:ac2d2f7e03c59604e9883139d6caf038e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets struct with the current altimeter values.  <a href="../../d6/d76/class_altimeter.html#ac2d2f7e03c59604e9883139d6caf038e">More...</a><br /></td></tr>
 <tr class="separator:ac2d2f7e03c59604e9883139d6caf038e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37aedb5e9bce6a34acf16d9613eeb227"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d76/class_altimeter.html#a37aedb5e9bce6a34acf16d9613eeb227">GetAltitude</a> ()</td></tr>
-<tr class="memdesc:a37aedb5e9bce6a34acf16d9613eeb227"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current altitude (m)  <a href="../../d6/d76/class_altimeter.html#a37aedb5e9bce6a34acf16d9613eeb227">More...</a><br /></td></tr>
-<tr class="separator:a37aedb5e9bce6a34acf16d9613eeb227"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a244b55d05771f7a5dc6a0abd326a6266"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d76/class_altimeter.html#a244b55d05771f7a5dc6a0abd326a6266">GetPressure</a> ()</td></tr>
-<tr class="memdesc:a244b55d05771f7a5dc6a0abd326a6266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current pressure (Pa)  <a href="../../d6/d76/class_altimeter.html#a244b55d05771f7a5dc6a0abd326a6266">More...</a><br /></td></tr>
-<tr class="separator:a244b55d05771f7a5dc6a0abd326a6266"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6908a760d03234487c72d3ef11c68283"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d76/class_altimeter.html#a6908a760d03234487c72d3ef11c68283">GetTemperature</a> ()</td></tr>
-<tr class="memdesc:a6908a760d03234487c72d3ef11c68283"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current temperature (C)  <a href="../../d6/d76/class_altimeter.html#a6908a760d03234487c72d3ef11c68283">More...</a><br /></td></tr>
-<tr class="separator:a6908a760d03234487c72d3ef11c68283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6969b5225062c81c61f5d07b745c168b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d76/class_altimeter.html#a6969b5225062c81c61f5d07b745c168b">Init</a> ()=0</td></tr>
+<tr class="memdesc:a6969b5225062c81c61f5d07b745c168b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the altimeter module for reading.  <a href="../../d6/d76/class_altimeter.html#a6969b5225062c81c61f5d07b745c168b">More...</a><br /></td></tr>
+<tr class="separator:a6969b5225062c81c61f5d07b745c168b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab56b130911ba34d7d428f5a223b12e60"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d76/class_altimeter.html#ab56b130911ba34d7d428f5a223b12e60">Init</a> (<a class="el" href="../../d2/d9a/class_buzzer.html">Buzzer</a> &amp;buzzer)=0</td></tr>
+<tr class="memdesc:ab56b130911ba34d7d428f5a223b12e60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the altimeter module for reading.  <a href="../../d6/d76/class_altimeter.html#ab56b130911ba34d7d428f5a223b12e60">More...</a><br /></td></tr>
+<tr class="separator:ab56b130911ba34d7d428f5a223b12e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48711c2e4d9b62bc5f62c57c9ab65e34"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d76/class_altimeter.html#a48711c2e4d9b62bc5f62c57c9ab65e34">GetAltitude</a> ()=0</td></tr>
+<tr class="memdesc:a48711c2e4d9b62bc5f62c57c9ab65e34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current altitude (m)  <a href="../../d6/d76/class_altimeter.html#a48711c2e4d9b62bc5f62c57c9ab65e34">More...</a><br /></td></tr>
+<tr class="separator:a48711c2e4d9b62bc5f62c57c9ab65e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52ea8346fece2e3d5639ed7c25d8d389"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d76/class_altimeter.html#a52ea8346fece2e3d5639ed7c25d8d389">GetPressure</a> ()=0</td></tr>
+<tr class="memdesc:a52ea8346fece2e3d5639ed7c25d8d389"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current pressure (Pa)  <a href="../../d6/d76/class_altimeter.html#a52ea8346fece2e3d5639ed7c25d8d389">More...</a><br /></td></tr>
+<tr class="separator:a52ea8346fece2e3d5639ed7c25d8d389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf2b8f33cfffca15b31787b81de6c037"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d76/class_altimeter.html#acf2b8f33cfffca15b31787b81de6c037">GetTemperature</a> ()=0</td></tr>
+<tr class="memdesc:acf2b8f33cfffca15b31787b81de6c037"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current temperature (C)  <a href="../../d6/d76/class_altimeter.html#acf2b8f33cfffca15b31787b81de6c037">More...</a><br /></td></tr>
+<tr class="separator:acf2b8f33cfffca15b31787b81de6c037"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a274b6fb8f1abd163f4b1f084b90811ab"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d76/class_altimeter.html#a274b6fb8f1abd163f4b1f084b90811ab">PrintAllReadings</a> (<a class="el" href="../../d2/d35/struct_altimeter_1_1_altimeter_readings.html">AltimeterReadings</a> &amp;readings)</td></tr>
 <tr class="memdesc:a274b6fb8f1abd163f4b1f084b90811ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints all altimeter readings to the Serial port.  <a href="../../d6/d76/class_altimeter.html#a274b6fb8f1abd163f4b1f084b90811ab">More...</a><br /></td></tr>
 <tr class="separator:a274b6fb8f1abd163f4b1f084b90811ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a290ac1980a4544ea5b6a5959babf7779"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d76/class_altimeter.html#a290ac1980a4544ea5b6a5959babf7779">SEA_LEVEL_HPA</a> = 1015.8</td></tr>
+<tr class="separator:a290ac1980a4544ea5b6a5959babf7779"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p ><a class="el" href="../../d6/d76/class_altimeter.html" title="Altimeter class that controls the Adafruit BMP280 module.">Altimeter</a> class that controls the Adafruit BMP280 module. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a8d229256f53046d836e748045ebcd3d7" name="a8d229256f53046d836e748045ebcd3d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d229256f53046d836e748045ebcd3d7">&#9670;&nbsp;</a></span>~Altimeter()</h2>
+<div class="textblock"><p >The abstract class to use when creating new <a class="el" href="../../d6/d76/class_altimeter.html" title="The abstract class to use when creating new Altimeter classes Have all derived Altimeter classes inhe...">Altimeter</a> classes Have all derived <a class="el" href="../../d6/d76/class_altimeter.html" title="The abstract class to use when creating new Altimeter classes Have all derived Altimeter classes inhe...">Altimeter</a> classes inherit this class. All these methods, structs, and variables will be available in it. This standardizes all <a class="el" href="../../d6/d76/class_altimeter.html" title="The abstract class to use when creating new Altimeter classes Have all derived Altimeter classes inhe...">Altimeter</a> modules we use. </p>
+<p >Additionally, have all functions that need a <a class="el" href="../../d6/d76/class_altimeter.html" title="The abstract class to use when creating new Altimeter classes Have all derived Altimeter classes inhe...">Altimeter</a> module take this class as a param. This way any <a class="el" href="../../d6/d76/class_altimeter.html" title="The abstract class to use when creating new Altimeter classes Have all derived Altimeter classes inhe...">Altimeter</a> class that inherits this one will be able to be passed in </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac2d2f7e03c59604e9883139d6caf038e" name="ac2d2f7e03c59604e9883139d6caf038e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2d2f7e03c59604e9883139d6caf038e">&#9670;&nbsp;</a></span>GetAltimeterReadings()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -145,9 +158,10 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Altimeter::~Altimeter </td>
+          <td class="memname">bool Altimeter::GetAltimeterReadings </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d2/d35/struct_altimeter_1_1_altimeter_readings.html">AltimeterReadings</a> &amp;&#160;</td>
+          <td class="paramname"><em>altReadings</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -158,128 +172,169 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Clean up allocated memory. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac2d2f7e03c59604e9883139d6caf038e" name="ac2d2f7e03c59604e9883139d6caf038e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2d2f7e03c59604e9883139d6caf038e">&#9670;&nbsp;</a></span>GetAltimeterReadings()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Altimeter::GetAltimeterReadings </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d2/d35/struct_altimeter_1_1_altimeter_readings.html">AltimeterReadings</a> &amp;&#160;</td>
-          <td class="paramname"><em>altReadings</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
 <p>Gets struct with the current altimeter values. </p>
-<dl class="section return"><dt>Returns</dt><dd>returns true for now - need error checking? </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">altReadings</td><td>the struct that will be populated with pressure (Pa), altitude (m), and temperature (C)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>returns true if successful read </dd></dl>
 
 </div>
 </div>
-<a id="a37aedb5e9bce6a34acf16d9613eeb227" name="a37aedb5e9bce6a34acf16d9613eeb227"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37aedb5e9bce6a34acf16d9613eeb227">&#9670;&nbsp;</a></span>GetAltitude()</h2>
+<a id="a48711c2e4d9b62bc5f62c57c9ab65e34" name="a48711c2e4d9b62bc5f62c57c9ab65e34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48711c2e4d9b62bc5f62c57c9ab65e34">&#9670;&nbsp;</a></span>GetAltitude()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float Altimeter::GetAltitude </td>
+          <td class="memname">virtual float Altimeter::GetAltitude </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Gets the current altitude (m) </p>
 <dl class="section return"><dt>Returns</dt><dd>float </dd></dl>
 
+<p>Implemented in <a class="el" href="../../db/dea/class_altimeter___b_m_p280.html#aab77c7897f9c450eecde6b06054adb47">Altimeter_BMP280</a>.</p>
+
 </div>
 </div>
-<a id="a244b55d05771f7a5dc6a0abd326a6266" name="a244b55d05771f7a5dc6a0abd326a6266"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a244b55d05771f7a5dc6a0abd326a6266">&#9670;&nbsp;</a></span>GetPressure()</h2>
+<a id="a52ea8346fece2e3d5639ed7c25d8d389" name="a52ea8346fece2e3d5639ed7c25d8d389"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52ea8346fece2e3d5639ed7c25d8d389">&#9670;&nbsp;</a></span>GetPressure()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float Altimeter::GetPressure </td>
+          <td class="memname">virtual float Altimeter::GetPressure </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Gets the current pressure (Pa) </p>
 <dl class="section return"><dt>Returns</dt><dd>float </dd></dl>
 
+<p>Implemented in <a class="el" href="../../db/dea/class_altimeter___b_m_p280.html#aa5b26853279c2ed93303c6a606326527">Altimeter_BMP280</a>.</p>
+
 </div>
 </div>
-<a id="a6908a760d03234487c72d3ef11c68283" name="a6908a760d03234487c72d3ef11c68283"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6908a760d03234487c72d3ef11c68283">&#9670;&nbsp;</a></span>GetTemperature()</h2>
+<a id="acf2b8f33cfffca15b31787b81de6c037" name="acf2b8f33cfffca15b31787b81de6c037"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf2b8f33cfffca15b31787b81de6c037">&#9670;&nbsp;</a></span>GetTemperature()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float Altimeter::GetTemperature </td>
+          <td class="memname">virtual float Altimeter::GetTemperature </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Gets the current temperature (C) </p>
 <dl class="section return"><dt>Returns</dt><dd>float </dd></dl>
 
+<p>Implemented in <a class="el" href="../../db/dea/class_altimeter___b_m_p280.html#a156792737b638fde84eda23f55e3e727">Altimeter_BMP280</a>.</p>
+
 </div>
 </div>
-<a id="a3bbdc8ccf80f99f37e348d07440950aa" name="a3bbdc8ccf80f99f37e348d07440950aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3bbdc8ccf80f99f37e348d07440950aa">&#9670;&nbsp;</a></span>Init() <span class="overload">[1/2]</span></h2>
+<a id="a6969b5225062c81c61f5d07b745c168b" name="a6969b5225062c81c61f5d07b745c168b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6969b5225062c81c61f5d07b745c168b">&#9670;&nbsp;</a></span>Init() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Altimeter::Init </td>
+          <td class="memname">virtual void Altimeter::Init </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Initializes the altimeter module for reading. </p>
 
+<p>Implemented in <a class="el" href="../../db/dea/class_altimeter___b_m_p280.html#a026a83b0aa850ee67db3a1e9a207b901">Altimeter_BMP280</a>.</p>
+
 </div>
 </div>
-<a id="a64f3de04588e3b5f5b8da09c31569960" name="a64f3de04588e3b5f5b8da09c31569960"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64f3de04588e3b5f5b8da09c31569960">&#9670;&nbsp;</a></span>Init() <span class="overload">[2/2]</span></h2>
+<a id="ab56b130911ba34d7d428f5a223b12e60" name="ab56b130911ba34d7d428f5a223b12e60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab56b130911ba34d7d428f5a223b12e60">&#9670;&nbsp;</a></span>Init() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Altimeter::Init </td>
+          <td class="memname">virtual void Altimeter::Init </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d2/d9a/class_buzzer.html">Buzzer</a> &amp;&#160;</td>
           <td class="paramname"><em>buzzer</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Initializes the altimeter module for reading. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buzzer</td><td>the buzzer object to signify failed init </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="../../db/dea/class_altimeter___b_m_p280.html#ac3e4a94edd16564240404afb81d2a159">Altimeter_BMP280</a>.</p>
 
 </div>
 </div>
@@ -308,12 +363,41 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Prints all altimeter readings to the Serial port. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">readings</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a290ac1980a4544ea5b6a5959babf7779" name="a290ac1980a4544ea5b6a5959babf7779"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a290ac1980a4544ea5b6a5959babf7779">&#9670;&nbsp;</a></span>SEA_LEVEL_HPA</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float Altimeter::SEA_LEVEL_HPA = 1015.8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/PSP/libraries/libs/Altimeter_BMP280/<a class="el" href="../../da/da7/_altimeter___b_m_p280_8h_source.html">Altimeter_BMP280.h</a></li>
-<li>C:/PSP/libraries/libs/Altimeter_BMP280/<a class="el" href="../../d3/d20/_altimeter___b_m_p280_8cpp.html">Altimeter_BMP280.cpp</a></li>
+<li>C:/PSP/libraries/libs/Altimeter/<a class="el" href="../../d6/dbd/_altimeter_8h_source.html">Altimeter.h</a></li>
+<li>C:/PSP/libraries/libs/Altimeter/<a class="el" href="../../d4/d3c/_altimeter_8cpp.html">Altimeter.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['latitude_0',['latitude',['../dd/d56/struct_g_p_s_1_1gps_location.html#a65b372147488a6881f831384f2de472f',1,'GPS::gpsLocation::latitude()'],['../df/d64/struct_radio_packet_1_1gps_coords_packet_data.html#a1b6c2b4f0784df28667e6c48061f6304',1,'RadioPacket::gpsCoordsPacketData::latitude()']]],
-  ['libraries_1',['Libraries',['../d4/dcd/md__c___p_s_p_libraries__r_e_a_d_m_e.html',1,'']]],
+  ['libraries_20overview_1',['Libraries Overview',['../d4/dcd/md__c___p_s_p_libraries__r_e_a_d_m_e.html',1,'']]],
   ['log_5fdebug_2',['LOG_DEBUG',['../d3/d42/class_logger.html#ac744681e23720966b5f430ec2060da36a3d390e12a16a389ee2d0d496bd692890',1,'Logger']]],
   ['log_5fdebug_5fmsg_3',['LOG_DEBUG_MSG',['../d6/dec/_logger_8h.html#acc6427cb47a5ba7b91ebdf4a34d72477',1,'Logger.h']]],
   ['log_5ferr_4',['LOG_ERR',['../d3/d42/class_logger.html#ac744681e23720966b5f430ec2060da36af0dee010a8883ffd1c2c7c7a000ec9a5',1,'Logger']]],

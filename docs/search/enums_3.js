@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['serialpacketids_0',['SerialPacketIDs',['../d6/dde/class_serial_packets.html#a7e5a9aedd3d91a8b3c26f6d998edba34',1,'SerialPackets']]]
+  ['radiopacketmode_0',['radioPacketMode',['../d0/d3a/class_t_f_t___i_l_i9341.html#a4a9dbfb8309b63a2b395167dbb5a5978',1,'TFT_ILI9341']]],
+  ['radiopacketmodecolor_1',['radioPacketModeColor',['../d0/d3a/class_t_f_t___i_l_i9341.html#a0279cdeea40e286dd0e77a27e5db22c6',1,'TFT_ILI9341']]]
 ];

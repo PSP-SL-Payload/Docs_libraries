@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('d5/dc4/struct_radio_packet_1_1radio_pa
 </div><!--header-->
 <div class="contents">
 
-<p>This is the packet that is sent universally ALWAYS 17 bytes wide (16 bytes of data and 1 byte for flag bits)  
+<p>This is the packet that is sent universally ALWAYS 17 bytes wide (16 bytes of data and 1 byte for flag bits) Without #pragma pack(1), this structure is actually 24 bytes, but the contents add to 17 (cause of padding)  
  <a href="../../d5/dc4/struct_radio_packet_1_1radio_packet.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d2/da2/_radio_packet_8h_source.html">RadioPacket.h</a>&gt;</code></p>
@@ -102,7 +102,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:abd7c811510a422edc0ad2029edf73a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >This is the packet that is sent universally ALWAYS 17 bytes wide (16 bytes of data and 1 byte for flag bits) </p>
+<div class="textblock"><p >This is the packet that is sent universally ALWAYS 17 bytes wide (16 bytes of data and 1 byte for flag bits) Without #pragma pack(1), this structure is actually 24 bytes, but the contents add to 17 (cause of padding) </p>
 <p >flagBits</p>
 <p >[4] : bool1 [5] : bool2 </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>

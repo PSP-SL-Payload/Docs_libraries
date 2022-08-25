@@ -97,6 +97,7 @@ $(document).ready(function(){initNavTree('dd/df7/class_s_d_card.html','../../');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0c4f4b943d0f300eeffaeca9f1396b99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df7/class_s_d_card.html#a0c4f4b943d0f300eeffaeca9f1396b99">Init</a> ()</td></tr>
+<tr class="memdesc:a0c4f4b943d0f300eeffaeca9f1396b99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the SD card module with default pins.  <a href="../../dd/df7/class_s_d_card.html#a0c4f4b943d0f300eeffaeca9f1396b99">More...</a><br /></td></tr>
 <tr class="separator:a0c4f4b943d0f300eeffaeca9f1396b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9039c9387a2b9f60466a2dc09a395b7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df7/class_s_d_card.html#a9039c9387a2b9f60466a2dc09a395b7e">Init</a> (uint8_t cs, uint8_t mosi=SPI_MOSI_PIN, uint8_t miso=SPI_MISO_PIN, uint8_t sck=SPI_SCK_PIN)</td></tr>
 <tr class="memdesc:a9039c9387a2b9f60466a2dc09a395b7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the SD card module.  <a href="../../dd/df7/class_s_d_card.html#a9039c9387a2b9f60466a2dc09a395b7e">More...</a><br /></td></tr>
@@ -104,6 +105,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a186b0eec5f16dd78a357e3e28db48845"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df7/class_s_d_card.html#a186b0eec5f16dd78a357e3e28db48845">Init</a> (<a class="el" href="../../d2/d9a/class_buzzer.html">Buzzer</a> &amp;buzzer, uint8_t cs, uint8_t mosi=SPI_MOSI_PIN, uint8_t miso=SPI_MISO_PIN, uint8_t sck=SPI_SCK_PIN)</td></tr>
 <tr class="memdesc:a186b0eec5f16dd78a357e3e28db48845"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the SD card module.  <a href="../../dd/df7/class_s_d_card.html#a186b0eec5f16dd78a357e3e28db48845">More...</a><br /></td></tr>
 <tr class="separator:a186b0eec5f16dd78a357e3e28db48845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd1e36064cce30b8b09006ccd22eaf76"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="../../d2/d31/class_s_d_file.html">SDFile</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df7/class_s_d_card.html#abd1e36064cce30b8b09006ccd22eaf76">CreateFile</a> (char *fileName, <a class="el" href="../../d2/d31/class_s_d_file.html#a4a6a9de4f78d16197f7b1ca7ee62e79d">SDFile::FileFlags</a> flags)</td></tr>
+<tr class="memdesc:abd1e36064cce30b8b09006ccd22eaf76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a file on the SD Card.  <a href="../../dd/df7/class_s_d_card.html#abd1e36064cce30b8b09006ccd22eaf76">More...</a><br /></td></tr>
+<tr class="separator:abd1e36064cce30b8b09006ccd22eaf76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ba2def58c60bc80b5dbb5a4de509c7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df7/class_s_d_card.html#a5ba2def58c60bc80b5dbb5a4de509c7c">DeleteFile</a> (char *fileName)</td></tr>
 <tr class="memdesc:a5ba2def58c60bc80b5dbb5a4de509c7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a file on the SD card.  <a href="../../dd/df7/class_s_d_card.html#a5ba2def58c60bc80b5dbb5a4de509c7c">More...</a><br /></td></tr>
 <tr class="separator:a5ba2def58c60bc80b5dbb5a4de509c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -111,6 +115,44 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Controls writing to an SD card. Uses SPI. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="abd1e36064cce30b8b09006ccd22eaf76" name="abd1e36064cce30b8b09006ccd22eaf76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd1e36064cce30b8b09006ccd22eaf76">&#9670;&nbsp;</a></span>CreateFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="../../d2/d31/class_s_d_file.html">SDFile</a> &gt; SDCard::CreateFile </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d31/class_s_d_file.html#a4a6a9de4f78d16197f7b1ca7ee62e79d">SDFile::FileFlags</a>&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a file on the SD Card. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>The file name to create. </td></tr>
+    <tr><td class="paramname">flags</td><td>The read/write flags to open the file with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;SDFile&gt; </dd></dl>
+
+</div>
+</div>
 <a id="a5ba2def58c60bc80b5dbb5a4de509c7c" name="a5ba2def58c60bc80b5dbb5a4de509c7c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5ba2def58c60bc80b5dbb5a4de509c7c">&#9670;&nbsp;</a></span>DeleteFile()</h2>
 
@@ -151,6 +193,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Initializes the SD card module with default pins. </p>
 
 </div>
 </div>
@@ -265,7 +309,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>C:/PSP/libraries/libs/SDCard/<a class="el" href="../../d8/d0e/_s_d_card_8h_source.html">SDCard.h</a></li>
-<li>C:/PSP/libraries/libs/SDCard/<a class="el" href="../../d5/dd6/_s_d_8cpp.html">SD.cpp</a></li>
+<li>C:/PSP/libraries/libs/SDCard/<a class="el" href="../../d2/d57/_s_d_card_8cpp.html">SDCard.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
