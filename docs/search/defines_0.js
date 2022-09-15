@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gps_5ftime_5fto_5fwait_5ffor_5flocation_5fms_0',['GPS_TIME_TO_WAIT_FOR_LOCATION_MS',['../db/d56/_g_p_s_8h.html#a015a2bafee76ab785de42b8415315748',1,'GPS.h']]]
+  ['acknowledge_5fwait_5fms_0',['ACKNOWLEDGE_WAIT_MS',['../df/d8e/_radio_8h.html#a576f823aa6c17ae43f88b5cf8c20dcee',1,'Radio.h']]]
 ];

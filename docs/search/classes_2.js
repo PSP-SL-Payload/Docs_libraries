@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['conversions_0',['Conversions',['../d3/d98/class_conversions.html',1,'']]]
+  ['directionalvalues_0',['DirectionalValues',['../de/df1/struct_i_m_u__6_d_o_f_1_1_directional_values.html',1,'IMU_6DOF']]]
 ];

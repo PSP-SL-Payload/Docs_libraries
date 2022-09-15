@@ -87,9 +87,9 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 <h3><a id="index_s" name="index_s"></a>- s -</h3><ul>
 <li>SDFile()&#160;:&#160;<a class="el" href="d2/d31/class_s_d_file.html#af365eecddf0a61603ad3190517c7b947">SDFile</a></li>
 <li>SEA_LEVEL_HPA&#160;:&#160;<a class="el" href="d6/d76/class_altimeter.html#a290ac1980a4544ea5b6a5959babf7779">Altimeter</a></li>
-<li>second&#160;:&#160;<a class="el" href="dc/db2/struct_g_p_s_1_1gps_date_time.html#ac19066c35406e6abda421203dec77d56">GPS::gpsDateTime</a>, <a class="el" href="db/d0d/struct_logger_1_1_log_time_struct.html#ab202b3732dbdaef03630bebcdf7fb92d">Logger::LogTimeStruct</a>, <a class="el" href="d7/d5a/struct_radio_packet_1_1time_packet_data.html#aa20d8d6de0b5c4062e9afd96f34935f5">RadioPacket::timePacketData</a></li>
+<li>second&#160;:&#160;<a class="el" href="dc/db2/struct_g_p_s_1_1gps_date_time.html#ac19066c35406e6abda421203dec77d56">GPS::gpsDateTime</a>, <a class="el" href="db/d0d/struct_logger_1_1_log_time_struct.html#ab202b3732dbdaef03630bebcdf7fb92d">Logger::LogTimeStruct</a>, <a class="el" href="d6/dba/struct_packet_data_structures_1_1time_payload.html#a46bfcc300ec13f0490e25e499ce55770">PacketDataStructures::timePayload</a></li>
 <li>Seek()&#160;:&#160;<a class="el" href="d2/d31/class_s_d_file.html#a35d52b488b62c48cf2dc2921fe8c4c99">SDFile</a></li>
-<li>SendPacketBlocking()&#160;:&#160;<a class="el" href="d2/d23/class_radio.html#a54321b915b3e2ff0afcede0486e376c9">Radio</a></li>
+<li>SendPacketBlocking()&#160;:&#160;<a class="el" href="d2/d23/class_radio.html#a54321b915b3e2ff0afcede0486e376c9">Radio</a>, <a class="el" href="d0/d0f/class_radio_command_handler.html#ab55173a159f7cd7b4f471a67e74d88a9">RadioCommandHandler</a></li>
 <li>SendPacketBlockingAndPrintTFT()&#160;:&#160;<a class="el" href="d2/d23/class_radio.html#a6f2030af64b6aecb856e7b3526d50e7b">Radio</a></li>
 <li>sequenceNum&#160;:&#160;<a class="el" href="d5/d63/struct_serial_packets_1_1ping_packet_data.html#a30563bfc386551726ead278b12647950">SerialPackets::pingPacketData</a></li>
 <li>SERIAL_PACKET_BUFF_SIZE&#160;:&#160;<a class="el" href="d8/dec/class_serial_interface.html#afb7574aede1f07a4498f9023ee7d27cb">SerialInterface</a></li>
@@ -102,19 +102,38 @@ $(document).ready(function(){initNavTree('functions_s.html',''); initResizable()
 <li>SerialWriteUInt32_t()&#160;:&#160;<a class="el" href="d8/dec/class_serial_interface.html#a8569470889b2e7838fe7f8799ccadc0f">SerialInterface</a></li>
 <li>SerialWriteUInt64_t()&#160;:&#160;<a class="el" href="d8/dec/class_serial_interface.html#aeb5199c2d4a43bdd4f51c67fe9e49c27">SerialInterface</a></li>
 <li>SerialWriteUInt8_t()&#160;:&#160;<a class="el" href="d8/dec/class_serial_interface.html#ac769a6c25e9ddad370c3237d8604a24b">SerialInterface</a></li>
-<li>SetPacketBool1()&#160;:&#160;<a class="el" href="d5/de8/class_radio_packet.html#a1b6cfbc38cd6b1e764b621be97037352">RadioPacket</a></li>
-<li>SetPacketBool2()&#160;:&#160;<a class="el" href="d5/de8/class_radio_packet.html#a28b2ac0deb002a187ef0a8ccbd710fc3">RadioPacket</a></li>
-<li>SetPacketBools()&#160;:&#160;<a class="el" href="d5/de8/class_radio_packet.html#a7114f07ca5eed6d16af552ff2ad517ed">RadioPacket</a></li>
-<li>SetPacketData()&#160;:&#160;<a class="el" href="d5/de8/class_radio_packet.html#a904c20e7ab150c6fb57c402a2402784b">RadioPacket</a></li>
+<li>SERVO_MOTOR_SPIN&#160;:&#160;<a class="el" href="d0/d0f/class_radio_command_handler.html#aab1287375ae5a7697a6d93c8d7d56470ae0bfb26114481b57b1233868e2097fdc">RadioCommandHandler</a></li>
+<li>SET_STAGE_LANDED&#160;:&#160;<a class="el" href="d0/d0f/class_radio_command_handler.html#a14ba0e1e5fa928c01a1122c455a03cf7a04f79215a94de30b77050e226981b10f">RadioCommandHandler</a></li>
+<li>SET_STAGE_LAUNCH_READY&#160;:&#160;<a class="el" href="d0/d0f/class_radio_command_handler.html#a14ba0e1e5fa928c01a1122c455a03cf7a298e2b684bde692a3c81beb2aea92324">RadioCommandHandler</a></li>
+<li>SET_STAGE_MISSION_FINISHED&#160;:&#160;<a class="el" href="d0/d0f/class_radio_command_handler.html#a14ba0e1e5fa928c01a1122c455a03cf7a82bca36a3dfe46d9d687ecb62813166d">RadioCommandHandler</a></li>
+<li>SET_STAGE_PRE_LAUNCH&#160;:&#160;<a class="el" href="d0/d0f/class_radio_command_handler.html#a14ba0e1e5fa928c01a1122c455a03cf7a090cd461950d0b8c19235cbef094f21e">RadioCommandHandler</a></li>
+<li>SET_STAGE_ROCKET_ASCENDING&#160;:&#160;<a class="el" href="d0/d0f/class_radio_command_handler.html#a14ba0e1e5fa928c01a1122c455a03cf7a783b130e21fb37f5596f8036722eb1ed">RadioCommandHandler</a></li>
+<li>SET_STAGE_ROCKET_DESCENDING&#160;:&#160;<a class="el" href="d0/d0f/class_radio_command_handler.html#a14ba0e1e5fa928c01a1122c455a03cf7a09e44ebe1179374a40806c6a45a31468">RadioCommandHandler</a></li>
+<li>SetCurrentStage()&#160;:&#160;<a class="el" href="d6/df1/class_mission_stage_detection.html#a2504c14a4141a57eed9bc3fac0b9dd11">MissionStageDetection</a></li>
+<li>SetPacketBools()&#160;:&#160;<a class="el" href="d0/d71/class_packet_header.html#a8585b1e09079ff4cd1205ea6ada47fd8">PacketHeader</a></li>
+<li>SetPacketData()&#160;:&#160;<a class="el" href="d5/de8/class_radio_packet.html#a34954bf164ed883c438f174f8c3bde0b">RadioPacket</a></li>
+<li>SetPacketDataValid()&#160;:&#160;<a class="el" href="d0/d71/class_packet_header.html#a0cd5a02b2759f74799c4fd8feb4bfec6">PacketHeader</a></li>
+<li>SetPacketDestAddress()&#160;:&#160;<a class="el" href="d0/d71/class_packet_header.html#ac51026c5adce4b4df5db072434114773">PacketHeader</a></li>
+<li>SetPacketExpectAck()&#160;:&#160;<a class="el" href="d0/d71/class_packet_header.html#aae39a022a20a47d5f61d4d30cb5c1c71">PacketHeader</a></li>
+<li>SetPacketExtraBool()&#160;:&#160;<a class="el" href="d0/d71/class_packet_header.html#a239d9d93fa1253e97f479aaf96ed545a">PacketHeader</a></li>
+<li>SetPacketHeader()&#160;:&#160;<a class="el" href="d0/d71/class_packet_header.html#abb7671e710f326cd7915f1018d24c256">PacketHeader</a></li>
+<li>SetPacketSrcAddress()&#160;:&#160;<a class="el" href="d0/d71/class_packet_header.html#a6a79e2351c54754080172768d147e9d8">PacketHeader</a></li>
+<li>SetPayloadType()&#160;:&#160;<a class="el" href="d0/d71/class_packet_header.html#a3ba4eee909e8bc263b7ba99dfbf2ba93">PacketHeader</a></li>
 <li>SetPinNum()&#160;:&#160;<a class="el" href="d2/d9a/class_buzzer.html#ae7b7d0deb5aae52cb4e48bc277030a81">Buzzer</a></li>
 <li>setStorage()&#160;:&#160;<a class="el" href="d5/db2/class_vector.html#a225fdf2062085d01154f0dcf9654b611">Vector&lt; T &gt;</a></li>
+<li>SetThisRadioAddress()&#160;:&#160;<a class="el" href="d2/d23/class_radio.html#af26ab86e2fea9b4a0beb6646db4ffe86">Radio</a></li>
 <li>size()&#160;:&#160;<a class="el" href="d5/db2/class_vector.html#a9b439586cd10cb45d002ca9d6e3db43c">Vector&lt; T &gt;</a></li>
-<li>Stage&#160;:&#160;<a class="el" href="d5/de8/class_radio_packet.html#a5a7be65f764c7136a7807392383e28f4a777a58e115f66dd2287b34c5553e1e9a">RadioPacket</a></li>
+<li>sLong0&#160;:&#160;<a class="el" href="d5/d74/struct_packet_data_structures_1_1radio_command_payload.html#aa53bf010c344c2906c9a0b33e068a199">PacketDataStructures::radioCommandPayload</a></li>
+<li>stage&#160;:&#160;<a class="el" href="de/dbd/union_radio_command_handler_1_1_radio_command_return.html#a1d9d0d42ebb0a056226fb86c8d989994">RadioCommandHandler::RadioCommandReturn</a></li>
+<li>StageOfMission&#160;:&#160;<a class="el" href="d6/df1/class_mission_stage_detection.html#a96ddd9c68551021f19323130fd1db4fc">MissionStageDetection</a></li>
 <li>Start32kHz()&#160;:&#160;<a class="el" href="d5/dd2/class_real_time_clock.html#a36058abba4e388bfccb137376045c6b9">RealTimeClock</a></li>
+<li>STEPPER_MOTOR_SPIN&#160;:&#160;<a class="el" href="d0/d0f/class_radio_command_handler.html#aab1287375ae5a7697a6d93c8d7d56470a099077bead3365e8ed2984afa0700f9a">RadioCommandHandler</a></li>
 <li>storage_array&#160;:&#160;<a class="el" href="d8/dec/class_serial_interface.html#a8ab46d4a447cf149a21be6aaa8675e3c">SerialInterface</a></li>
-<li>String&#160;:&#160;<a class="el" href="d5/de8/class_radio_packet.html#a5a7be65f764c7136a7807392383e28f4a2d0db8828abaed9b27c2ae65c33d12a0">RadioPacket</a></li>
-<li>stringData&#160;:&#160;<a class="el" href="d2/d55/union_radio_packet_1_1packet_payload_type.html#a18277c76f0b1e9fdccc2d65f4c69a3c1">RadioPacket::packetPayloadType</a></li>
+<li>String&#160;:&#160;<a class="el" href="d6/d56/class_packet_data_structures.html#af19b40e5093b9a2c23cb4b5075bd2150a0659ada362fd0c6bcb1e074acd0bc2f9">PacketDataStructures</a></li>
+<li>stringData&#160;:&#160;<a class="el" href="de/df2/union_packet_data_structures_1_1payload_type.html#a868186b26362476e45daa0ead8a17c35">PacketDataStructures::payloadType</a></li>
 <li>Success&#160;:&#160;<a class="el" href="d0/d3a/class_t_f_t___i_l_i9341.html#a0279cdeea40e286dd0e77a27e5db22c6ad105206318de56adb8af59f6b5f1d9ed">TFT_ILI9341</a></li>
+<li>SUCCESS_DATA_RETURNED&#160;:&#160;<a class="el" href="d0/d0f/class_radio_command_handler.html#a16f1c7edc5cff41b76e160d82d4c8c1da26db793eb1167a4bce97dde40d8c2ac4">RadioCommandHandler</a></li>
+<li>SUCCESS_NO_DATA_RETURNED&#160;:&#160;<a class="el" href="d0/d0f/class_radio_command_handler.html#a16f1c7edc5cff41b76e160d82d4c8c1dae15bf0b23ed43990d2976dcfad03711f">RadioCommandHandler</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

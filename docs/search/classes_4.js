@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['gps_0',['GPS',['../d1/d58/class_g_p_s.html',1,'']]],
-  ['gps_5fsam_5fm8q_1',['GPS_SAM_M8Q',['../da/d17/class_g_p_s___s_a_m___m8_q.html',1,'']]],
-  ['gpscoordspacketdata_2',['gpsCoordsPacketData',['../df/d64/struct_radio_packet_1_1gps_coords_packet_data.html',1,'RadioPacket']]],
-  ['gpsdatetime_3',['gpsDateTime',['../dc/db2/struct_g_p_s_1_1gps_date_time.html',1,'GPS']]],
-  ['gpslocation_4',['gpsLocation',['../dd/d56/struct_g_p_s_1_1gps_location.html',1,'GPS']]]
+  ['imu_5f6dof_0',['IMU_6DOF',['../d4/d8c/class_i_m_u__6_d_o_f.html',1,'']]],
+  ['imu_5f6dof_5flsm6dsr_1',['IMU_6DOF_LSM6DSR',['../df/d24/class_i_m_u__6_d_o_f___l_s_m6_d_s_r.html',1,'']]],
+  ['imu_5f6dof_5flsm6x_2',['IMU_6DOF_LSM6x',['../d5/d6e/class_i_m_u__6_d_o_f___l_s_m6x.html',1,'']]],
+  ['imu_5f9dof_3',['IMU_9DOF',['../d6/def/class_i_m_u__9_d_o_f.html',1,'']]],
+  ['imu_5f9dof_5fbno08x_4',['IMU_9DOF_BNO08x',['../db/d3b/class_i_m_u__9_d_o_f___b_n_o08x.html',1,'']]],
+  ['imu_5f9dof_5flsm6ds33_5flis3mdl_5',['IMU_9DOF_LSM6DS33_LIS3MDL',['../df/d2a/class_i_m_u__9_d_o_f___l_s_m6_d_s33___l_i_s3_m_d_l.html',1,'']]],
+  ['imureadings_6',['IMUReadings',['../d6/d2d/union_radio_command_handler_1_1_i_m_u_readings.html',1,'RadioCommandHandler']]]
 ];

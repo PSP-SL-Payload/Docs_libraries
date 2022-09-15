@@ -86,9 +86,9 @@ $(document).ready(function(){initNavTree('d7/d8d/md__c___p_s_p_libraries_libs__s
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p >This class is an <code>abstract</code> class, meaning that is kind of like a template. It isn't exactly a template, because that's a specific type of class in C++ but we're using it as a template for other <a class="el" href="../../d8/dec/class_serial_interface.html" title="This is a purely abstract class for a Serial Interface. It MUST be inherited.">SerialInterface</a> modules. Every single function, struct, variable, etc in this class will be available in its child classes.</p>
-<h1><a class="anchor" id="autotoc_md35"></a>
+<h1><a class="anchor" id="autotoc_md49"></a>
 When should I use this class?</h1>
-<h2><a class="anchor" id="autotoc_md36"></a>
+<h2><a class="anchor" id="autotoc_md50"></a>
 Making child classes</h2>
 <p >Whenever you need to create a Serial connection between a Raspberry PI and an Arduino, a child class that inherits this module can be used to interface with that connection.</p>
 <p >For example, let's say I'm making a new child class for the Serial Interface between the GCS ButtonHandler Arduino and the GCS Core RaspberryPI.</p><ol type="1">
@@ -96,7 +96,7 @@ Making child classes</h2>
 <li>Have it inherit this class, like so: <code>class ButtonHandlerSerialInterface : public <a class="el" href="../../d8/dec/class_serial_interface.html" title="This is a purely abstract class for a Serial Interface. It MUST be inherited.">SerialInterface</a></code>.</li>
 </ol>
 <p >Any abstract function in the <code><a class="el" href="../../d8/dec/class_serial_interface.html" title="This is a purely abstract class for a Serial Interface. It MUST be inherited.">SerialInterface</a></code> class needs to implemented in the <code>ButtonHandlerSerialInterface</code> class. You can find these by looking at all the fuctions of this general format in the header file <code>virtual void foo() = 0;</code></p>
-<h1><a class="anchor" id="autotoc_md37"></a>
+<h1><a class="anchor" id="autotoc_md51"></a>
 Example Test Code (change names accordingly)</h1>
 <div class="fragment"><div class="line"> {C++}</div>
 <div class="line">#include &lt;Arduino.h&gt;</div>

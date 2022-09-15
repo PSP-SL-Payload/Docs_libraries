@@ -1,6 +1,7 @@
 var class_serial_interface =
 [
     [ "ClearBuffer", "d8/dec/class_serial_interface.html#aa073a68fede10af41e7c1eee57f1ac54", null ],
+    [ "IsPacketAvailable", "d8/dec/class_serial_interface.html#ac441621f1c44995562c19d464e619739", null ],
     [ "ParseChar", "d8/dec/class_serial_interface.html#acb6aa94ea044e37715f472df427be243", null ],
     [ "ParseDouble", "d8/dec/class_serial_interface.html#afe661e681b05f94306b3e657226c7aa9", null ],
     [ "ParseFloat", "d8/dec/class_serial_interface.html#a8abd9fc66b0bbd5567e38843119e31f1", null ],
@@ -21,6 +22,7 @@ var class_serial_interface =
     [ "SerialWriteUInt32_t", "d8/dec/class_serial_interface.html#a8569470889b2e7838fe7f8799ccadc0f", null ],
     [ "SerialWriteUInt64_t", "d8/dec/class_serial_interface.html#aeb5199c2d4a43bdd4f51c67fe9e49c27", null ],
     [ "SerialWriteUInt8_t", "d8/dec/class_serial_interface.html#ac769a6c25e9ddad370c3237d8604a24b", null ],
+    [ "WaitForAnyPacket", "d8/dec/class_serial_interface.html#a2c1f1216a75a1d9762137d7bc313cb81", null ],
     [ "WaitForPacket", "d8/dec/class_serial_interface.html#a2ce6eae2eae7f0522f5e8ef76a848a87", null ],
     [ "WaitForPacket", "d8/dec/class_serial_interface.html#a04652e720c1e40da5511df06dce8d323", null ],
     [ "WritePacket", "d8/dec/class_serial_interface.html#ab7a5e6889bd0acd2b145e6512091f3d2", null ],

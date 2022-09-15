@@ -95,8 +95,8 @@ $(document).ready(function(){initNavTree('d0/d3a/class_t_f_t___i_l_i9341.html','
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a4a9dbfb8309b63a2b395167dbb5a5978"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a4a9dbfb8309b63a2b395167dbb5a5978">radioPacketMode</a> { <a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a4a9dbfb8309b63a2b395167dbb5a5978ac1fb9d8d8aafbf53ca5b88799396a387">RX</a> = 0
-, <a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a4a9dbfb8309b63a2b395167dbb5a5978a57566b473f9b75d2d699d27a7e81b173">TX</a> = 1
+<tr class="memitem:a4a9dbfb8309b63a2b395167dbb5a5978"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a4a9dbfb8309b63a2b395167dbb5a5978">radioPacketMode</a> { <a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a4a9dbfb8309b63a2b395167dbb5a5978ad1e63333cf634ca91a5b19c69691c0b7">Receive</a> = 0
+, <a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a4a9dbfb8309b63a2b395167dbb5a5978a4b54a73e98635d4f96341a785b01d87c">Transmit</a> = 1
 , <a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a4a9dbfb8309b63a2b395167dbb5a5978a87fbad23f78d8d32c3b820c5f0d9c887">Undefined</a> = 2
  }</td></tr>
 <tr class="separator:a4a9dbfb8309b63a2b395167dbb5a5978"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,9 +117,26 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa7ba67ee150bc78675e8dc99680b01ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#aa7ba67ee150bc78675e8dc99680b01ce">WriteNewLine</a> (const char *line1, const char *line2, <a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a4a9dbfb8309b63a2b395167dbb5a5978">radioPacketMode</a> packetMode=<a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a4a9dbfb8309b63a2b395167dbb5a5978a87fbad23f78d8d32c3b820c5f0d9c887">Undefined</a>, <a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a0279cdeea40e286dd0e77a27e5db22c6">radioPacketModeColor</a> packetColor=<a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a0279cdeea40e286dd0e77a27e5db22c6adc2b0bb0a231b609bfef9dd9df91b542">None</a>)</td></tr>
 <tr class="memdesc:aa7ba67ee150bc78675e8dc99680b01ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a new line to the TFT screen. This is usually used for logging radio packets that are sent or received.  <a href="../../d0/d3a/class_t_f_t___i_l_i9341.html#aa7ba67ee150bc78675e8dc99680b01ce">More...</a><br /></td></tr>
 <tr class="separator:aa7ba67ee150bc78675e8dc99680b01ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a120dd7806beda48642a210ab6d61be00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a120dd7806beda48642a210ab6d61be00">ClearAllPrintedItems</a> ()</td></tr>
-<tr class="memdesc:a120dd7806beda48642a210ab6d61be00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all the printed items on the screen. It doesn't deleted them from the queue though.  <a href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a120dd7806beda48642a210ab6d61be00">More...</a><br /></td></tr>
-<tr class="separator:a120dd7806beda48642a210ab6d61be00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8978d92bcdb44cdb19d2c0a778c67640"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a8978d92bcdb44cdb19d2c0a778c67640">ClearAllPrintedLines</a> ()</td></tr>
+<tr class="memdesc:a8978d92bcdb44cdb19d2c0a778c67640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all the printed items on the screen. It doesn't deleted them from the queue though.  <a href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a8978d92bcdb44cdb19d2c0a778c67640">More...</a><br /></td></tr>
+<tr class="separator:a8978d92bcdb44cdb19d2c0a778c67640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47b3c3da3cc389d9f5eea8a862fe6178"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a47b3c3da3cc389d9f5eea8a862fe6178">WriteLineToScreen</a> (uint8_t index, uint16_t color)</td></tr>
+<tr class="memdesc:a47b3c3da3cc389d9f5eea8a862fe6178"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an item to the screen. Pass in the index of the item and it will be written to the screen. The item will be pulled from the printedItemQueue.  <a href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a47b3c3da3cc389d9f5eea8a862fe6178">More...</a><br /></td></tr>
+<tr class="separator:a47b3c3da3cc389d9f5eea8a862fe6178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a087855febca4143b82cf32999d4d716d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a087855febca4143b82cf32999d4d716d">ChangeLastPrintedLineStatusColor</a> (<a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a0279cdeea40e286dd0e77a27e5db22c6">radioPacketModeColor</a> newColor)</td></tr>
+<tr class="memdesc:a087855febca4143b82cf32999d4d716d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the color of the packetMode ([RX] or [TX]) of the most recent line written to the screen.  <a href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a087855febca4143b82cf32999d4d716d">More...</a><br /></td></tr>
+<tr class="separator:a087855febca4143b82cf32999d4d716d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90963976d6c6d04167504a1144da8d73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a90963976d6c6d04167504a1144da8d73">ChangeLastPrintedLineSecondLine</a> (char *newString)</td></tr>
+<tr class="separator:a90963976d6c6d04167504a1144da8d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e6c56478b083dc992835e56a51e3c12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a9e6c56478b083dc992835e56a51e3c12">DeleteLastPrintedLine</a> ()</td></tr>
+<tr class="memdesc:a9e6c56478b083dc992835e56a51e3c12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the most recently written line.  <a href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a9e6c56478b083dc992835e56a51e3c12">More...</a><br /></td></tr>
+<tr class="separator:a9e6c56478b083dc992835e56a51e3c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba2f168c8e9de361d9ced1700ad5df5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#aba2f168c8e9de361d9ced1700ad5df5c">DrawGPSData</a> (<a class="el" href="../../d1/d58/class_g_p_s.html">GPS</a> &amp;gps)</td></tr>
+<tr class="memdesc:aba2f168c8e9de361d9ced1700ad5df5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the gps data on the TFT screen. This includes updating the <a class="el" href="../../d1/d58/class_g_p_s.html" title="The abstract class to use when creating new GPS classes Have all derived GPS classes inherit this cla...">GPS</a> icon color and printing the date. If the gps does not find a position lock within GPS_TIME_TO_WAIT_FOR_LOCATION_MS milliseconds, it changes the <a class="el" href="../../d1/d58/class_g_p_s.html" title="The abstract class to use when creating new GPS classes Have all derived GPS classes inherit this cla...">GPS</a> icon color to red and continues on.  <a href="../../d0/d3a/class_t_f_t___i_l_i9341.html#aba2f168c8e9de361d9ced1700ad5df5c">More...</a><br /></td></tr>
+<tr class="separator:aba2f168c8e9de361d9ced1700ad5df5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ab286819d5ef4396b900f055f465c88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a3ab286819d5ef4396b900f055f465c88">DrawGPSIcon</a> (uint16_t color)</td></tr>
+<tr class="memdesc:a3ab286819d5ef4396b900f055f465c88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the <a class="el" href="../../d1/d58/class_g_p_s.html" title="The abstract class to use when creating new GPS classes Have all derived GPS classes inherit this cla...">GPS</a> icon.  <a href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a3ab286819d5ef4396b900f055f465c88">More...</a><br /></td></tr>
+<tr class="separator:a3ab286819d5ef4396b900f055f465c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a816186fb43e06c8817cd3d292c1fa70b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a816186fb43e06c8817cd3d292c1fa70b">DrawGPSIconSearching</a> ()</td></tr>
 <tr class="memdesc:a816186fb43e06c8817cd3d292c1fa70b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the <a class="el" href="../../d1/d58/class_g_p_s.html" title="The abstract class to use when creating new GPS classes Have all derived GPS classes inherit this cla...">GPS</a> icon as yellow (searching for location)  <a href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a816186fb43e06c8817cd3d292c1fa70b">More...</a><br /></td></tr>
 <tr class="separator:a816186fb43e06c8817cd3d292c1fa70b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,27 +146,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2719c03b362ebf5fef15d48ecfda7d39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a2719c03b362ebf5fef15d48ecfda7d39">DrawGPSIconFailed</a> ()</td></tr>
 <tr class="memdesc:a2719c03b362ebf5fef15d48ecfda7d39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the <a class="el" href="../../d1/d58/class_g_p_s.html" title="The abstract class to use when creating new GPS classes Have all derived GPS classes inherit this cla...">GPS</a> icon as red (location was NOT found)  <a href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a2719c03b362ebf5fef15d48ecfda7d39">More...</a><br /></td></tr>
 <tr class="separator:a2719c03b362ebf5fef15d48ecfda7d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a632ed154ae9fecc6ad70ae71f1544536"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a632ed154ae9fecc6ad70ae71f1544536">DrawStartingScreen</a> ()</td></tr>
-<tr class="memdesc:a632ed154ae9fecc6ad70ae71f1544536"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the starting screen of the TFT. This includes the <a class="el" href="../../d1/d58/class_g_p_s.html" title="The abstract class to use when creating new GPS classes Have all derived GPS classes inherit this cla...">GPS</a> icon being yellow and the header line.  <a href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a632ed154ae9fecc6ad70ae71f1544536">More...</a><br /></td></tr>
-<tr class="separator:a632ed154ae9fecc6ad70ae71f1544536"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ab286819d5ef4396b900f055f465c88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a3ab286819d5ef4396b900f055f465c88">DrawGPSIcon</a> (uint16_t color)</td></tr>
-<tr class="memdesc:a3ab286819d5ef4396b900f055f465c88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the <a class="el" href="../../d1/d58/class_g_p_s.html" title="The abstract class to use when creating new GPS classes Have all derived GPS classes inherit this cla...">GPS</a> icon.  <a href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a3ab286819d5ef4396b900f055f465c88">More...</a><br /></td></tr>
-<tr class="separator:a3ab286819d5ef4396b900f055f465c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a743f9208683b453348f19ce70402f7a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a743f9208683b453348f19ce70402f7a9">WriteItemToScreen</a> (uint8_t index, uint16_t color)</td></tr>
-<tr class="memdesc:a743f9208683b453348f19ce70402f7a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the item to the screen. Pass in the index of the item and it will be written to the screen.  <a href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a743f9208683b453348f19ce70402f7a9">More...</a><br /></td></tr>
-<tr class="separator:a743f9208683b453348f19ce70402f7a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a60ebfc198bb4c3a834cc9dd640f1c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a3a60ebfc198bb4c3a834cc9dd640f1c0">DrawAltimeterData</a> (<a class="el" href="../../d6/d76/class_altimeter.html">Altimeter</a> &amp;altimeter)</td></tr>
 <tr class="memdesc:a3a60ebfc198bb4c3a834cc9dd640f1c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the altitude and temperature on the TFT screen. Will print something regardless of if it is valid data or not.  <a href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a3a60ebfc198bb4c3a834cc9dd640f1c0">More...</a><br /></td></tr>
 <tr class="separator:a3a60ebfc198bb4c3a834cc9dd640f1c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba2f168c8e9de361d9ced1700ad5df5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#aba2f168c8e9de361d9ced1700ad5df5c">DrawGPSData</a> (<a class="el" href="../../d1/d58/class_g_p_s.html">GPS</a> &amp;gps)</td></tr>
-<tr class="memdesc:aba2f168c8e9de361d9ced1700ad5df5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the gps data on the TFT screen. This includes updating the <a class="el" href="../../d1/d58/class_g_p_s.html" title="The abstract class to use when creating new GPS classes Have all derived GPS classes inherit this cla...">GPS</a> icon color and printing the date. If the gps does not find a position lock within GPS_TIME_TO_WAIT_FOR_LOCATION_MS milliseconds, it changes the <a class="el" href="../../d1/d58/class_g_p_s.html" title="The abstract class to use when creating new GPS classes Have all derived GPS classes inherit this cla...">GPS</a> icon color to red and continues on.  <a href="../../d0/d3a/class_t_f_t___i_l_i9341.html#aba2f168c8e9de361d9ced1700ad5df5c">More...</a><br /></td></tr>
-<tr class="separator:aba2f168c8e9de361d9ced1700ad5df5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adecef366e5cda7c9bbf76db47a39564f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#adecef366e5cda7c9bbf76db47a39564f">ChangeLastPrintedItemStatusColor</a> (<a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a0279cdeea40e286dd0e77a27e5db22c6">radioPacketModeColor</a> newColor)</td></tr>
-<tr class="memdesc:adecef366e5cda7c9bbf76db47a39564f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the color of the packetMode ([RX] or [TX]) of the most recent line written to the screen.  <a href="../../d0/d3a/class_t_f_t___i_l_i9341.html#adecef366e5cda7c9bbf76db47a39564f">More...</a><br /></td></tr>
-<tr class="separator:adecef366e5cda7c9bbf76db47a39564f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5d4143ab16b610ae21b004e8eb384c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#ac5d4143ab16b610ae21b004e8eb384c1">DeleteLastPrintedItem</a> ()</td></tr>
-<tr class="memdesc:ac5d4143ab16b610ae21b004e8eb384c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the most recently written line.  <a href="../../d0/d3a/class_t_f_t___i_l_i9341.html#ac5d4143ab16b610ae21b004e8eb384c1">More...</a><br /></td></tr>
-<tr class="separator:ac5d4143ab16b610ae21b004e8eb384c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a632ed154ae9fecc6ad70ae71f1544536"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a632ed154ae9fecc6ad70ae71f1544536">DrawStartingScreen</a> ()</td></tr>
+<tr class="memdesc:a632ed154ae9fecc6ad70ae71f1544536"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the starting screen of the TFT. This includes the <a class="el" href="../../d1/d58/class_g_p_s.html" title="The abstract class to use when creating new GPS classes Have all derived GPS classes inherit this cla...">GPS</a> icon being yellow and the header line.  <a href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a632ed154ae9fecc6ad70ae71f1544536">More...</a><br /></td></tr>
+<tr class="separator:a632ed154ae9fecc6ad70ae71f1544536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4197eaa64f701536da2c3497f43d947"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#aa4197eaa64f701536da2c3497f43d947">GetNumberOfReceivePacketFailsInARow</a> ()</td></tr>
+<tr class="separator:aa4197eaa64f701536da2c3497f43d947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af99acee97e90e3d1e2d2425e8d125889"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#af99acee97e90e3d1e2d2425e8d125889">IncrementNumberOfReceivePacketFailsInARow</a> ()</td></tr>
+<tr class="separator:af99acee97e90e3d1e2d2425e8d125889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3097d760ac4c155e9bfb22ddfb25bf60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a3097d760ac4c155e9bfb22ddfb25bf60">ResetNumberOfReceivePacketFailsInARow</a> ()</td></tr>
+<tr class="separator:a3097d760ac4c155e9bfb22ddfb25bf60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a4a9dbfb8309b63a2b395167dbb5a5978" name="a4a9dbfb8309b63a2b395167dbb5a5978"></a>
@@ -164,8 +172,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4a9dbfb8309b63a2b395167dbb5a5978ac1fb9d8d8aafbf53ca5b88799396a387" name="a4a9dbfb8309b63a2b395167dbb5a5978ac1fb9d8d8aafbf53ca5b88799396a387"></a>RX&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a4a9dbfb8309b63a2b395167dbb5a5978a57566b473f9b75d2d699d27a7e81b173" name="a4a9dbfb8309b63a2b395167dbb5a5978a57566b473f9b75d2d699d27a7e81b173"></a>TX&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4a9dbfb8309b63a2b395167dbb5a5978ad1e63333cf634ca91a5b19c69691c0b7" name="a4a9dbfb8309b63a2b395167dbb5a5978ad1e63333cf634ca91a5b19c69691c0b7"></a>Receive&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4a9dbfb8309b63a2b395167dbb5a5978a4b54a73e98635d4f96341a785b01d87c" name="a4a9dbfb8309b63a2b395167dbb5a5978a4b54a73e98635d4f96341a785b01d87c"></a>Transmit&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a4a9dbfb8309b63a2b395167dbb5a5978a87fbad23f78d8d32c3b820c5f0d9c887" name="a4a9dbfb8309b63a2b395167dbb5a5978a87fbad23f78d8d32c3b820c5f0d9c887"></a>Undefined&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
@@ -218,14 +226,32 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="adecef366e5cda7c9bbf76db47a39564f" name="adecef366e5cda7c9bbf76db47a39564f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adecef366e5cda7c9bbf76db47a39564f">&#9670;&nbsp;</a></span>ChangeLastPrintedItemStatusColor()</h2>
+<a id="a90963976d6c6d04167504a1144da8d73" name="a90963976d6c6d04167504a1144da8d73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90963976d6c6d04167504a1144da8d73">&#9670;&nbsp;</a></span>ChangeLastPrintedLineSecondLine()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TFT_ILI9341::ChangeLastPrintedItemStatusColor </td>
+          <td class="memname">void TFT_ILI9341::ChangeLastPrintedLineSecondLine </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>newString</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a087855febca4143b82cf32999d4d716d" name="a087855febca4143b82cf32999d4d716d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a087855febca4143b82cf32999d4d716d">&#9670;&nbsp;</a></span>ChangeLastPrintedLineStatusColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TFT_ILI9341::ChangeLastPrintedLineStatusColor </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html#a0279cdeea40e286dd0e77a27e5db22c6">radioPacketModeColor</a>&#160;</td>
           <td class="paramname"><em>newColor</em></td><td>)</td>
@@ -244,14 +270,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a120dd7806beda48642a210ab6d61be00" name="a120dd7806beda48642a210ab6d61be00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a120dd7806beda48642a210ab6d61be00">&#9670;&nbsp;</a></span>ClearAllPrintedItems()</h2>
+<a id="a8978d92bcdb44cdb19d2c0a778c67640" name="a8978d92bcdb44cdb19d2c0a778c67640"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8978d92bcdb44cdb19d2c0a778c67640">&#9670;&nbsp;</a></span>ClearAllPrintedLines()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TFT_ILI9341::ClearAllPrintedItems </td>
+          <td class="memname">void TFT_ILI9341::ClearAllPrintedLines </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -263,14 +289,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac5d4143ab16b610ae21b004e8eb384c1" name="ac5d4143ab16b610ae21b004e8eb384c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5d4143ab16b610ae21b004e8eb384c1">&#9670;&nbsp;</a></span>DeleteLastPrintedItem()</h2>
+<a id="a9e6c56478b083dc992835e56a51e3c12" name="a9e6c56478b083dc992835e56a51e3c12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e6c56478b083dc992835e56a51e3c12">&#9670;&nbsp;</a></span>DeleteLastPrintedLine()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TFT_ILI9341::DeleteLastPrintedItem </td>
+          <td class="memname">void TFT_ILI9341::DeleteLastPrintedLine </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -436,6 +462,40 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aa4197eaa64f701536da2c3497f43d947" name="aa4197eaa64f701536da2c3497f43d947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4197eaa64f701536da2c3497f43d947">&#9670;&nbsp;</a></span>GetNumberOfReceivePacketFailsInARow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t TFT_ILI9341::GetNumberOfReceivePacketFailsInARow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af99acee97e90e3d1e2d2425e8d125889" name="af99acee97e90e3d1e2d2425e8d125889"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af99acee97e90e3d1e2d2425e8d125889">&#9670;&nbsp;</a></span>IncrementNumberOfReceivePacketFailsInARow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TFT_ILI9341::IncrementNumberOfReceivePacketFailsInARow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a835c759ee0a1b0d6ce314c3b385a11a5" name="a835c759ee0a1b0d6ce314c3b385a11a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a835c759ee0a1b0d6ce314c3b385a11a5">&#9670;&nbsp;</a></span>Init()</h2>
 
@@ -501,14 +561,31 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a743f9208683b453348f19ce70402f7a9" name="a743f9208683b453348f19ce70402f7a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a743f9208683b453348f19ce70402f7a9">&#9670;&nbsp;</a></span>WriteItemToScreen()</h2>
+<a id="a3097d760ac4c155e9bfb22ddfb25bf60" name="a3097d760ac4c155e9bfb22ddfb25bf60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3097d760ac4c155e9bfb22ddfb25bf60">&#9670;&nbsp;</a></span>ResetNumberOfReceivePacketFailsInARow()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TFT_ILI9341::WriteItemToScreen </td>
+          <td class="memname">void TFT_ILI9341::ResetNumberOfReceivePacketFailsInARow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a47b3c3da3cc389d9f5eea8a862fe6178" name="a47b3c3da3cc389d9f5eea8a862fe6178"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47b3c3da3cc389d9f5eea8a862fe6178">&#9670;&nbsp;</a></span>WriteLineToScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TFT_ILI9341::WriteLineToScreen </td>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>index</em>, </td>
@@ -527,7 +604,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Writes the item to the screen. Pass in the index of the item and it will be written to the screen. </p>
+<p>Writes an item to the screen. Pass in the index of the item and it will be written to the screen. The item will be pulled from the printedItemQueue. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">index</td><td>the index of the item </td></tr>
@@ -579,8 +656,8 @@ Public Member Functions</h2></td></tr>
 <p>Write a new line to the TFT screen. This is usually used for logging radio packets that are sent or received. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">line1</td><td>The first line to log in the message </td></tr>
-    <tr><td class="paramname">line2</td><td>The second line to log in the message </td></tr>
+    <tr><td class="paramname">line1</td><td>The first line to log in the message (max ~50 chars) </td></tr>
+    <tr><td class="paramname">line2</td><td>The second line to log in the message (max ~50 chars) </td></tr>
     <tr><td class="paramname">packetMode</td><td>The mode of the packet. Indicates RX, TX, etc. </td></tr>
     <tr><td class="paramname">packetColor</td><td>The color of the printed packetMode. This colors the [TX] or [RX] that is printed. </td></tr>
   </table>

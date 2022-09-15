@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['millisecond_0',['millisecond',['../db/d0d/struct_logger_1_1_log_time_struct.html#a92a1d683ac773945bdd05dab684a19ef',1,'Logger::LogTimeStruct']]],
-  ['milliseconds_1',['milliseconds',['../d7/d5a/struct_radio_packet_1_1time_packet_data.html#a9e782e11bca01973d3084d6169e7821f',1,'RadioPacket::timePacketData']]],
-  ['minute_2',['minute',['../dc/db2/struct_g_p_s_1_1gps_date_time.html#a916d1cf25708023bd8c888afe8d6a484',1,'GPS::gpsDateTime::minute()'],['../db/d0d/struct_logger_1_1_log_time_struct.html#a7d8a0c53c054afd09cfa211aa525ee2f',1,'Logger::LogTimeStruct::minute()'],['../d7/d5a/struct_radio_packet_1_1time_packet_data.html#a60caae17924f7099bc663a7ffe386780',1,'RadioPacket::timePacketData::minute()']]],
-  ['month_3',['month',['../dc/db2/struct_g_p_s_1_1gps_date_time.html#aa64cf59c56ee6adf6016ee9e18476ed4',1,'GPS::gpsDateTime::month()'],['../d7/d5a/struct_radio_packet_1_1time_packet_data.html#af2a442aaa96ed64298a4178af189af4d',1,'RadioPacket::timePacketData::month()']]]
+  ['i_0',['i',['../d3/d11/struct_i_m_u__9_d_o_f_1_1_quaternion.html#a531a9bbb15b1390bc11fcc86bca61379',1,'IMU_9DOF::Quaternion']]],
+  ['imu_1',['imu',['../df/d24/class_i_m_u__6_d_o_f___l_s_m6_d_s_r.html#a17dda1b188a07b135b37d23dd4b02183',1,'IMU_6DOF_LSM6DSR::imu()'],['../d5/d6e/class_i_m_u__6_d_o_f___l_s_m6x.html#a4a604fa4b157e62686109da41a576a0d',1,'IMU_6DOF_LSM6x::imu()'],['../db/d3b/class_i_m_u__9_d_o_f___b_n_o08x.html#a4a3f3991c0dce2d64c1f183bebc35625',1,'IMU_9DOF_BNO08x::imu()'],['../df/d2a/class_i_m_u__9_d_o_f___l_s_m6_d_s33___l_i_s3_m_d_l.html#ac2b9a1d420aa0cfaf2cea2b2ca232c41',1,'IMU_9DOF_LSM6DS33_LIS3MDL::imu()'],['../de/dbd/union_radio_command_handler_1_1_radio_command_return.html#af22baee53e481d46471762cbc74351b9',1,'RadioCommandHandler::RadioCommandReturn::imu()']]]
 ];

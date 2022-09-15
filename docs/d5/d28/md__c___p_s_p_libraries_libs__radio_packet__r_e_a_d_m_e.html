@@ -82,15 +82,15 @@ $(document).ready(function(){initNavTree('d5/d28/md__c___p_s_p_libraries_libs__r
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title"><a class="el" href="../../d5/de8/class_radio_packet.html">RadioPacket</a> </div></div>
+  <div class="headertitle"><div class="title"><a class="el" href="../../d5/de8/class_radio_packet.html" title="The class to create a RadioPacket. This is the packet that is universally sent for each radio transac...">RadioPacket</a> </div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p >This class does not interface to any sort of hardware module, it is strictly software.</p>
-<p >The <a class="el" href="../../d5/de8/class_radio_packet.html">RadioPacket</a> class contains many methods and structs that control the data in a radio packet. The struct that contains the data that is actually sent and received is <code>radioPacket</code>.</p>
-<p ><code><img src="https://user-images.githubusercontent.com/67335671/186491641-3a7b5fb2-7498-4f1e-930d-7a262ea3a9ad.png" alt="RadioPacket" class="inline"/></code></p>
-<h1><a class="anchor" id="autotoc_md33"></a>
+<p >The <a class="el" href="../../d5/de8/class_radio_packet.html" title="The class to create a RadioPacket. This is the packet that is universally sent for each radio transac...">RadioPacket</a> class contains many methods and structs that control the data in a radio packet. The struct that contains the data that is actually sent and received is <code>radioPacket</code>.</p>
+<p ><code><img src="https://user-images.githubusercontent.com/67335671/189705606-f08cbbe9-dda9-4206-9226-770b066b970a.png" alt="RadioPacket (1)" class="inline"/></code></p>
+<h1><a class="anchor" id="autotoc_md47"></a>
 Useful Information</h1>
-<p >The size of <code><a class="el" href="../../d5/dc4/struct_radio_packet_1_1radio_packet.html" title="This is the packet that is sent universally ALWAYS 17 bytes wide (16 bytes of data and 1 byte for fla...">RadioPacket::radioPacket</a></code> is <em>supposed</em> to be 17 bytes (1 for flag bits, 16 for data). However, the <code>#pragma pack(1)</code> directive causes an issue with the <a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html">TFT_ILI9341</a> library. If you solve that issue, feel free to add the directive back. Until then, the size of the packet (due to auto-added padding) is 24 bytes. Make sure when you add other structs to the <code>packetPayloadType</code> union the overall size of <code>radioPacket</code> does not change </p>
+<p >The size of <code>RadioPacket::radioPacket</code> is <em>supposed</em> to be 18 bytes (2 for header, 16 for payload). However, the <code>#pragma pack(1)</code> directive causes an issue with the <a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html">TFT_ILI9341</a> library. If you solve that issue, feel free to add the directive back. Until then, the size of the packet (due to auto-added padding) is 24 bytes. Make sure when you add other structs to the <code>packetPayloadType</code> union the overall size of <code>radioPacket</code> does not change </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

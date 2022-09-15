@@ -1,6 +1,27 @@
 var searchData=
 [
-  ['none_0',['None',['../d0/d3a/class_t_f_t___i_l_i9341.html#a0279cdeea40e286dd0e77a27e5db22c6adc2b0bb0a231b609bfef9dd9df91b542',1,'TFT_ILI9341']]],
-  ['number_5fof_5fstored_5fnodes_1',['NUMBER_OF_STORED_NODES',['../d8/dec/class_serial_interface.html#a83067102ffb9f6bf59aae66775584a5b',1,'SerialInterface']]],
-  ['numsats_2',['numSats',['../dd/d56/struct_g_p_s_1_1gps_location.html#ad6d0240340126aed18cf84541c17cd44',1,'GPS::gpsLocation::numSats()'],['../df/d64/struct_radio_packet_1_1gps_coords_packet_data.html#a2d081ca0fd2ea1b45933261e785a5932',1,'RadioPacket::gpsCoordsPacketData::numSats()']]]
+  ['landed_0',['Landed',['../d6/df1/class_mission_stage_detection.html#a96ddd9c68551021f19323130fd1db4fca6b5a19834560894b5d739766cf3b9086',1,'MissionStageDetection']]],
+  ['latitude_1',['latitude',['../dd/d56/struct_g_p_s_1_1gps_location.html#a65b372147488a6881f831384f2de472f',1,'GPS::gpsLocation::latitude()'],['../d2/d1e/struct_packet_data_structures_1_1gps_coords_payload.html#a8d519a29dcd07a610751d003bba154f5',1,'PacketDataStructures::gpsCoordsPayload::latitude()']]],
+  ['launchedascending_2',['LaunchedAscending',['../d6/df1/class_mission_stage_detection.html#a96ddd9c68551021f19323130fd1db4fcabb89ae5ccfec6f245a1f8ebf300b7e53',1,'MissionStageDetection']]],
+  ['launchready_3',['LaunchReady',['../d6/df1/class_mission_stage_detection.html#a96ddd9c68551021f19323130fd1db4fca09ed8fdd42bd9b4e9b5ff91b72030b6c',1,'MissionStageDetection']]],
+  ['libraries_20overview_4',['Libraries Overview',['../d4/dcd/md__c___p_s_p_libraries__r_e_a_d_m_e.html',1,'']]],
+  ['lis3mdl_5',['lis3mdl',['../df/d2a/class_i_m_u__9_d_o_f___l_s_m6_d_s33___l_i_s3_m_d_l.html#a6b0412eb6dde031ac25fd78a469ad81e',1,'IMU_9DOF_LSM6DS33_LIS3MDL']]],
+  ['location_6',['location',['../d1/d6e/union_radio_command_handler_1_1_g_p_s_readings.html#af97fd67026e50135f00568a960322252',1,'RadioCommandHandler::GPSReadings']]],
+  ['log_5fdebug_7',['LOG_DEBUG',['../d3/d42/class_logger.html#ac744681e23720966b5f430ec2060da36a3d390e12a16a389ee2d0d496bd692890',1,'Logger']]],
+  ['log_5fdebug_5fmsg_8',['LOG_DEBUG_MSG',['../d6/dec/_logger_8h.html#acc6427cb47a5ba7b91ebdf4a34d72477',1,'Logger.h']]],
+  ['log_5ferr_9',['LOG_ERR',['../d3/d42/class_logger.html#ac744681e23720966b5f430ec2060da36af0dee010a8883ffd1c2c7c7a000ec9a5',1,'Logger']]],
+  ['log_5ferr_5fmsg_10',['LOG_ERR_MSG',['../d6/dec/_logger_8h.html#a57fad59d067bf9917fd6eaf4c16a68f8',1,'Logger.h']]],
+  ['log_5finfo_11',['LOG_INFO',['../d3/d42/class_logger.html#ac744681e23720966b5f430ec2060da36a486a2070742e8847e3a14d39cfc639bb',1,'Logger']]],
+  ['log_5finfo_5fmsg_12',['LOG_INFO_MSG',['../d6/dec/_logger_8h.html#ab3b3c2567d64b7caf5409491c860daa5',1,'Logger.h']]],
+  ['log_5fwarn_13',['LOG_WARN',['../d3/d42/class_logger.html#ac744681e23720966b5f430ec2060da36a3d98e5059c1468fc0ce31d0c4367073f',1,'Logger']]],
+  ['log_5fwarn_5fmsg_14',['LOG_WARN_MSG',['../d6/dec/_logger_8h.html#a653bb936d9ac052b8dc2bfdd0ef26ea0',1,'Logger.h']]],
+  ['logger_15',['Logger',['../d3/d42/class_logger.html',1,'']]],
+  ['logger_2ecpp_16',['Logger.cpp',['../de/d27/_logger_8cpp.html',1,'']]],
+  ['logger_2eh_17',['Logger.h',['../d6/dec/_logger_8h.html',1,'']]],
+  ['loglevel_18',['LogLevel',['../d3/d42/class_logger.html#ac744681e23720966b5f430ec2060da36',1,'Logger']]],
+  ['logtimestruct_19',['LogTimeStruct',['../db/d0d/struct_logger_1_1_log_time_struct.html',1,'Logger']]],
+  ['longitude_20',['longitude',['../dd/d56/struct_g_p_s_1_1gps_location.html#abca14694f5a1d665b0a3e2ea43b91f21',1,'GPS::gpsLocation::longitude()'],['../d2/d1e/struct_packet_data_structures_1_1gps_coords_payload.html#aa049d5acf4d2d08f37696dd425e2d5d5',1,'PacketDataStructures::gpsCoordsPayload::longitude()']]],
+  ['loop_21',['loop',['../de/dfb/src_2main_8cpp.html#afe461d27b9c48d5921c00d521181f12f',1,'main.cpp']]],
+  ['lowest_5findex_5fof_5fgeneral_5fcommands_22',['LOWEST_INDEX_OF_GENERAL_COMMANDS',['../d0/d0f/class_radio_command_handler.html#a0ce144a9231d1c7f8ed893a7f509ef49',1,'RadioCommandHandler']]],
+  ['lowest_5findex_5fof_5fmodded_5fcommands_23',['LOWEST_INDEX_OF_MODDED_COMMANDS',['../d0/d0f/class_radio_command_handler.html#a5ceb54d8c10d9c03ecbb63fdea94bbac',1,'RadioCommandHandler']]]
 ];

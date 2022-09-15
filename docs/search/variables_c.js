@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['unused1_0',['unused1',['../d7/d5a/struct_radio_packet_1_1time_packet_data.html#ab09be24fd1a766ef25b18a55fdc5aaba',1,'RadioPacket::timePacketData::unused1()'],['../df/d64/struct_radio_packet_1_1gps_coords_packet_data.html#a518c3f4c7c484ae8a8a2b9021de17451',1,'RadioPacket::gpsCoordsPacketData::unused1()']]],
-  ['unused2_1',['unused2',['../d7/d5a/struct_radio_packet_1_1time_packet_data.html#aae7a0fc5bcba537258bff4555618d91b',1,'RadioPacket::timePacketData::unused2()'],['../df/d64/struct_radio_packet_1_1gps_coords_packet_data.html#a804058ea08ed9725982f438b7e3ba99c',1,'RadioPacket::gpsCoordsPacketData::unused2()']]],
-  ['unused3_2',['unused3',['../d7/d5a/struct_radio_packet_1_1time_packet_data.html#a3063cf71134d8ba61c3e08ea5aae7402',1,'RadioPacket::timePacketData::unused3()'],['../df/d64/struct_radio_packet_1_1gps_coords_packet_data.html#a512494af104b3ffa0db87974fa8072c2',1,'RadioPacket::gpsCoordsPacketData::unused3()']]]
+  ['number_5fof_5fstored_5fnodes_0',['NUMBER_OF_STORED_NODES',['../d8/dec/class_serial_interface.html#a83067102ffb9f6bf59aae66775584a5b',1,'SerialInterface']]],
+  ['numsats_1',['numSats',['../dd/d56/struct_g_p_s_1_1gps_location.html#ad6d0240340126aed18cf84541c17cd44',1,'GPS::gpsLocation::numSats()'],['../d2/d1e/struct_packet_data_structures_1_1gps_coords_payload.html#ab562e76505f5cdc38c04c30377e7ac5e',1,'PacketDataStructures::gpsCoordsPayload::numSats()']]]
 ];

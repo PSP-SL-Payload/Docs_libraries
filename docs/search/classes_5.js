@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['imu_0',['IMU',['../dd/d3c/class_i_m_u.html',1,'']]],
-  ['imu_5flsm6x_1',['IMU_LSM6x',['../d4/dae/class_i_m_u___l_s_m6x.html',1,'']]]
+  ['logger_0',['Logger',['../d3/d42/class_logger.html',1,'']]],
+  ['logtimestruct_1',['LogTimeStruct',['../db/d0d/struct_logger_1_1_log_time_struct.html',1,'Logger']]]
 ];

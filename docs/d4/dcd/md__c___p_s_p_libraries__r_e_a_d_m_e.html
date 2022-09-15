@@ -86,91 +86,112 @@ $(document).ready(function(){initNavTree('d4/dcd/md__c___p_s_p_libraries__r_e_a_
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p >The place we dump all our libraries. You should be able to import these into your projects as needed and get them to work</p>
-<h1><a class="anchor" id="autotoc_md43"></a>
+<h1><a class="anchor" id="autotoc_md57"></a>
 Why do we put libraries here?</h1>
 <p >This is so all projects can have the same libraries and you only have to write them once. This fixes a long standing issue the team has had in previous years of having multiple versions of different libraries floating around.</p>
-<h1><a class="anchor" id="autotoc_md44"></a>
+<h1><a class="anchor" id="autotoc_md58"></a>
 Writing Conventions</h1>
 <p >Use generally decent OOP principles here. Not going to be super picky but at least make it readable.</p>
 <p >We use a child/parent class structure for sensors where the parent is an abstract class with implemented functions as needed and the child class implements all remaining functions. This way all sensors have a standard implementation and you can switch sensors without changing code in other libraries or the control loop. Keep it this way as it greatly simplifies the code.</p>
 <p ><b>Example of how this works for Radios:</b></p>
 <p >We have the <code><a class="el" href="../../d2/d23/class_radio.html" title="The abstract class to use when creating new Radio classes Have all derived Radio classes inherit this...">Radio</a></code> abstract class. This has the <code><a class="el" href="../../df/d8e/_radio_8h.html">Radio.h</a></code> file which defines all methods that are standardized for all <em><a class="el" href="../../d2/d23/class_radio.html" title="The abstract class to use when creating new Radio classes Have all derived Radio classes inherit this...">Radio</a></em> modules that we use. It also has <code><a class="el" href="../../dd/d45/_radio_8cpp.html">Radio.cpp</a></code> which implements many of the methods that are shared throughout all the <em><a class="el" href="../../d2/d23/class_radio.html" title="The abstract class to use when creating new Radio classes Have all derived Radio classes inherit this...">Radio</a></em> modules we use.</p>
 <p >Next, we implemented the <code><a class="el" href="../../d2/d95/class_radio__433_t30_d.html">Radio_433T30D</a></code> child class. This class inherits the abstract <code><a class="el" href="../../d2/d23/class_radio.html" title="The abstract class to use when creating new Radio classes Have all derived Radio classes inherit this...">Radio</a></code> class, allowing it to access the methods that are defined there. Being we inherited the abstract class, we only have to define a few functions inside <code><a class="el" href="../../d6/d96/_radio__433_t30_d_8cpp.html">Radio_433T30D.cpp</a></code> to get the <em><a class="el" href="../../d2/d23/class_radio.html" title="The abstract class to use when creating new Radio classes Have all derived Radio classes inherit this...">Radio</a></em> working and implemented</p>
-<h1><a class="anchor" id="autotoc_md45"></a>
+<h1><a class="anchor" id="autotoc_md59"></a>
 File Naming Conventions</h1>
 <p >Name child (derived) class files in the following format: <em>sensorType_sensorName</em></p>
 <p >Name parent (base) class files in the following format: <em>sensorType</em></p>
-<h1><a class="anchor" id="autotoc_md46"></a>
+<h1><a class="anchor" id="autotoc_md60"></a>
 Quick Description of Libraries:</h1>
-<h2><a class="anchor" id="autotoc_md47"></a>
+<h2><a class="anchor" id="autotoc_md61"></a>
 Altimeter</h2>
 <p >The abstract class defining how all <a class="el" href="../../d6/d76/class_altimeter.html" title="The abstract class to use when creating new Altimeter classes Have all derived Altimeter classes inhe...">Altimeter</a> modules will be interfaced. Make sure to use proper units when making child classes.</p>
 <p ><a href="https://github.com/PSP-SL-Payload/libraries/tree/main/libs/Altimeter">Detailed Description, Code, etc</a></p>
-<h4><a class="anchor" id="autotoc_md48"></a>
+<h4><a class="anchor" id="autotoc_md62"></a>
 Altimeter_BMP280</h4>
 <p >A child class of <a class="el" href="../../d6/d76/class_altimeter.html" title="The abstract class to use when creating new Altimeter classes Have all derived Altimeter classes inhe...">Altimeter</a>. This one is specifically made for the BMP280 module. It has been tested using I2C on an Arduino MKR ZERO.</p>
 <p ><a href="https://github.com/PSP-SL-Payload/libraries/tree/main/libs/Altimeter_BMP280">Detailed Description, Wiring, Code, etc</a></p>
-<h2><a class="anchor" id="autotoc_md49"></a>
+<h2><a class="anchor" id="autotoc_md63"></a>
 Buzzer</h2>
 <p >The buzzer class. Use this when interfacing a buzzer with your projects to make it easier and standardized.</p>
-<h2><a class="anchor" id="autotoc_md50"></a>
+<h2><a class="anchor" id="autotoc_md64"></a>
 GPS</h2>
 <p >The abstract class defining how all <a class="el" href="../../d1/d58/class_g_p_s.html" title="The abstract class to use when creating new GPS classes Have all derived GPS classes inherit this cla...">GPS</a> modules will be interfaced. Make sure to use proper units when making child classes.</p>
 <p ><a href="https://github.com/PSP-SL-Payload/libraries/tree/main/libs/GPS">Detailed Description, Code, etc</a></p>
-<h4><a class="anchor" id="autotoc_md51"></a>
+<h4><a class="anchor" id="autotoc_md65"></a>
 GPS_SAM_M8Q</h4>
 <p >A child class of <a class="el" href="../../d1/d58/class_g_p_s.html" title="The abstract class to use when creating new GPS classes Have all derived GPS classes inherit this cla...">GPS</a>. This one is specifically made for the SAM_M8Q module. It has been tested using I2C on an Arduino MKR ZERO.</p>
 <p ><a href="https://github.com/PSP-SL-Payload/libraries/tree/main/libs/GPS_SAM_M8Q">Detailed Description, Wiring, Code, etc</a></p>
-<h2><a class="anchor" id="autotoc_md52"></a>
-IMU</h2>
-<p >The abstract class defining how all <a class="el" href="../../dd/d3c/class_i_m_u.html" title="The abstract class to use when creating new IMU classes Have all derived IMU classes inherit this cla...">IMU</a> modules will be interfaced. Make sure to use proper units when making child classes.</p>
-<p ><a href="https://github.com/PSP-SL-Payload/libraries/tree/main/libs/IMU">Detailed Description, Code, etc</a></p>
-<h4><a class="anchor" id="autotoc_md53"></a>
-IMU_LSM6x</h4>
-<p >A child class of <a class="el" href="../../dd/d3c/class_i_m_u.html" title="The abstract class to use when creating new IMU classes Have all derived IMU classes inherit this cla...">IMU</a>. This one is specifically made for the LSM6x family of modules. It has been tested using I2C on an Arduino MKR ZERO with the LSM6DS33.</p>
-<p ><a href="https://github.com/PSP-SL-Payload/libraries/tree/main/libs/IMU_LSM6x">Detailed Description, Wiring, Code, etc</a></p>
-<h2><a class="anchor" id="autotoc_md54"></a>
+<h2><a class="anchor" id="autotoc_md66"></a>
+IMU_6DOF</h2>
+<p >The abstract class defining how all IMU modules with 6 Degrees of Freedom will be interfaced. Make sure to use proper units when making child classes.</p>
+<p ><a href="https://github.com/PSP-SL-Payload/libraries/tree/main/libs/IMU_6DOF">Detailed Description, Code, etc</a></p>
+<h4><a class="anchor" id="autotoc_md67"></a>
+IMU_6DOF_LSM6x</h4>
+<p >A child class of <a class="el" href="../../d4/d8c/class_i_m_u__6_d_o_f.html" title="The abstract class to use when creating new 6 Degrees of Freedom OR 9 Degrees of Freedom IMU classes ...">IMU_6DOF</a>. It has support for 3-axis of acceleration and 3-axis of gyroscope. This one is specifically made for the LSM6x family of modules. It has been tested using I2C on an Arduino MKR ZERO with the LSM6DS33.</p>
+<p ><a href="https://github.com/PSP-SL-Payload/libraries/tree/main/libs/IMU_6DOF_LSM6x">Detailed Description, Wiring, Code, etc</a></p>
+<h4><a class="anchor" id="autotoc_md68"></a>
+IMU_6DOF_LSM6DSR</h4>
+<p >A child class of <a class="el" href="../../d4/d8c/class_i_m_u__6_d_o_f.html" title="The abstract class to use when creating new 6 Degrees of Freedom OR 9 Degrees of Freedom IMU classes ...">IMU_6DOF</a>. It has support for 3-axis of acceleration and 3-axis of gyroscope. This one is specifically made for the LSM6DSR module. It has been tested using I2C on an Arduino MKR ZERO.</p>
+<p ><a href="https://github.com/PSP-SL-Payload/libraries/tree/main/libs/IMU_6DOF_LSM6DSR">Detailed Description, Wiring, Code, etc</a></p>
+<h2><a class="anchor" id="autotoc_md69"></a>
+IMU_9DOF</h2>
+<p >The abstract class defining how all IMU modules with 9 Degrees of Freedom will be interfaced. It inherits from <a class="el" href="../../d4/d8c/class_i_m_u__6_d_o_f.html" title="The abstract class to use when creating new 6 Degrees of Freedom OR 9 Degrees of Freedom IMU classes ...">IMU_6DOF</a>. Make sure to use proper units when making child classes.</p>
+<p ><a href="https://github.com/PSP-SL-Payload/libraries/tree/main/libs/IMU_9DOF">Detailed Description, Code, etc</a></p>
+<h4><a class="anchor" id="autotoc_md70"></a>
+IMU_9DOF_BNO08x</h4>
+<p >A child class of <a class="el" href="../../d6/def/class_i_m_u__9_d_o_f.html" title="The abstract class to use when creating new 9 Degrees of Freedom OR IMU classes Have all derived 9 Do...">IMU_9DOF</a> <em>and</em> <a class="el" href="../../d4/d8c/class_i_m_u__6_d_o_f.html" title="The abstract class to use when creating new 6 Degrees of Freedom OR 9 Degrees of Freedom IMU classes ...">IMU_6DOF</a>. It has support for 3-axis of acceleration, 3-axis of gyroscope, and 3-axis of magnetometer. This one is specifically made for the BNO08x family of modules. It has been tested using I2C on an Arduino MKR ZERO with the BNO08x.</p>
+<p ><a href="https://github.com/PSP-SL-Payload/libraries/tree/main/libs/IMU_9DOF_BNO08x">Detailed Description, Wiring, Code, etc</a></p>
+<h4><a class="anchor" id="autotoc_md71"></a>
+IMU_9DOF_LSM6DS33_LIS3MDL</h4>
+<p >A child class of <a class="el" href="../../d6/def/class_i_m_u__9_d_o_f.html" title="The abstract class to use when creating new 9 Degrees of Freedom OR IMU classes Have all derived 9 Do...">IMU_9DOF</a> <em>and</em> <a class="el" href="../../d4/d8c/class_i_m_u__6_d_o_f.html" title="The abstract class to use when creating new 6 Degrees of Freedom OR 9 Degrees of Freedom IMU classes ...">IMU_6DOF</a>. It has support for 3-axis of acceleration, 3-axis of gyroscope, and 3-axis of magnetometer. This one is specifically made for the LSM6DS33+LIS3MDL combination module. It has been tested using I2C on an Arduino MKR ZERO.</p>
+<p ><a href="https://github.com/PSP-SL-Payload/libraries/tree/main/libs/IMU_9DOF_LSM6DS33_LIS3MDL">Detailed Description, Wiring, Code, etc</a></p>
+<h2><a class="anchor" id="autotoc_md72"></a>
 Logger</h2>
 <p >The logger class used for logging information to the screen in a standard fashion. Use this instead of Serial prints.</p>
-<h2><a class="anchor" id="autotoc_md55"></a>
+<h2><a class="anchor" id="autotoc_md73"></a>
+MissionStageDetection</h2>
+<p >Describes all of our stages of flight and the payload mission. VERY useful functions are contained here for those aspects</p>
+<h2><a class="anchor" id="autotoc_md74"></a>
 RTC_DS3231</h2>
 <p >The class to utilize the DS3231 Real Time Clock.</p>
-<h2><a class="anchor" id="autotoc_md56"></a>
+<h2><a class="anchor" id="autotoc_md75"></a>
 Radio</h2>
 <p >The abstract class defining how all <a class="el" href="../../d2/d23/class_radio.html" title="The abstract class to use when creating new Radio classes Have all derived Radio classes inherit this...">Radio</a> modules will be interfaced.</p>
-<h4><a class="anchor" id="autotoc_md57"></a>
+<p ><a href="https://github.com/PSP-SL-Payload/libraries/tree/main/libs/Radio">Detailed Description, Code, etc</a></p>
+<h4><a class="anchor" id="autotoc_md76"></a>
 Radio_433T30D</h4>
 <p >A child class of <a class="el" href="../../d2/d23/class_radio.html" title="The abstract class to use when creating new Radio classes Have all derived Radio classes inherit this...">Radio</a>. This one is specifically made for the Ebyte E32 433T30D and the Ebyte E32 433T20D modules. It has been tested on both using UART on an Arduino MKR ZERO.</p>
-<h2><a class="anchor" id="autotoc_md58"></a>
+<p ><a href="https://github.com/PSP-SL-Payload/libraries/tree/main/libs/Radio_433T30D">Detailed Description, Wiring, Code, etc</a></p>
+<h2><a class="anchor" id="autotoc_md77"></a>
 RadioPacket</h2>
 <p >The class that defines the <a class="el" href="../../d2/d23/class_radio.html" title="The abstract class to use when creating new Radio classes Have all derived Radio classes inherit this...">Radio</a> Packets we use. These are the packets that are sent and received by all radios and are standardized so that they should work with any <a class="el" href="../../d2/d23/class_radio.html" title="The abstract class to use when creating new Radio classes Have all derived Radio classes inherit this...">Radio</a> class we implement.</p>
 <p ><a href="https://github.com/PSP-SL-Payload/libraries/tree/main/libs/RadioPacket">Detailed Description and Diagrams</a></p>
-<h2><a class="anchor" id="autotoc_md59"></a>
+<h2><a class="anchor" id="autotoc_md78"></a>
 SDCard</h2>
 <p >The class to control an SD Card. This controls an SD Card and can create different files on it.</p>
-<h2><a class="anchor" id="autotoc_md60"></a>
+<h2><a class="anchor" id="autotoc_md79"></a>
 SDFile</h2>
 <p >The class that controls individual files on an SD Card. This class is used by <a class="el" href="../../dd/df7/class_s_d_card.html" title="Controls writing to an SD card. Uses SPI.">SDCard</a> to create files</p>
-<h2><a class="anchor" id="autotoc_md61"></a>
+<h2><a class="anchor" id="autotoc_md80"></a>
 SerialInterface</h2>
 <p >An abstract class that communicates with the Raspberry PI over serial bus. It is capable of sending and receiving packets. It is meant to be inherited to add custom packets, but does still contain native packets.</p>
 <p ><a href="https://github.com/PSP-SL-Payload/libraries/tree/main/libs/SerialInterface">Detailed Description and Code</a></p>
-<h2><a class="anchor" id="autotoc_md62"></a>
+<h2><a class="anchor" id="autotoc_md81"></a>
 SerialPackets</h2>
 <p >The native packets that the <a class="el" href="../../d8/dec/class_serial_interface.html" title="This is a purely abstract class for a Serial Interface. It MUST be inherited.">SerialInterface</a> class sends/receives. More packets can be added through the inherited member of <a class="el" href="../../d8/dec/class_serial_interface.html" title="This is a purely abstract class for a Serial Interface. It MUST be inherited.">SerialInterface</a>.</p>
-<h2><a class="anchor" id="autotoc_md63"></a>
+<h2><a class="anchor" id="autotoc_md82"></a>
 TFT_ILI9341</h2>
 <p >This is the class to control the <a class="el" href="../../d0/d3a/class_t_f_t___i_l_i9341.html">TFT_ILI9341</a> display. This module is used as the small color display in GCS and is geared toward displaying lines of radio data as well as altitude and other small bits of info.</p>
-<h2><a class="anchor" id="autotoc_md64"></a>
+<h2><a class="anchor" id="autotoc_md83"></a>
 Timer_ATSAMD21G18</h2>
 <p >This class controls the internal timers of the ATSAMD21G18 (processor used by MKR Zero and Zero). It was adapted from the 2021-2022 competition. You may find a use from it, you may not. Its here for reference in case future teams find a need for it.</p>
-<h2><a class="anchor" id="autotoc_md65"></a>
+<h2><a class="anchor" id="autotoc_md84"></a>
 TypeConversions</h2>
 <p >A library for doing all sorts of type conversions (i.e. uint to a string).</p>
-<h2><a class="anchor" id="autotoc_md66"></a>
+<h2><a class="anchor" id="autotoc_md85"></a>
 UnitConversions</h2>
 <p >A library for doing unit conversions such as feet to miles, degrees C to F, etc.</p>
-<h2><a class="anchor" id="autotoc_md67"></a>
+<h2><a class="anchor" id="autotoc_md86"></a>
 Vector</h2>
 <p >An external library the we DID NOT write. This is imported to utilize C++ Vectors </p>
 </div></div><!-- contents -->

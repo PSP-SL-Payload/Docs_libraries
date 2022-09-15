@@ -133,19 +133,19 @@ Example Test Code (change pins and such accordingly)</h1>
 <div class="line">    gps.Init();</div>
 <div class="line">       </div>
 <div class="line">    // attempt to find the location</div>
-<div class="line">    wasLocationFound = BlockUntilLocationAquired(GPS_TIME_TO_WAIT_FOR_LOCATION_MS);</div>
+<div class="line">    wasLocationFound = gps.BlockUntilLocationAquired(GPS_TIME_TO_WAIT_FOR_LOCATION_MS);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"> </div>
 <div class="line">void loop()</div>
 <div class="line">{</div>
-<div class="line">    gpsLocation location;</div>
-<div class="line">    gpsDateTime dateTime;</div>
+<div class="line">    GPS::gpsLocation location;</div>
+<div class="line">    GPS::gpsDateTime dateTime;</div>
 <div class="line">    </div>
 <div class="line">    if (wasLocationFound)</div>
 <div class="line">    {</div>
-<div class="line">        GetLocation(location);</div>
-<div class="line">        GetDateTime(dateTime);</div>
+<div class="line">        gps.GetLocation(location);</div>
+<div class="line">        gps.GetDateTime(dateTime);</div>
 <div class="line">        GPS::PrintLocation(location);</div>
 <div class="line">        GPS::PrintDateTime(dateTime);</div>
 <div class="line">    }</div>

@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['sea_5flevel_5fhpa_0',['SEA_LEVEL_HPA',['../d6/d76/class_altimeter.html#a290ac1980a4544ea5b6a5959babf7779',1,'Altimeter']]],
-  ['second_1',['second',['../dc/db2/struct_g_p_s_1_1gps_date_time.html#ac19066c35406e6abda421203dec77d56',1,'GPS::gpsDateTime::second()'],['../db/d0d/struct_logger_1_1_log_time_struct.html#ab202b3732dbdaef03630bebcdf7fb92d',1,'Logger::LogTimeStruct::second()'],['../d7/d5a/struct_radio_packet_1_1time_packet_data.html#aa20d8d6de0b5c4062e9afd96f34935f5',1,'RadioPacket::timePacketData::second()']]],
-  ['sequencenum_2',['sequenceNum',['../d5/d63/struct_serial_packets_1_1ping_packet_data.html#a30563bfc386551726ead278b12647950',1,'SerialPackets::pingPacketData']]],
-  ['serial_5fpacket_5fbuff_5fsize_3',['SERIAL_PACKET_BUFF_SIZE',['../d8/dec/class_serial_interface.html#afb7574aede1f07a4498f9023ee7d27cb',1,'SerialInterface']]],
-  ['storage_4',['storage',['../de/d3f/libs_2_vector_2examples_2_platform_i_o_2src_2main_8cpp.html#a87be20e83ef65d43452ced0b8a4b2189',1,'main.cpp']]],
-  ['storage_5farray_5',['storage_array',['../d8/dec/class_serial_interface.html#a8ab46d4a447cf149a21be6aaa8675e3c',1,'SerialInterface']]],
-  ['stringdata_6',['stringData',['../d2/d55/union_radio_packet_1_1packet_payload_type.html#a18277c76f0b1e9fdccc2d65f4c69a3c1',1,'RadioPacket::packetPayloadType']]]
+  ['latitude_0',['latitude',['../dd/d56/struct_g_p_s_1_1gps_location.html#a65b372147488a6881f831384f2de472f',1,'GPS::gpsLocation::latitude()'],['../d2/d1e/struct_packet_data_structures_1_1gps_coords_payload.html#a8d519a29dcd07a610751d003bba154f5',1,'PacketDataStructures::gpsCoordsPayload::latitude()']]],
+  ['lis3mdl_1',['lis3mdl',['../df/d2a/class_i_m_u__9_d_o_f___l_s_m6_d_s33___l_i_s3_m_d_l.html#a6b0412eb6dde031ac25fd78a469ad81e',1,'IMU_9DOF_LSM6DS33_LIS3MDL']]],
+  ['location_2',['location',['../d1/d6e/union_radio_command_handler_1_1_g_p_s_readings.html#af97fd67026e50135f00568a960322252',1,'RadioCommandHandler::GPSReadings']]],
+  ['longitude_3',['longitude',['../dd/d56/struct_g_p_s_1_1gps_location.html#abca14694f5a1d665b0a3e2ea43b91f21',1,'GPS::gpsLocation::longitude()'],['../d2/d1e/struct_packet_data_structures_1_1gps_coords_payload.html#aa049d5acf4d2d08f37696dd425e2d5d5',1,'PacketDataStructures::gpsCoordsPayload::longitude()']]],
+  ['lowest_5findex_5fof_5fgeneral_5fcommands_4',['LOWEST_INDEX_OF_GENERAL_COMMANDS',['../d0/d0f/class_radio_command_handler.html#a0ce144a9231d1c7f8ed893a7f509ef49',1,'RadioCommandHandler']]],
+  ['lowest_5findex_5fof_5fmodded_5fcommands_5',['LOWEST_INDEX_OF_MODDED_COMMANDS',['../d0/d0f/class_radio_command_handler.html#a5ceb54d8c10d9c03ecbb63fdea94bbac',1,'RadioCommandHandler']]]
 ];

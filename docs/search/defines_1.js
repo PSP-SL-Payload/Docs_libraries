@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['handshake_5fwait_5fms_0',['HANDSHAKE_WAIT_MS',['../df/d8e/_radio_8h.html#a99e4afb44a8bc976ff8f59bc133b8fbe',1,'Radio.h']]]
+  ['defined_5fpi_0',['DEFINED_PI',['../d2/d9d/_unit_conversions_8h.html#a05ade1c77ae4b64cf7e0528effa17f95',1,'UnitConversions.h']]]
 ];

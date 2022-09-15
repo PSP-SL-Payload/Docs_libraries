@@ -86,18 +86,19 @@ $(document).ready(function(){initNavTree('dd/d69/md__c___p_s_p_libraries_libs__r
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p >This class is an <code>abstract</code> class, meaning that is kind of like a template. It isn't exactly a template, because that's a specific type of class in C++ but we're using it as a template for other <a class="el" href="../../d2/d23/class_radio.html" title="The abstract class to use when creating new Radio classes Have all derived Radio classes inherit this...">Radio</a> modules. Every single function, struct, variable, etc in this class will be available in its child classes.</p>
-<h1><a class="anchor" id="autotoc_md22"></a>
+<h1><a class="anchor" id="autotoc_md35"></a>
 How does the communication work?</h1>
-<p >All the default communication is handled by 'handshakes'. What this means is that when the TX end sends a message, the RX end will reply with a 'handshake' packet that basically acknowledges that the RX end received the TX side's message.</p>
-<p >The flow of radio communication follows the general structure below. Note that different methods add/remove steps, but this is the basic cookie cutter they all follow. <code><img src="https://user-images.githubusercontent.com/67335671/186279737-8f94642f-edab-496e-82aa-776df291e12a.png" alt="RadioPackets" class="inline"/></code></p>
-<h1><a class="anchor" id="autotoc_md23"></a>
+<p >All the default communication is handled by 'handshakes'. What this means is that when the TX end sends a message, the RX end will reply with an Acknowledgement (ACK) packet that acknowledges that the RX end received the TX side's message.</p>
+<p >The flow of radio communication follows the general structure below. Note that different methods add/remove steps, but this is the basic cookie cutter they all follow. <code><img src="https://user-images.githubusercontent.com/67335671/189543905-041c6c56-d508-4729-871c-89ec9709b4d1.png" alt="Radio" class="inline"/></code></p>
+<h1><a class="anchor" id="autotoc_md36"></a>
 When should I use this class?</h1>
-<h2><a class="anchor" id="autotoc_md24"></a>
+<h2><a class="anchor" id="autotoc_md37"></a>
 Having functions that need a Radio</h2>
 <p >Any function that needs a <a class="el" href="../../d2/d23/class_radio.html" title="The abstract class to use when creating new Radio classes Have all derived Radio classes inherit this...">Radio</a> module should take this <code><a class="el" href="../../d2/d23/class_radio.html" title="The abstract class to use when creating new Radio classes Have all derived Radio classes inherit this...">Radio</a></code> class as a parameter.</p>
 <p >For example, let's say you have a method called <code>void TransmitPayloadStatus(Radio radio)</code>.</p>
 <p >Notice here I have the parameter type as <code><a class="el" href="../../d2/d23/class_radio.html" title="The abstract class to use when creating new Radio classes Have all derived Radio classes inherit this...">Radio</a></code>. This means any child class of <code><a class="el" href="../../d2/d23/class_radio.html" title="The abstract class to use when creating new Radio classes Have all derived Radio classes inherit this...">Radio</a></code> can be passed in here. We could pass in an object of <code><a class="el" href="../../d2/d95/class_radio__433_t30_d.html">Radio_433T30D</a></code>, <code>Radio_nRF24L01</code>, etc as long as the class that gets passed in is a child class of <code><a class="el" href="../../d2/d23/class_radio.html" title="The abstract class to use when creating new Radio classes Have all derived Radio classes inherit this...">Radio</a></code>.</p>
-<p >Example: </p><div class="fragment"><div class="line">foo()</div>
+<p >Example: </p><div class="fragment"><div class="line"> {C++}</div>
+<div class="line">foo()</div>
 <div class="line">{</div>
 <div class="line">  // we make an Radio_433T30D object (a child of Radio)</div>
 <div class="line">  Radio_433T30D radio;</div>
@@ -109,7 +110,7 @@ Having functions that need a Radio</h2>
 <div class="line">  </div>
 <div class="line">  ...</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md25"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md38"></a>
 Making child classes</h2>
 <p >Whenever you have a new <a class="el" href="../../d2/d23/class_radio.html" title="The abstract class to use when creating new Radio classes Have all derived Radio classes inherit this...">Radio</a> module, have the child class you make for it inherit this class.</p>
 <p >For example, let's say I'm making a new child class for the nRF24L01 <a class="el" href="../../d2/d23/class_radio.html" title="The abstract class to use when creating new Radio classes Have all derived Radio classes inherit this...">Radio</a> module.</p><ol type="1">
@@ -118,67 +119,199 @@ Making child classes</h2>
 </ol>
 <p >Any abstract function in the <code><a class="el" href="../../d2/d23/class_radio.html" title="The abstract class to use when creating new Radio classes Have all derived Radio classes inherit this...">Radio</a></code> class needs to implemented in the <code>Radio_nRF24L01</code> class. You can find these by looking at all the fuctions of this general format in the header file <code>virtual void foo() = 0;</code></p>
 <p >Now your child class can be used in the control loop while changing virtually nothing because its functionality is the same as other <a class="el" href="../../d2/d23/class_radio.html" title="The abstract class to use when creating new Radio classes Have all derived Radio classes inherit this...">Radio</a> classes.</p>
-<h1><a class="anchor" id="autotoc_md26"></a>
+<h1><a class="anchor" id="autotoc_md39"></a>
+Example Test Wiring (change wiring according to module you are using)</h1>
+<p >Here is an example wiring you can use with the code found below. This example uses the E32_433T30D modules but you can sub in whatever module you want to test (hange the wiring). Note that you won't get much range if you source 5V from the Arduino as it likely can't supply as much as the radios require.</p>
+<p ><code><img src="https://user-images.githubusercontent.com/67335671/189722543-a39d3708-6d4c-4efa-9b4f-e426c36e17a3.png" alt="image" class="inline"/></code></p>
+<h1><a class="anchor" id="autotoc_md40"></a>
 Example Test Code (change pins and such accordingly)</h1>
-<div class="fragment"><div class="line">#include &lt;Arduino.h&gt;</div>
-<div class="line">#include &quot;RadioPacket.h&quot;</div>
-<div class="line">#include childClass</div>
+<p >This is example code for the schematic shown above. It is written for the E32_433T30D but can easily be changed to another radio class.</p>
+<div class="fragment"><div class="line"> {C++}</div>
+<div class="line">#include &lt;Arduino.h&gt;</div>
+<div class="line">#include &quot;Radio_433T30D.h&quot;</div>
 <div class="line"> </div>
-<div class="line">// TODO: change childClass to respective child class, ex: Radio_433T30D</div>
-<div class="line"> </div>
-<div class="line">#define RADIO_M0_PIN 6</div>
+<div class="line">#define RADIO_AUX_PIN 6</div>
+<div class="line">#define RADIO_M0_PIN 8</div>
 <div class="line">#define RADIO_M1_PIN 7</div>
-<div class="line">#define RADIO_AUX_PIN 8</div>
 <div class="line"> </div>
-<div class="line">childClass radio;</div>
-<div class="line">RadioPacket packetReceived;</div>
+<div class="line">Radio_433T30D radio;</div>
+<div class="line">RadioPacket   receivedPacket; </div>
 <div class="line"> </div>
 <div class="line">void setup()</div>
 <div class="line">{</div>
 <div class="line">    Serial.begin(9600);</div>
-<div class="line">    radio.Init(&amp;Serial1, RADIO_AUX_PIN, RADIO_M0_PIN, RADIO_M1_PIN);</div>
+<div class="line"> </div>
+<div class="line">    // Initialize the radio. This one has the address set to &#39;GCS&#39; but it can be anything so long as its unique.</div>
+<div class="line">    radio.Init(&amp;Serial1, RADIO_AUX_PIN, RADIO_M0_PIN, RADIO_M1_PIN, RadioPacket::RadioAddress::GCS);</div>
 <div class="line">}</div>
+<div class="line"> </div>
 <div class="line"> </div>
 <div class="line">void loop()</div>
 <div class="line">{</div>
 <div class="line">    // receive packets with a 2000 ms timeout</div>
-<div class="line">    if (radio.ReceivePacketBlocking(packetReceived, 2000))</div>
+<div class="line">    if (radio.ReceivePacketBlocking(receivedPacket, 2000))</div>
 <div class="line">    {</div>
 <div class="line">        Serial.println(&quot;Packet Received!&quot;);</div>
 <div class="line">        </div>
-<div class="line">        packetReceived.PrintAllPacketData();</div>
+<div class="line">        receivedPacket.PrintAllPacketData();</div>
+<div class="line">    }</div>
+<div class="line">    else</div>
+<div class="line">    {</div>
+<div class="line">        Serial.println(&quot;No Packet Available&quot;);</div>
 <div class="line">    }</div>
 <div class="line">}</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md27"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md41"></a>
 Transmitter</h3>
-<div class="fragment"><div class="line">#include &lt;Arduino.h&gt;</div>
-<div class="line">#include &quot;RadioPacket.h&quot;</div>
-<div class="line">#include childClass</div>
+<div class="fragment"><div class="line"> {C++}</div>
+<div class="line">#include &lt;Arduino.h&gt;</div>
+<div class="line">#include &quot;Radio_433T30D.h&quot;</div>
 <div class="line"> </div>
-<div class="line">// TODO: change childClass to respective child class, ex: Radio_433T30D</div>
-<div class="line"> </div>
+<div class="line">#define RADIO_AUX_PIN 5</div>
 <div class="line">#define RADIO_M0_PIN 6</div>
 <div class="line">#define RADIO_M1_PIN 7</div>
-<div class="line">#define RADIO_AUX_PIN 8</div>
 <div class="line"> </div>
-<div class="line">childClass radio;</div>
-<div class="line">RadioPacket packetToSend;</div>
+<div class="line">#define EXPECT_ACK true</div>
+<div class="line">#define DONT_EXPECT_ACK false</div>
+<div class="line">#define PAYLOAD_DATA_VALID true</div>
+<div class="line">#define PAYLOAD_DATA_NOT_VALID false</div>
+<div class="line"> </div>
+<div class="line">Radio_433T30D radio;</div>
+<div class="line">RadioPacket   packetToSend;</div>
+<div class="line"> </div>
+<div class="line">void SendPackets(bool shouldExpectACK);</div>
 <div class="line"> </div>
 <div class="line">void setup()</div>
 <div class="line">{</div>
 <div class="line">    Serial.begin(9600);</div>
-<div class="line">    radio.Init(&amp;Serial1, RADIO_AUX_PIN, RADIO_M0_PIN, RADIO_M1_PIN);</div>
-<div class="line">    </div>
-<div class="line">    uint32_t ints[4] = {162462, 126552309, 89792875, 98279847};</div>
-<div class="line">    packetToSend.SetPacketData(RadioPacket::PacketPayloadTypes::Int32, true, true, ints);</div>
+<div class="line"> </div>
+<div class="line">    // Initialize the radio. This one has the address set to &#39;Payload0&#39; but it can be anything so long as its unique.</div>
+<div class="line">    radio.Init(&amp;Serial1, RADIO_AUX_PIN, RADIO_M0_PIN, RADIO_M1_PIN, RadioPacket::RadioAddress::Payload0);</div>
+<div class="line"> </div>
 <div class="line">}</div>
+<div class="line"> </div>
 <div class="line"> </div>
 <div class="line">void loop()</div>
 <div class="line">{</div>
-<div class="line">    // send the packet with 3 retries</div>
-<div class="line">    if (radio.SendPacketBlocking(packetToSend, 3))</div>
+<div class="line">    Serial.println(&quot;Sending Packets (With ACK)&quot;);</div>
+<div class="line">    SendPackets(EXPECT_ACK);</div>
+<div class="line">    </div>
+<div class="line"> </div>
+<div class="line">    Serial.println(&quot;Sending Packets (Without ACK)&quot;);</div>
+<div class="line">    SendPackets(DONT_EXPECT_ACK);</div>
+<div class="line">    </div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">/**</div>
+<div class="line"> * @brief This function just goes through and sends one of each type of packet.</div>
+<div class="line"> * </div>
+<div class="line"> * @param shouldExpectACK whether or not to expect an ACK packet in return for each sent packet</div>
+<div class="line"> */</div>
+<div class="line">void SendPackets(bool shouldExpectACK)</div>
+<div class="line">{</div>
+<div class="line">    for (uint8_t i = 0; i &lt; 8; i++)</div>
 <div class="line">    {</div>
-<div class="line">        Serial.println(&quot;Radio packet sent successfully!&quot;);</div>
+<div class="line">        if (i == 0)</div>
+<div class="line">        {</div>
+<div class="line">            // Set float type packet</div>
+<div class="line">            float floats[4] = {21.1848, 309.5891, 0.0, -913.583};</div>
+<div class="line"> </div>
+<div class="line">            if (!packetToSend.SetPacketData(RadioPacket::PacketPayloadTypes::Float, PAYLOAD_DATA_VALID, true, RadioPacket::RadioAddress::GCS, floats, shouldExpectACK))</div>
+<div class="line">            {</div>
+<div class="line">                Serial.println(&quot;Error Setting Packet Data&quot;);</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">        else if (i == 1)</div>
+<div class="line">        {</div>
+<div class="line">            // Set double type packet</div>
+<div class="line">            double doubles[2] = {21141.1848, -91433.583};</div>
+<div class="line"> </div>
+<div class="line">            if (!packetToSend.SetPacketData(RadioPacket::PacketPayloadTypes::Double, PAYLOAD_DATA_VALID, true, RadioPacket::RadioAddress::GCS, doubles, shouldExpectACK))</div>
+<div class="line">            {</div>
+<div class="line">                Serial.println(&quot;Error Setting Packet Data&quot;);</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">        else if (i == 2)</div>
+<div class="line">        {</div>
+<div class="line">            // Set uint32_t type packet</div>
+<div class="line">            uint32_t ints[4] = {162462, 126552309, 89792875, 98279847};</div>
+<div class="line"> </div>
+<div class="line">            if (!packetToSend.SetPacketData(RadioPacket::PacketPayloadTypes::UInt32, PAYLOAD_DATA_VALID, true, RadioPacket::RadioAddress::GCS, ints, shouldExpectACK))</div>
+<div class="line">            {</div>
+<div class="line">                Serial.println(&quot;Error Setting Packet Data&quot;);</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">        else if (i == 3)</div>
+<div class="line">        {</div>
+<div class="line">            // Set uint16_t type packet</div>
+<div class="line">            uint16_t ints[8] = {1624, 12655, 8979, 9827, 0, 1, 4189, 9999};</div>
+<div class="line"> </div>
+<div class="line">            if (!packetToSend.SetPacketData(RadioPacket::PacketPayloadTypes::UInt16, PAYLOAD_DATA_VALID, true, RadioPacket::RadioAddress::GCS, ints, shouldExpectACK))</div>
+<div class="line">            {</div>
+<div class="line">                Serial.println(&quot;Error Setting Packet Data&quot;);</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">        else if (i == 4)</div>
+<div class="line">        {</div>
+<div class="line">            // Set uint8_t type packet</div>
+<div class="line">            uint8_t ints[16] = {255, 0, 11, 126, 1, 2, 20, 200, 250, 125, 100, 50, 6, 7, 8, 9};</div>
+<div class="line"> </div>
+<div class="line">            if (!packetToSend.SetPacketData(RadioPacket::PacketPayloadTypes::UInt8, PAYLOAD_DATA_VALID, true, RadioPacket::RadioAddress::GCS, ints, shouldExpectACK))</div>
+<div class="line">            {</div>
+<div class="line">                Serial.println(&quot;Error Setting Packet Data&quot;);</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">        else if (i == 5)</div>
+<div class="line">        {</div>
+<div class="line">            // Set String type packet</div>
+<div class="line">            char stringy[16] = &quot;Hello World!&quot;;</div>
+<div class="line"> </div>
+<div class="line">            if (!packetToSend.SetPacketData(RadioPacket::PacketPayloadTypes::String, PAYLOAD_DATA_VALID, true, RadioPacket::RadioAddress::GCS, stringy, shouldExpectACK))</div>
+<div class="line">            {</div>
+<div class="line">                Serial.println(&quot;Error Setting Packet Data&quot;);</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">        else if (i == 6)</div>
+<div class="line">        {</div>
+<div class="line">            // Set Time type packet (mimics getting the time from a GPS or RTC)</div>
+<div class="line">            RadioPacket::timePayload time;</div>
+<div class="line">            time.year         = 2022;</div>
+<div class="line">            time.month        = 9;</div>
+<div class="line">            time.day          = 12;</div>
+<div class="line">            time.hour         = 3;</div>
+<div class="line">            time.minute       = 38;</div>
+<div class="line">            time.second       = 12;</div>
+<div class="line">            time.milliseconds = 46;</div>
+<div class="line"> </div>
+<div class="line">            if (!packetToSend.SetPacketData(RadioPacket::PacketPayloadTypes::Time, PAYLOAD_DATA_VALID, true, RadioPacket::RadioAddress::GCS, &amp;time, shouldExpectACK))</div>
+<div class="line">            {</div>
+<div class="line">                Serial.println(&quot;Error Setting Packet Data&quot;);</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">        else if (i == 7)</div>
+<div class="line">        {</div>
+<div class="line">            // Set Time type packet (mimics getting the time from a GPS or RTC)</div>
+<div class="line">            RadioPacket::gpsCoordsPayload gpsCoords;</div>
+<div class="line">            gpsCoords.latitude  = -90.74281;</div>
+<div class="line">            gpsCoords.longitude = 127.18891;</div>
+<div class="line">            gpsCoords.numSats   = 15;</div>
+<div class="line"> </div>
+<div class="line">            if (!packetToSend.SetPacketData(RadioPacket::PacketPayloadTypes::GPSCoords, PAYLOAD_DATA_VALID, true, RadioPacket::RadioAddress::GCS, &amp;gpsCoords, shouldExpectACK))</div>
+<div class="line">            {</div>
+<div class="line">                Serial.println(&quot;Error Setting Packet Data&quot;);</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">        // send the packet with 3 retries</div>
+<div class="line">        if (radio.SendPacketBlocking(packetToSend, 3))</div>
+<div class="line">        {</div>
+<div class="line">            Serial.println(&quot;Radio packet sent successfully!&quot;);</div>
+<div class="line">        }</div>
+<div class="line">        else</div>
+<div class="line">        {</div>
+<div class="line">            Serial.println(&quot;Radio packet not ACK&#39;d&quot;);</div>
+<div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div></div><!-- contents -->

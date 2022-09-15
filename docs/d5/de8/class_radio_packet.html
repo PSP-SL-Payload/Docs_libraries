@@ -83,148 +83,179 @@ $(document).ready(function(){initNavTree('d5/de8/class_radio_packet.html','../..
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="../../df/db2/class_radio_packet-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">RadioPacket Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
+<p>The class to create a <a class="el" href="../../d5/de8/class_radio_packet.html" title="The class to create a RadioPacket. This is the packet that is universally sent for each radio transac...">RadioPacket</a>. This is the packet that is universally sent for each radio transaction.  
+ <a href="../../d5/de8/class_radio_packet.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="../../d2/da2/_radio_packet_8h_source.html">RadioPacket.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for RadioPacket:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="../../d5/de8/class_radio_packet.png" usemap="#RadioPacket_map" alt=""/>
+  <map id="RadioPacket_map" name="RadioPacket_map">
+<area href="../../d0/d71/class_packet_header.html" title="The class to manipulate the Radio Packet Header." alt="PacketHeader" shape="rect" coords="0,56,134,80"/>
+<area href="../../d6/d56/class_packet_data_structures.html" title="The class to define all data structures used in a RadioPacket . Important - Please note that we creat..." alt="PacketDataStructures" shape="rect" coords="0,0,134,24"/>
+  </map>
+</div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d64/struct_radio_packet_1_1gps_coords_packet_data.html">gpsCoordsPacketData</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The payload structure for <a class="el" href="../../d1/d58/class_g_p_s.html" title="The abstract class to use when creating new GPS classes Have all derived GPS classes inherit this cla...">GPS</a> data NOTE: The properties are arranged in a specific order to make this struct 16 bytes wide. DO NOT change the width or order of properties. ALL payload data structs MUST be 16 bytes wide Also #pragma pack(1) was used before, but the ILI9341 TFT display seg faults whenever pragma pack is used here... can't figure out why.  <a href="../../df/d64/struct_radio_packet_1_1gps_coords_packet_data.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/union_radio_packet_1_1packet_payload_type.html">packetPayloadType</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">selects payload type sent one of the types below is sent as the payload in a <a class="el" href="../../d5/dc4/struct_radio_packet_1_1radio_packet.html" title="This is the packet that is sent universally ALWAYS 17 bytes wide (16 bytes of data and 1 byte for fla...">radioPacket</a>  <a href="../../d2/d55/union_radio_packet_1_1packet_payload_type.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc4/struct_radio_packet_1_1radio_packet.html">radioPacket</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the packet that is sent universally ALWAYS 17 bytes wide (16 bytes of data and 1 byte for flag bits) Without #pragma pack(1), this structure is actually 24 bytes, but the contents add to 17 (cause of padding)  <a href="../../d5/dc4/struct_radio_packet_1_1radio_packet.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/struct_radio_packet_1_1time_packet_data.html">timePacketData</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The payload structure for time data NOTE: The properties are arranged in a specific order to make this struct 16 bytes wide. DO NOT change the width or order of properties. ALL payload data structs MUST be 16 bytes wide Also #pragma pack(1) was used before, but the ILI9341 TFT display seg faults whenever pragma pack is used here... can't figure out why.  <a href="../../d7/d5a/struct_radio_packet_1_1time_packet_data.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a5a7be65f764c7136a7807392383e28f4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de8/class_radio_packet.html#a5a7be65f764c7136a7807392383e28f4">PacketPayloadTypes</a> { <br />
-&#160;&#160;<a class="el" href="../../d5/de8/class_radio_packet.html#a5a7be65f764c7136a7807392383e28f4a3d16b1af6457c4429286faeadc0ee27f">Float</a> = 0
-, <a class="el" href="../../d5/de8/class_radio_packet.html#a5a7be65f764c7136a7807392383e28f4aa824f472c50c212cdefa3318d62d8135">Double</a> = 1
-, <a class="el" href="../../d5/de8/class_radio_packet.html#a5a7be65f764c7136a7807392383e28f4aecb078c978a14ddfe24a22f35bf85fc2">Int32</a> = 2
-, <a class="el" href="../../d5/de8/class_radio_packet.html#a5a7be65f764c7136a7807392383e28f4add227733826ee3e53c49c76afe2792d7">Int16</a> = 3
-, <br />
-&#160;&#160;<a class="el" href="../../d5/de8/class_radio_packet.html#a5a7be65f764c7136a7807392383e28f4ab96bef2ffcd3452fefa522c46fb97c39">Int8</a> = 4
-, <a class="el" href="../../d5/de8/class_radio_packet.html#a5a7be65f764c7136a7807392383e28f4a2d0db8828abaed9b27c2ae65c33d12a0">String</a> = 5
-, <a class="el" href="../../d5/de8/class_radio_packet.html#a5a7be65f764c7136a7807392383e28f4a459bd23dcaae87285e5f1c05bb52c528">Time</a> = 6
-, <a class="el" href="../../d5/de8/class_radio_packet.html#a5a7be65f764c7136a7807392383e28f4acddd17a1fdb4f6365fc9c61ce6521ee4">GPSCoords</a> = 7
-, <br />
-&#160;&#160;<a class="el" href="../../d5/de8/class_radio_packet.html#a5a7be65f764c7136a7807392383e28f4a58bfef99bd10934b86836021d180d7de">Handshake</a> = 8
-, <a class="el" href="../../d5/de8/class_radio_packet.html#a5a7be65f764c7136a7807392383e28f4a777a58e115f66dd2287b34c5553e1e9a">Stage</a> = 9
-<br />
- }</td></tr>
-<tr class="memdesc:a5a7be65f764c7136a7807392383e28f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">All the supported kinds of packets that can be sent and received NOTE: When you add a new packet, don't change the numbers of any existing packets.  <a href="../../d5/de8/class_radio_packet.html#a5a7be65f764c7136a7807392383e28f4">More...</a><br /></td></tr>
-<tr class="separator:a5a7be65f764c7136a7807392383e28f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:acc7ed23504700fcce262a725bab379d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de8/class_radio_packet.html#acc7ed23504700fcce262a725bab379d0">RadioPacket</a> (void *inputStruct)</td></tr>
-<tr class="memdesc:acc7ed23504700fcce262a725bab379d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="../../d5/de8/class_radio_packet.html">RadioPacket</a> object. Parses the inputStruct received from the 433T30D radio and sets the data in the object.  <a href="../../d5/de8/class_radio_packet.html#acc7ed23504700fcce262a725bab379d0">More...</a><br /></td></tr>
+<tr class="memdesc:acc7ed23504700fcce262a725bab379d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="../../d5/de8/class_radio_packet.html" title="The class to create a RadioPacket. This is the packet that is universally sent for each radio transac...">RadioPacket</a> object. Parses the inputStruct received from the 433T30D radio and sets the data in the object.  <a href="../../d5/de8/class_radio_packet.html#acc7ed23504700fcce262a725bab379d0">More...</a><br /></td></tr>
 <tr class="separator:acc7ed23504700fcce262a725bab379d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd287841467904dae38b3a2239edb4ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de8/class_radio_packet.html#acd287841467904dae38b3a2239edb4ba">RadioPacket</a> (<a class="el" href="../../d5/de8/class_radio_packet.html#a5a7be65f764c7136a7807392383e28f4">PacketPayloadTypes</a> type, bool bool1, bool bool2, void *data=nullptr)</td></tr>
-<tr class="memdesc:acd287841467904dae38b3a2239edb4ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="../../d5/de8/class_radio_packet.html">RadioPacket</a> object with the given data.  <a href="../../d5/de8/class_radio_packet.html#acd287841467904dae38b3a2239edb4ba">More...</a><br /></td></tr>
-<tr class="separator:acd287841467904dae38b3a2239edb4ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc843ab699bbf03f8231a1e421370369"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de8/class_radio_packet.html#abc843ab699bbf03f8231a1e421370369">RadioPacket</a> (uint8_t allFlagBits, void *data)</td></tr>
-<tr class="memdesc:abc843ab699bbf03f8231a1e421370369"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="../../d5/de8/class_radio_packet.html">RadioPacket</a> object with the given data.  <a href="../../d5/de8/class_radio_packet.html#abc843ab699bbf03f8231a1e421370369">More...</a><br /></td></tr>
-<tr class="separator:abc843ab699bbf03f8231a1e421370369"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15a22d52fa88b3037c21818e5bec66ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de8/class_radio_packet.html#a15a22d52fa88b3037c21818e5bec66ea">RadioPacket</a> (<a class="el" href="../../d6/d56/class_packet_data_structures.html#af19b40e5093b9a2c23cb4b5075bd2150">PacketPayloadTypes</a> type, bool isPayloadValid, bool extraBool, <a class="el" href="../../d6/d56/class_packet_data_structures.html#af1320a6456273d40a20a6402a1a6857f">RadioAddress</a> destAddress, void *data=nullptr, bool expectACK=true)</td></tr>
+<tr class="memdesc:a15a22d52fa88b3037c21818e5bec66ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="../../d5/de8/class_radio_packet.html" title="The class to create a RadioPacket. This is the packet that is universally sent for each radio transac...">RadioPacket</a> object with the given data.  <a href="../../d5/de8/class_radio_packet.html#a15a22d52fa88b3037c21818e5bec66ea">More...</a><br /></td></tr>
+<tr class="separator:a15a22d52fa88b3037c21818e5bec66ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affa541f9653fa4a5e752880c167b4251"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de8/class_radio_packet.html#affa541f9653fa4a5e752880c167b4251">RadioPacket</a> (uint16_t header, void *data)</td></tr>
+<tr class="memdesc:affa541f9653fa4a5e752880c167b4251"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="../../d5/de8/class_radio_packet.html" title="The class to create a RadioPacket. This is the packet that is universally sent for each radio transac...">RadioPacket</a> object with the given data.  <a href="../../d5/de8/class_radio_packet.html#affa541f9653fa4a5e752880c167b4251">More...</a><br /></td></tr>
+<tr class="separator:affa541f9653fa4a5e752880c167b4251"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c7b35b9d07c79eac9b6024e27f0f4de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de8/class_radio_packet.html#a0c7b35b9d07c79eac9b6024e27f0f4de">RadioPacket</a> ()</td></tr>
 <tr class="memdesc:a0c7b35b9d07c79eac9b6024e27f0f4de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor - doesn't populate with any data.  <a href="../../d5/de8/class_radio_packet.html#a0c7b35b9d07c79eac9b6024e27f0f4de">More...</a><br /></td></tr>
 <tr class="separator:a0c7b35b9d07c79eac9b6024e27f0f4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a904c20e7ab150c6fb57c402a2402784b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de8/class_radio_packet.html#a904c20e7ab150c6fb57c402a2402784b">SetPacketData</a> (<a class="el" href="../../d5/de8/class_radio_packet.html#a5a7be65f764c7136a7807392383e28f4">PacketPayloadTypes</a> type, bool bool1, bool bool2, void *payloadData)</td></tr>
-<tr class="memdesc:a904c20e7ab150c6fb57c402a2402784b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the paylaod data and flag byte of the packet.  <a href="../../d5/de8/class_radio_packet.html#a904c20e7ab150c6fb57c402a2402784b">More...</a><br /></td></tr>
-<tr class="separator:a904c20e7ab150c6fb57c402a2402784b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36b2813f410b334847c78c31b5b7fdc5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de8/class_radio_packet.html#a36b2813f410b334847c78c31b5b7fdc5">SetPacketData</a> (uint8_t allFlagBits, void *payloadData)</td></tr>
-<tr class="memdesc:a36b2813f410b334847c78c31b5b7fdc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the paylaod data and flag byte of the packet.  <a href="../../d5/de8/class_radio_packet.html#a36b2813f410b334847c78c31b5b7fdc5">More...</a><br /></td></tr>
-<tr class="separator:a36b2813f410b334847c78c31b5b7fdc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7114f07ca5eed6d16af552ff2ad517ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de8/class_radio_packet.html#a7114f07ca5eed6d16af552ff2ad517ed">SetPacketBools</a> (bool bool1, bool bool2)</td></tr>
-<tr class="memdesc:a7114f07ca5eed6d16af552ff2ad517ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets bits [5:4] of the flag bits. These are the two bools sent with the packet flags Does not overwrite other flag values, only sets the two bools.  <a href="../../d5/de8/class_radio_packet.html#a7114f07ca5eed6d16af552ff2ad517ed">More...</a><br /></td></tr>
-<tr class="separator:a7114f07ca5eed6d16af552ff2ad517ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b6cfbc38cd6b1e764b621be97037352"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de8/class_radio_packet.html#a1b6cfbc38cd6b1e764b621be97037352">SetPacketBool1</a> (bool bool1)</td></tr>
-<tr class="memdesc:a1b6cfbc38cd6b1e764b621be97037352"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets bit [4] of the flag bits. This is bool1 sent with the packet flags Does not overwrite other flag values, only sets the bool1.  <a href="../../d5/de8/class_radio_packet.html#a1b6cfbc38cd6b1e764b621be97037352">More...</a><br /></td></tr>
-<tr class="separator:a1b6cfbc38cd6b1e764b621be97037352"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28b2ac0deb002a187ef0a8ccbd710fc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de8/class_radio_packet.html#a28b2ac0deb002a187ef0a8ccbd710fc3">SetPacketBool2</a> (bool bool2)</td></tr>
-<tr class="memdesc:a28b2ac0deb002a187ef0a8ccbd710fc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets bit [5] of the flag bits. This is bool2 sent with the packet flags Does not overwrite other flag values, only sets the bool2.  <a href="../../d5/de8/class_radio_packet.html#a28b2ac0deb002a187ef0a8ccbd710fc3">More...</a><br /></td></tr>
-<tr class="separator:a28b2ac0deb002a187ef0a8ccbd710fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2be41d117dd4be0974b8a351463055ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/de8/class_radio_packet.html#a5a7be65f764c7136a7807392383e28f4">PacketPayloadTypes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de8/class_radio_packet.html#a2be41d117dd4be0974b8a351463055ae">GetPacketType</a> ()</td></tr>
-<tr class="memdesc:a2be41d117dd4be0974b8a351463055ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns what type of data the packet contains according to PacketTypes enum These are flag bits [3:0].  <a href="../../d5/de8/class_radio_packet.html#a2be41d117dd4be0974b8a351463055ae">More...</a><br /></td></tr>
-<tr class="separator:a2be41d117dd4be0974b8a351463055ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48359badb6fbce9f689b60c9cc7f04be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de8/class_radio_packet.html#a48359badb6fbce9f689b60c9cc7f04be">GetPacketBool1</a> ()</td></tr>
-<tr class="memdesc:a48359badb6fbce9f689b60c9cc7f04be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of bool1 in the packet flags This is flag bit [4].  <a href="../../d5/de8/class_radio_packet.html#a48359badb6fbce9f689b60c9cc7f04be">More...</a><br /></td></tr>
-<tr class="separator:a48359badb6fbce9f689b60c9cc7f04be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cde418d6c9c5380abea309f0601053a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de8/class_radio_packet.html#a7cde418d6c9c5380abea309f0601053a">GetPacketBool2</a> ()</td></tr>
-<tr class="memdesc:a7cde418d6c9c5380abea309f0601053a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of bool2 in the packet flags This is flag bit [5].  <a href="../../d5/de8/class_radio_packet.html#a7cde418d6c9c5380abea309f0601053a">More...</a><br /></td></tr>
-<tr class="separator:a7cde418d6c9c5380abea309f0601053a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34954bf164ed883c438f174f8c3bde0b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de8/class_radio_packet.html#a34954bf164ed883c438f174f8c3bde0b">SetPacketData</a> (<a class="el" href="../../d6/d56/class_packet_data_structures.html#af19b40e5093b9a2c23cb4b5075bd2150">PacketPayloadTypes</a> type, bool isPayloadValid, bool extraBool, <a class="el" href="../../d6/d56/class_packet_data_structures.html#af1320a6456273d40a20a6402a1a6857f">RadioAddress</a> destAddress, void *payloadData, bool expectACK=true)</td></tr>
+<tr class="memdesc:a34954bf164ed883c438f174f8c3bde0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the paylaod and header data of the packet.  <a href="../../d5/de8/class_radio_packet.html#a34954bf164ed883c438f174f8c3bde0b">More...</a><br /></td></tr>
+<tr class="separator:a34954bf164ed883c438f174f8c3bde0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57d1cb67f3a6513ef9f04ff9c20106b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de8/class_radio_packet.html#a57d1cb67f3a6513ef9f04ff9c20106b0">SetPacketData</a> (uint16_t header, void *payloadData)</td></tr>
+<tr class="memdesc:a57d1cb67f3a6513ef9f04ff9c20106b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the payload and header data of the packet.  <a href="../../d5/de8/class_radio_packet.html#a57d1cb67f3a6513ef9f04ff9c20106b0">More...</a><br /></td></tr>
+<tr class="separator:a57d1cb67f3a6513ef9f04ff9c20106b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6686e97d2e08cade8da91118bd2ffff0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de8/class_radio_packet.html#a6686e97d2e08cade8da91118bd2ffff0">GetPacketPayload</a> (void *data)</td></tr>
+<tr class="memdesc:a6686e97d2e08cade8da91118bd2ffff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the data stored in the packet's payload.  <a href="../../d5/de8/class_radio_packet.html#a6686e97d2e08cade8da91118bd2ffff0">More...</a><br /></td></tr>
+<tr class="separator:a6686e97d2e08cade8da91118bd2ffff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01047ace102e6892b9697335c799f832"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de8/class_radio_packet.html#a01047ace102e6892b9697335c799f832">ParsePacket</a> (void *inputStruct)</td></tr>
 <tr class="memdesc:a01047ace102e6892b9697335c799f832"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses radio data received (inputStruct) into the packet.  <a href="../../d5/de8/class_radio_packet.html#a01047ace102e6892b9697335c799f832">More...</a><br /></td></tr>
 <tr class="separator:a01047ace102e6892b9697335c799f832"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac940ca552de756cdcdf0563b3f3a5c71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de8/class_radio_packet.html#ac940ca552de756cdcdf0563b3f3a5c71">PrintAllPacketData</a> (char *flagBitLine=nullptr, char *payloadLine=nullptr)</td></tr>
-<tr class="memdesc:ac940ca552de756cdcdf0563b3f3a5c71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints all the packet data. Prints the flag byte first, then the payload data.  <a href="../../d5/de8/class_radio_packet.html#ac940ca552de756cdcdf0563b3f3a5c71">More...</a><br /></td></tr>
-<tr class="separator:ac940ca552de756cdcdf0563b3f3a5c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0cc63ee9b041c9ef24e5122caf41e75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de8/class_radio_packet.html#ac0cc63ee9b041c9ef24e5122caf41e75">PrintAllPacketData</a> (char *headerLine=nullptr, char *payloadLine=nullptr)</td></tr>
+<tr class="memdesc:ac0cc63ee9b041c9ef24e5122caf41e75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints all the packet data. Prints the header byte first, then the payload data.  <a href="../../d5/de8/class_radio_packet.html#ac0cc63ee9b041c9ef24e5122caf41e75">More...</a><br /></td></tr>
+<tr class="separator:ac0cc63ee9b041c9ef24e5122caf41e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0c910677213c9e7c1a8641a549c5fc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de8/class_radio_packet.html#ad0c910677213c9e7c1a8641a549c5fc3">PrintPacketPayload</a> (char *payloadLine=nullptr)</td></tr>
 <tr class="memdesc:ad0c910677213c9e7c1a8641a549c5fc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the packet payload.  <a href="../../d5/de8/class_radio_packet.html#ad0c910677213c9e7c1a8641a549c5fc3">More...</a><br /></td></tr>
 <tr class="separator:ad0c910677213c9e7c1a8641a549c5fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a358661ca8159098c184dcc979434df03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de8/class_radio_packet.html#a358661ca8159098c184dcc979434df03">PrintPacketFlagBits</a> (char *flagBitLine=nullptr)</td></tr>
-<tr class="memdesc:a358661ca8159098c184dcc979434df03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the packet flag byte (all the flag bits)  <a href="../../d5/de8/class_radio_packet.html#a358661ca8159098c184dcc979434df03">More...</a><br /></td></tr>
-<tr class="separator:a358661ca8159098c184dcc979434df03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_packet_header"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_packet_header')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d0/d71/class_packet_header.html">PacketHeader</a></td></tr>
+<tr class="memitem:a8585b1e09079ff4cd1205ea6ada47fd8 inherit pub_methods_class_packet_header"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d71/class_packet_header.html#a8585b1e09079ff4cd1205ea6ada47fd8">SetPacketBools</a> (bool isPayloadValid, bool extraBool)</td></tr>
+<tr class="memdesc:a8585b1e09079ff4cd1205ea6ada47fd8 inherit pub_methods_class_packet_header"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets bits [5:4] of the header. These are the two bools sent with the packet header. Does not overwrite other header bit values, only sets the two bools.  <a href="../../d0/d71/class_packet_header.html#a8585b1e09079ff4cd1205ea6ada47fd8">More...</a><br /></td></tr>
+<tr class="separator:a8585b1e09079ff4cd1205ea6ada47fd8 inherit pub_methods_class_packet_header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cd5a02b2759f74799c4fd8feb4bfec6 inherit pub_methods_class_packet_header"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d71/class_packet_header.html#a0cd5a02b2759f74799c4fd8feb4bfec6">SetPacketDataValid</a> (bool isPayloadValid)</td></tr>
+<tr class="memdesc:a0cd5a02b2759f74799c4fd8feb4bfec6 inherit pub_methods_class_packet_header"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets bit [4] of the header, marking if the packet's payload data is valid. This is the isPayloadValid bool sent with the packet header. Does not overwrite other header bit values, only sets isPayloadValid.  <a href="../../d0/d71/class_packet_header.html#a0cd5a02b2759f74799c4fd8feb4bfec6">More...</a><br /></td></tr>
+<tr class="separator:a0cd5a02b2759f74799c4fd8feb4bfec6 inherit pub_methods_class_packet_header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a239d9d93fa1253e97f479aaf96ed545a inherit pub_methods_class_packet_header"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d71/class_packet_header.html#a239d9d93fa1253e97f479aaf96ed545a">SetPacketExtraBool</a> (bool extraBool)</td></tr>
+<tr class="memdesc:a239d9d93fa1253e97f479aaf96ed545a inherit pub_methods_class_packet_header"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets bit [5] of the header. This is the extraBool sent with the packet header. Does not overwrite other header bit values, only sets the extraBool.  <a href="../../d0/d71/class_packet_header.html#a239d9d93fa1253e97f479aaf96ed545a">More...</a><br /></td></tr>
+<tr class="separator:a239d9d93fa1253e97f479aaf96ed545a inherit pub_methods_class_packet_header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac51026c5adce4b4df5db072434114773 inherit pub_methods_class_packet_header"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d71/class_packet_header.html#ac51026c5adce4b4df5db072434114773">SetPacketDestAddress</a> (<a class="el" href="../../d6/d56/class_packet_data_structures.html#af1320a6456273d40a20a6402a1a6857f">RadioAddress</a> destAddress)</td></tr>
+<tr class="memdesc:ac51026c5adce4b4df5db072434114773 inherit pub_methods_class_packet_header"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets bits [7:6] of the header. This is the destination address sent with the packet header. Does not overwrite other header bit values, only sets the destAddress.  <a href="../../d0/d71/class_packet_header.html#ac51026c5adce4b4df5db072434114773">More...</a><br /></td></tr>
+<tr class="separator:ac51026c5adce4b4df5db072434114773 inherit pub_methods_class_packet_header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a79e2351c54754080172768d147e9d8 inherit pub_methods_class_packet_header"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d71/class_packet_header.html#a6a79e2351c54754080172768d147e9d8">SetPacketSrcAddress</a> (<a class="el" href="../../d6/d56/class_packet_data_structures.html#af1320a6456273d40a20a6402a1a6857f">RadioAddress</a> srcAddress)</td></tr>
+<tr class="memdesc:a6a79e2351c54754080172768d147e9d8 inherit pub_methods_class_packet_header"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets bits [9:8] of the header. This is the source address sent with the packet header. Does not overwrite other header bit values, only sets the srcAddress.  <a href="../../d0/d71/class_packet_header.html#a6a79e2351c54754080172768d147e9d8">More...</a><br /></td></tr>
+<tr class="separator:a6a79e2351c54754080172768d147e9d8 inherit pub_methods_class_packet_header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae39a022a20a47d5f61d4d30cb5c1c71 inherit pub_methods_class_packet_header"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d71/class_packet_header.html#aae39a022a20a47d5f61d4d30cb5c1c71">SetPacketExpectAck</a> (bool shouldExpectACK)</td></tr>
+<tr class="memdesc:aae39a022a20a47d5f61d4d30cb5c1c71 inherit pub_methods_class_packet_header"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets bit1 [10] of the header. This is the bool representing expectACK - whether or not the receiver should send an ACK packet back to the transmitter. Does not overwrite other header bit values, only sets the expectACK.  <a href="../../d0/d71/class_packet_header.html#aae39a022a20a47d5f61d4d30cb5c1c71">More...</a><br /></td></tr>
+<tr class="separator:aae39a022a20a47d5f61d4d30cb5c1c71 inherit pub_methods_class_packet_header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a894912b14424a0c46b7270b61ad384 inherit pub_methods_class_packet_header"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d56/class_packet_data_structures.html#af19b40e5093b9a2c23cb4b5075bd2150">PacketPayloadTypes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d71/class_packet_header.html#a1a894912b14424a0c46b7270b61ad384">GetPayloadType</a> ()</td></tr>
+<tr class="memdesc:a1a894912b14424a0c46b7270b61ad384 inherit pub_methods_class_packet_header"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns what type of data the packet contains according to PacketTypes enum. These are header bits [3:0].  <a href="../../d0/d71/class_packet_header.html#a1a894912b14424a0c46b7270b61ad384">More...</a><br /></td></tr>
+<tr class="separator:a1a894912b14424a0c46b7270b61ad384 inherit pub_methods_class_packet_header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ca63fdde5e51ea5b84b3c5ae376861a inherit pub_methods_class_packet_header"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d56/class_packet_data_structures.html#af1320a6456273d40a20a6402a1a6857f">RadioAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d71/class_packet_header.html#a7ca63fdde5e51ea5b84b3c5ae376861a">GetPacketDestAddress</a> ()</td></tr>
+<tr class="memdesc:a7ca63fdde5e51ea5b84b3c5ae376861a inherit pub_methods_class_packet_header"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the destination address of the packet according to RadioAddress enum. These are header bits [7:6].  <a href="../../d0/d71/class_packet_header.html#a7ca63fdde5e51ea5b84b3c5ae376861a">More...</a><br /></td></tr>
+<tr class="separator:a7ca63fdde5e51ea5b84b3c5ae376861a inherit pub_methods_class_packet_header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22d1b6777a752eae9db20e6a97ba5a5f inherit pub_methods_class_packet_header"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d56/class_packet_data_structures.html#af1320a6456273d40a20a6402a1a6857f">RadioAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d71/class_packet_header.html#a22d1b6777a752eae9db20e6a97ba5a5f">GetPacketSrcAddress</a> ()</td></tr>
+<tr class="memdesc:a22d1b6777a752eae9db20e6a97ba5a5f inherit pub_methods_class_packet_header"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the source address of the packet according to RadioAddress enum. These are header bits [9:8].  <a href="../../d0/d71/class_packet_header.html#a22d1b6777a752eae9db20e6a97ba5a5f">More...</a><br /></td></tr>
+<tr class="separator:a22d1b6777a752eae9db20e6a97ba5a5f inherit pub_methods_class_packet_header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad363011ffe23c2142548bcf7dede7c3e inherit pub_methods_class_packet_header"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d71/class_packet_header.html#ad363011ffe23c2142548bcf7dede7c3e">GetIsPacketPayloadValid</a> ()</td></tr>
+<tr class="memdesc:ad363011ffe23c2142548bcf7dede7c3e inherit pub_methods_class_packet_header"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of isPayloadValid in the packet header. This is header bit [4].  <a href="../../d0/d71/class_packet_header.html#ad363011ffe23c2142548bcf7dede7c3e">More...</a><br /></td></tr>
+<tr class="separator:ad363011ffe23c2142548bcf7dede7c3e inherit pub_methods_class_packet_header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdf82337c2f4bff2287ba8d23ac3408a inherit pub_methods_class_packet_header"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d71/class_packet_header.html#abdf82337c2f4bff2287ba8d23ac3408a">GetPacketExtraBool</a> ()</td></tr>
+<tr class="memdesc:abdf82337c2f4bff2287ba8d23ac3408a inherit pub_methods_class_packet_header"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of extraBool in the packet header. This is header bit [5].  <a href="../../d0/d71/class_packet_header.html#abdf82337c2f4bff2287ba8d23ac3408a">More...</a><br /></td></tr>
+<tr class="separator:abdf82337c2f4bff2287ba8d23ac3408a inherit pub_methods_class_packet_header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22368cda39e16cd54dca859bd4d6d8cc inherit pub_methods_class_packet_header"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d71/class_packet_header.html#a22368cda39e16cd54dca859bd4d6d8cc">GetPacketExpectAck</a> ()</td></tr>
+<tr class="memdesc:a22368cda39e16cd54dca859bd4d6d8cc inherit pub_methods_class_packet_header"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of expectACK in the packet header. This marks whether or not the sender of this packet expects an ACK packet back. This is header bit [10].  <a href="../../d0/d71/class_packet_header.html#a22368cda39e16cd54dca859bd4d6d8cc">More...</a><br /></td></tr>
+<tr class="separator:a22368cda39e16cd54dca859bd4d6d8cc inherit pub_methods_class_packet_header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a561c437c38582c2b42c5a2257957c193 inherit pub_methods_class_packet_header"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d71/class_packet_header.html#a561c437c38582c2b42c5a2257957c193">PrintPacketHeader</a> (char *headerLine=nullptr)</td></tr>
+<tr class="memdesc:a561c437c38582c2b42c5a2257957c193 inherit pub_methods_class_packet_header"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the packet header.  <a href="../../d0/d71/class_packet_header.html#a561c437c38582c2b42c5a2257957c193">More...</a><br /></td></tr>
+<tr class="separator:a561c437c38582c2b42c5a2257957c193 inherit pub_methods_class_packet_header"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a7c63f5f1ac250b05bc1a665d5b59d51f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d5/de8/class_radio_packet.html#a5a7be65f764c7136a7807392383e28f4">PacketPayloadTypes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de8/class_radio_packet.html#a7c63f5f1ac250b05bc1a665d5b59d51f">GetPacketType</a> (const uint8_t flagByte)</td></tr>
-<tr class="memdesc:a7c63f5f1ac250b05bc1a665d5b59d51f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns what type of data the packet contains according to PacketTypes enum These are flag bits [3:0].  <a href="../../d5/de8/class_radio_packet.html#a7c63f5f1ac250b05bc1a665d5b59d51f">More...</a><br /></td></tr>
-<tr class="separator:a7c63f5f1ac250b05bc1a665d5b59d51f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62504b562e947c868a96277ae2788946"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de8/class_radio_packet.html#a62504b562e947c868a96277ae2788946">GetPacketBool1</a> (const uint8_t flagByte)</td></tr>
-<tr class="memdesc:a62504b562e947c868a96277ae2788946"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of bool1 in the packet flags This is flag bit [4].  <a href="../../d5/de8/class_radio_packet.html#a62504b562e947c868a96277ae2788946">More...</a><br /></td></tr>
-<tr class="separator:a62504b562e947c868a96277ae2788946"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add99dee698c4736c4428ec39bc578b3c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de8/class_radio_packet.html#add99dee698c4736c4428ec39bc578b3c">GetPacketBool2</a> (const uint8_t flagByte)</td></tr>
-<tr class="memdesc:add99dee698c4736c4428ec39bc578b3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of bool2 in the packet flags This is flag bit [5].  <a href="../../d5/de8/class_radio_packet.html#add99dee698c4736c4428ec39bc578b3c">More...</a><br /></td></tr>
-<tr class="separator:add99dee698c4736c4428ec39bc578b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a818c3b80f8524bdb58e98605f1a8d40e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de8/class_radio_packet.html#a818c3b80f8524bdb58e98605f1a8d40e">PrintPacketFlagBits</a> (const uint8_t flagByte, char *flagBitLine=nullptr)</td></tr>
-<tr class="memdesc:a818c3b80f8524bdb58e98605f1a8d40e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the packet flag byte (all the flag bits)  <a href="../../d5/de8/class_radio_packet.html#a818c3b80f8524bdb58e98605f1a8d40e">More...</a><br /></td></tr>
-<tr class="separator:a818c3b80f8524bdb58e98605f1a8d40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_class_packet_data_structures"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_packet_data_structures')"><img src="../../closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="../../d6/d56/class_packet_data_structures.html">PacketDataStructures</a></td></tr>
+<tr class="memitem:af1320a6456273d40a20a6402a1a6857f inherit pub_types_class_packet_data_structures"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d56/class_packet_data_structures.html#af1320a6456273d40a20a6402a1a6857f">RadioAddress</a> : uint8_t { <a class="el" href="../../d6/d56/class_packet_data_structures.html#af1320a6456273d40a20a6402a1a6857fae883e69e8f1a3eddbda3d505ba92ef9e">GCS</a> = 0
+, <a class="el" href="../../d6/d56/class_packet_data_structures.html#af1320a6456273d40a20a6402a1a6857fa3490d69f87ed03f630b97a3f0ba934a8">Payload0</a> = 1
+, <a class="el" href="../../d6/d56/class_packet_data_structures.html#af1320a6456273d40a20a6402a1a6857facf0fde429578aaeeb91b00b938a41db1">Payload1</a> = 2
+, <a class="el" href="../../d6/d56/class_packet_data_structures.html#af1320a6456273d40a20a6402a1a6857fab7e4b735ae9736d7efab7802f513859a">Airbrakes</a> = 3
+ }</td></tr>
+<tr class="memdesc:af1320a6456273d40a20a6402a1a6857f"><td class="mdescLeft">&#160;</td><td class="mdescRight">All the supported addresses packets can be sent to. These mark which radio should receive the packet and which ones should ignore it.  <a href="../../d6/d56/class_packet_data_structures.html#af1320a6456273d40a20a6402a1a6857f">More...</a><br /></td></tr>
+<tr class="separator:af1320a6456273d40a20a6402a1a6857f inherit pub_types_class_packet_data_structures"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af19b40e5093b9a2c23cb4b5075bd2150 inherit pub_types_class_packet_data_structures"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d56/class_packet_data_structures.html#af19b40e5093b9a2c23cb4b5075bd2150">PacketPayloadTypes</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="../../d6/d56/class_packet_data_structures.html#af19b40e5093b9a2c23cb4b5075bd2150a8104a33272e801bab5125899de7227c0">Float</a> = 0
+, <a class="el" href="../../d6/d56/class_packet_data_structures.html#af19b40e5093b9a2c23cb4b5075bd2150a89a0375d59311d95b53b5672aa16f9ea">Double</a> = 1
+, <a class="el" href="../../d6/d56/class_packet_data_structures.html#af19b40e5093b9a2c23cb4b5075bd2150a60c7c3a764012b97ebae924df82fca01">UInt32</a> = 2
+, <a class="el" href="../../d6/d56/class_packet_data_structures.html#af19b40e5093b9a2c23cb4b5075bd2150afbe158e80812dc8e909d90e719130989">UInt16</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="../../d6/d56/class_packet_data_structures.html#af19b40e5093b9a2c23cb4b5075bd2150aca4ead968ee6631cc8ba08804a2316bc">UInt8</a> = 4
+, <a class="el" href="../../d6/d56/class_packet_data_structures.html#af19b40e5093b9a2c23cb4b5075bd2150a0659ada362fd0c6bcb1e074acd0bc2f9">String</a> = 5
+, <a class="el" href="../../d6/d56/class_packet_data_structures.html#af19b40e5093b9a2c23cb4b5075bd2150afb47339ee4734209c2076db162286c96">Time</a> = 6
+, <a class="el" href="../../d6/d56/class_packet_data_structures.html#af19b40e5093b9a2c23cb4b5075bd2150a4d98d9ef840c2c3adb2b3e625ca454d9">GPSCoords</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="../../d6/d56/class_packet_data_structures.html#af19b40e5093b9a2c23cb4b5075bd2150ad561eedb533d7cfd8308b2fd3dc04fc8">ACK</a> = 8
+, <a class="el" href="../../d6/d56/class_packet_data_structures.html#af19b40e5093b9a2c23cb4b5075bd2150ab00c7bdad5101eb7db0c68a08836521d">Command</a> = 9
+<br />
+ }</td></tr>
+<tr class="memdesc:af19b40e5093b9a2c23cb4b5075bd2150"><td class="mdescLeft">&#160;</td><td class="mdescRight">All the supported kinds of packets that can be sent and received NOTE: When you add a new packet, don't change the numbers of any existing packets.  <a href="../../d6/d56/class_packet_data_structures.html#af19b40e5093b9a2c23cb4b5075bd2150">More...</a><br /></td></tr>
+<tr class="separator:af19b40e5093b9a2c23cb4b5075bd2150 inherit pub_types_class_packet_data_structures"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_class_packet_header"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_packet_header')"><img src="../../closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="../../d0/d71/class_packet_header.html">PacketHeader</a></td></tr>
+<tr class="memitem:a128be6f36b91fe03d0022594c97e4c9a inherit pub_static_methods_class_packet_header"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d6/d56/class_packet_data_structures.html#af19b40e5093b9a2c23cb4b5075bd2150">PacketPayloadTypes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d71/class_packet_header.html#a128be6f36b91fe03d0022594c97e4c9a">GetPayloadType</a> (const uint16_t header)</td></tr>
+<tr class="memdesc:a128be6f36b91fe03d0022594c97e4c9a inherit pub_static_methods_class_packet_header"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns what type of data the packet contains according to PacketTypes enum. These are header bits [3:0].  <a href="../../d0/d71/class_packet_header.html#a128be6f36b91fe03d0022594c97e4c9a">More...</a><br /></td></tr>
+<tr class="separator:a128be6f36b91fe03d0022594c97e4c9a inherit pub_static_methods_class_packet_header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51ed13b900cc9ba001bf66c2dc8a2973 inherit pub_static_methods_class_packet_header"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d6/d56/class_packet_data_structures.html#af1320a6456273d40a20a6402a1a6857f">RadioAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d71/class_packet_header.html#a51ed13b900cc9ba001bf66c2dc8a2973">GetPacketDestAddress</a> (const uint16_t header)</td></tr>
+<tr class="memdesc:a51ed13b900cc9ba001bf66c2dc8a2973 inherit pub_static_methods_class_packet_header"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the destination address of the packet according to RadioAddress enum. These are header bits [7:6].  <a href="../../d0/d71/class_packet_header.html#a51ed13b900cc9ba001bf66c2dc8a2973">More...</a><br /></td></tr>
+<tr class="separator:a51ed13b900cc9ba001bf66c2dc8a2973 inherit pub_static_methods_class_packet_header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fe00bde2cb5145d823d60d841823c5c inherit pub_static_methods_class_packet_header"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d6/d56/class_packet_data_structures.html#af1320a6456273d40a20a6402a1a6857f">RadioAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d71/class_packet_header.html#a0fe00bde2cb5145d823d60d841823c5c">GetPacketSrcAddress</a> (const uint16_t header)</td></tr>
+<tr class="memdesc:a0fe00bde2cb5145d823d60d841823c5c inherit pub_static_methods_class_packet_header"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the source address of the packet according to RadioAddress enum. These are header bits [9:8].  <a href="../../d0/d71/class_packet_header.html#a0fe00bde2cb5145d823d60d841823c5c">More...</a><br /></td></tr>
+<tr class="separator:a0fe00bde2cb5145d823d60d841823c5c inherit pub_static_methods_class_packet_header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab87b58d3bb66dd2048128a0dfabc9eba inherit pub_static_methods_class_packet_header"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d71/class_packet_header.html#ab87b58d3bb66dd2048128a0dfabc9eba">GetIsPacketPayloadValid</a> (const uint16_t header)</td></tr>
+<tr class="memdesc:ab87b58d3bb66dd2048128a0dfabc9eba inherit pub_static_methods_class_packet_header"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of isPayloadValid in the packet header. This is header bit [4].  <a href="../../d0/d71/class_packet_header.html#ab87b58d3bb66dd2048128a0dfabc9eba">More...</a><br /></td></tr>
+<tr class="separator:ab87b58d3bb66dd2048128a0dfabc9eba inherit pub_static_methods_class_packet_header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f4c3dc879b28f2a69b7b01a79c006b2 inherit pub_static_methods_class_packet_header"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d71/class_packet_header.html#a1f4c3dc879b28f2a69b7b01a79c006b2">GetPacketExtraBool</a> (const uint16_t header)</td></tr>
+<tr class="memdesc:a1f4c3dc879b28f2a69b7b01a79c006b2 inherit pub_static_methods_class_packet_header"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of extraBool in the packet header. This is header bit [5].  <a href="../../d0/d71/class_packet_header.html#a1f4c3dc879b28f2a69b7b01a79c006b2">More...</a><br /></td></tr>
+<tr class="separator:a1f4c3dc879b28f2a69b7b01a79c006b2 inherit pub_static_methods_class_packet_header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acef07a5a81a2a32570f9132448141b61 inherit pub_static_methods_class_packet_header"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d71/class_packet_header.html#acef07a5a81a2a32570f9132448141b61">GetPacketExpectAck</a> (const uint16_t header)</td></tr>
+<tr class="memdesc:acef07a5a81a2a32570f9132448141b61 inherit pub_static_methods_class_packet_header"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of expectACK in the packet header. This marks whether or not the sender of this packet expects an ACK packet back. This is header bit [10].  <a href="../../d0/d71/class_packet_header.html#acef07a5a81a2a32570f9132448141b61">More...</a><br /></td></tr>
+<tr class="separator:acef07a5a81a2a32570f9132448141b61 inherit pub_static_methods_class_packet_header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99aa4ca41bbba1161847c34886af3d65 inherit pub_static_methods_class_packet_header"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d71/class_packet_header.html#a99aa4ca41bbba1161847c34886af3d65">PrintPacketHeader</a> (const uint16_t header, char *headerLine=nullptr)</td></tr>
+<tr class="memdesc:a99aa4ca41bbba1161847c34886af3d65 inherit pub_static_methods_class_packet_header"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the packet header.  <a href="../../d0/d71/class_packet_header.html#a99aa4ca41bbba1161847c34886af3d65">More...</a><br /></td></tr>
+<tr class="separator:a99aa4ca41bbba1161847c34886af3d65 inherit pub_static_methods_class_packet_header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_packet_header"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_packet_header')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d0/d71/class_packet_header.html">PacketHeader</a></td></tr>
+<tr class="memitem:abb7671e710f326cd7915f1018d24c256 inherit pro_methods_class_packet_header"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d71/class_packet_header.html#abb7671e710f326cd7915f1018d24c256">SetPacketHeader</a> (<a class="el" href="../../d6/d56/class_packet_data_structures.html#af19b40e5093b9a2c23cb4b5075bd2150">PacketPayloadTypes</a> type, bool isPayloadValid, bool extraBool, <a class="el" href="../../d6/d56/class_packet_data_structures.html#af1320a6456273d40a20a6402a1a6857f">RadioAddress</a> destAddress, bool expectACK)</td></tr>
+<tr class="memdesc:abb7671e710f326cd7915f1018d24c256 inherit pro_methods_class_packet_header"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all header bits of the packet.  <a href="../../d0/d71/class_packet_header.html#abb7671e710f326cd7915f1018d24c256">More...</a><br /></td></tr>
+<tr class="separator:abb7671e710f326cd7915f1018d24c256 inherit pro_methods_class_packet_header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac531f43a8b7d3f7394e6011dce3a0c64 inherit pro_methods_class_packet_header"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d71/class_packet_header.html#ac531f43a8b7d3f7394e6011dce3a0c64">SetPacketHeader</a> (uint16_t header)</td></tr>
+<tr class="memdesc:ac531f43a8b7d3f7394e6011dce3a0c64 inherit pro_methods_class_packet_header"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all header bits of the packet.  <a href="../../d0/d71/class_packet_header.html#ac531f43a8b7d3f7394e6011dce3a0c64">More...</a><br /></td></tr>
+<tr class="separator:ac531f43a8b7d3f7394e6011dce3a0c64 inherit pro_methods_class_packet_header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ba4eee909e8bc263b7ba99dfbf2ba93 inherit pro_methods_class_packet_header"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d71/class_packet_header.html#a3ba4eee909e8bc263b7ba99dfbf2ba93">SetPayloadType</a> (<a class="el" href="../../d6/d56/class_packet_data_structures.html#af19b40e5093b9a2c23cb4b5075bd2150">PacketPayloadTypes</a> type)</td></tr>
+<tr class="memdesc:a3ba4eee909e8bc263b7ba99dfbf2ba93 inherit pro_methods_class_packet_header"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets bits [3:0] of the header. These signify the type of packet according to PacketTypes enum. Does not overwrite other header bit values, only sets the packet's data type.  <a href="../../d0/d71/class_packet_header.html#a3ba4eee909e8bc263b7ba99dfbf2ba93">More...</a><br /></td></tr>
+<tr class="separator:a3ba4eee909e8bc263b7ba99dfbf2ba93 inherit pro_methods_class_packet_header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_methods_class_packet_header"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_class_packet_header')"><img src="../../closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="../../d0/d71/class_packet_header.html">PacketHeader</a></td></tr>
+<tr class="memitem:a399b180c5ff14d29d4ea63f25eec5cda inherit pro_static_methods_class_packet_header"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d71/class_packet_header.html#a399b180c5ff14d29d4ea63f25eec5cda">ConvertRadioAddressNumberToPrintValue</a> (<a class="el" href="../../d6/d56/class_packet_data_structures.html#af1320a6456273d40a20a6402a1a6857f">RadioAddress</a> addressNum, char *addressStr)</td></tr>
+<tr class="separator:a399b180c5ff14d29d4ea63f25eec5cda inherit pro_static_methods_class_packet_header"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_packet_data_structures"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_packet_data_structures')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d6/d56/class_packet_data_structures.html">PacketDataStructures</a></td></tr>
+<tr class="memitem:a04863f22e6a1a8810b21b88a8caad621 inherit pro_attribs_class_packet_data_structures"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/de9/struct_packet_data_structures_1_1radio_packet.html">radioPacket</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d56/class_packet_data_structures.html#a04863f22e6a1a8810b21b88a8caad621">packet</a></td></tr>
+<tr class="separator:a04863f22e6a1a8810b21b88a8caad621 inherit pro_attribs_class_packet_data_structures"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_attribs_class_packet_data_structures"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_class_packet_data_structures')"><img src="../../closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="../../d6/d56/class_packet_data_structures.html">PacketDataStructures</a></td></tr>
+<tr class="memitem:ae19d0052c734a1735fe808d2adc7b85f inherit pro_static_attribs_class_packet_data_structures"><td class="memItemLeft" align="right" valign="top">static const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d56/class_packet_data_structures.html#ae19d0052c734a1735fe808d2adc7b85f">GCS_PRINT</a> [4] = &quot;GCS&quot;</td></tr>
+<tr class="memdesc:ae19d0052c734a1735fe808d2adc7b85f inherit pro_static_attribs_class_packet_data_structures"><td class="mdescLeft">&#160;</td><td class="mdescRight">All the supported addresses packets can be sent to in the abbreviated form that they print to This maps 1:1 to RadioAddress enum found above. Make each value 3 character (excluding null terminator).  <a href="../../d6/d56/class_packet_data_structures.html#ae19d0052c734a1735fe808d2adc7b85f">More...</a><br /></td></tr>
+<tr class="separator:ae19d0052c734a1735fe808d2adc7b85f inherit pro_static_attribs_class_packet_data_structures"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9073362ead200b95807986481ea33eb4 inherit pro_static_attribs_class_packet_data_structures"><td class="memItemLeft" align="right" valign="top">static const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d56/class_packet_data_structures.html#a9073362ead200b95807986481ea33eb4">PAYLOAD0_PRINT</a> [4] = &quot;PL0&quot;</td></tr>
+<tr class="separator:a9073362ead200b95807986481ea33eb4 inherit pro_static_attribs_class_packet_data_structures"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6ec81b37b89c30812abd8962f1953c8 inherit pro_static_attribs_class_packet_data_structures"><td class="memItemLeft" align="right" valign="top">static const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d56/class_packet_data_structures.html#ab6ec81b37b89c30812abd8962f1953c8">PAYLOAD1_PRINT</a> [4] = &quot;PL1&quot;</td></tr>
+<tr class="separator:ab6ec81b37b89c30812abd8962f1953c8 inherit pro_static_attribs_class_packet_data_structures"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40bc11e1c83779063bb3f6b867b954f3 inherit pro_static_attribs_class_packet_data_structures"><td class="memItemLeft" align="right" valign="top">static const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d56/class_packet_data_structures.html#a40bc11e1c83779063bb3f6b867b954f3">AIRBRAKES_PRINT</a> [4] = &quot;AIR&quot;</td></tr>
+<tr class="separator:a40bc11e1c83779063bb3f6b867b954f3 inherit pro_static_attribs_class_packet_data_structures"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a5a7be65f764c7136a7807392383e28f4" name="a5a7be65f764c7136a7807392383e28f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a7be65f764c7136a7807392383e28f4">&#9670;&nbsp;</a></span>PacketPayloadTypes</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="../../d5/de8/class_radio_packet.html#a5a7be65f764c7136a7807392383e28f4">RadioPacket::PacketPayloadTypes</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>All the supported kinds of packets that can be sent and received NOTE: When you add a new packet, don't change the numbers of any existing packets. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5a7be65f764c7136a7807392383e28f4a3d16b1af6457c4429286faeadc0ee27f" name="a5a7be65f764c7136a7807392383e28f4a3d16b1af6457c4429286faeadc0ee27f"></a>Float&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5a7be65f764c7136a7807392383e28f4aa824f472c50c212cdefa3318d62d8135" name="a5a7be65f764c7136a7807392383e28f4aa824f472c50c212cdefa3318d62d8135"></a>Double&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5a7be65f764c7136a7807392383e28f4aecb078c978a14ddfe24a22f35bf85fc2" name="a5a7be65f764c7136a7807392383e28f4aecb078c978a14ddfe24a22f35bf85fc2"></a>Int32&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5a7be65f764c7136a7807392383e28f4add227733826ee3e53c49c76afe2792d7" name="a5a7be65f764c7136a7807392383e28f4add227733826ee3e53c49c76afe2792d7"></a>Int16&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5a7be65f764c7136a7807392383e28f4ab96bef2ffcd3452fefa522c46fb97c39" name="a5a7be65f764c7136a7807392383e28f4ab96bef2ffcd3452fefa522c46fb97c39"></a>Int8&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5a7be65f764c7136a7807392383e28f4a2d0db8828abaed9b27c2ae65c33d12a0" name="a5a7be65f764c7136a7807392383e28f4a2d0db8828abaed9b27c2ae65c33d12a0"></a>String&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5a7be65f764c7136a7807392383e28f4a459bd23dcaae87285e5f1c05bb52c528" name="a5a7be65f764c7136a7807392383e28f4a459bd23dcaae87285e5f1c05bb52c528"></a>Time&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5a7be65f764c7136a7807392383e28f4acddd17a1fdb4f6365fc9c61ce6521ee4" name="a5a7be65f764c7136a7807392383e28f4acddd17a1fdb4f6365fc9c61ce6521ee4"></a>GPSCoords&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5a7be65f764c7136a7807392383e28f4a58bfef99bd10934b86836021d180d7de" name="a5a7be65f764c7136a7807392383e28f4a58bfef99bd10934b86836021d180d7de"></a>Handshake&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5a7be65f764c7136a7807392383e28f4a777a58e115f66dd2287b34c5553e1e9a" name="a5a7be65f764c7136a7807392383e28f4a777a58e115f66dd2287b34c5553e1e9a"></a>Stage&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >The class to create a <a class="el" href="../../d5/de8/class_radio_packet.html" title="The class to create a RadioPacket. This is the packet that is universally sent for each radio transac...">RadioPacket</a>. This is the packet that is universally sent for each radio transaction. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="acc7ed23504700fcce262a725bab379d0" name="acc7ed23504700fcce262a725bab379d0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc7ed23504700fcce262a725bab379d0">&#9670;&nbsp;</a></span>RadioPacket() <span class="overload">[1/4]</span></h2>
 
@@ -241,7 +272,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Creates a <a class="el" href="../../d5/de8/class_radio_packet.html">RadioPacket</a> object. Parses the inputStruct received from the 433T30D radio and sets the data in the object. </p>
+<p>Creates a <a class="el" href="../../d5/de8/class_radio_packet.html" title="The class to create a RadioPacket. This is the packet that is universally sent for each radio transac...">RadioPacket</a> object. Parses the inputStruct received from the 433T30D radio and sets the data in the object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">inputStruct</td><td>The struct of raw data received from the 433T30D radio module </td></tr>
@@ -251,8 +282,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="acd287841467904dae38b3a2239edb4ba" name="acd287841467904dae38b3a2239edb4ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd287841467904dae38b3a2239edb4ba">&#9670;&nbsp;</a></span>RadioPacket() <span class="overload">[2/4]</span></h2>
+<a id="a15a22d52fa88b3037c21818e5bec66ea" name="a15a22d52fa88b3037c21818e5bec66ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15a22d52fa88b3037c21818e5bec66ea">&#9670;&nbsp;</a></span>RadioPacket() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -260,26 +291,38 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">RadioPacket::RadioPacket </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d5/de8/class_radio_packet.html#a5a7be65f764c7136a7807392383e28f4">PacketPayloadTypes</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d6/d56/class_packet_data_structures.html#af19b40e5093b9a2c23cb4b5075bd2150">PacketPayloadTypes</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bool1</em>, </td>
+          <td class="paramname"><em>isPayloadValid</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bool2</em>, </td>
+          <td class="paramname"><em>extraBool</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/d56/class_packet_data_structures.html#af1320a6456273d40a20a6402a1a6857f">RadioAddress</a>&#160;</td>
+          <td class="paramname"><em>destAddress</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>data</em> = <code>nullptr</code>&#160;</td>
+          <td class="paramname"><em>data</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>expectACK</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -289,21 +332,23 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Creates a <a class="el" href="../../d5/de8/class_radio_packet.html">RadioPacket</a> object with the given data. </p>
+<p>Creates a <a class="el" href="../../d5/de8/class_radio_packet.html" title="The class to create a RadioPacket. This is the packet that is universally sent for each radio transac...">RadioPacket</a> object with the given data. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">type</td><td>The type of packet to make </td></tr>
-    <tr><td class="paramname">bool1</td><td>The first bool in the packet flag byte </td></tr>
-    <tr><td class="paramname">bool2</td><td>The second bool in the packet flag byte </td></tr>
+    <tr><td class="paramname">isPayloadValid</td><td>Marks if the data in the packet's payload is valid or not </td></tr>
+    <tr><td class="paramname">extraBool</td><td>The extra bool to send in the packet header </td></tr>
+    <tr><td class="paramname">destAddress</td><td>The destination address of where to send this packet to. </td></tr>
     <tr><td class="paramname">data</td><td>Optional. The data to set in the payload </td></tr>
+    <tr><td class="paramname">expectACK</td><td>Defaults to true. Set to true for the receiver of this packet to send an ACK packet back. Set false if receiver doesn't need to send back an ACK packet </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="abc843ab699bbf03f8231a1e421370369" name="abc843ab699bbf03f8231a1e421370369"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc843ab699bbf03f8231a1e421370369">&#9670;&nbsp;</a></span>RadioPacket() <span class="overload">[3/4]</span></h2>
+<a id="affa541f9653fa4a5e752880c167b4251" name="affa541f9653fa4a5e752880c167b4251"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affa541f9653fa4a5e752880c167b4251">&#9670;&nbsp;</a></span>RadioPacket() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -311,8 +356,8 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">RadioPacket::RadioPacket </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>allFlagBits</em>, </td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>header</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -328,10 +373,10 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Creates a <a class="el" href="../../d5/de8/class_radio_packet.html">RadioPacket</a> object with the given data. </p>
+<p>Creates a <a class="el" href="../../d5/de8/class_radio_packet.html" title="The class to create a RadioPacket. This is the packet that is universally sent for each radio transac...">RadioPacket</a> object with the given data. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">allFlagBits</td><td>The flag bits to set </td></tr>
+    <tr><td class="paramname">header</td><td>The header Byte to set </td></tr>
     <tr><td class="paramname">data</td><td>The data to set in the payload </td></tr>
   </table>
   </dd>
@@ -359,162 +404,30 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a48359badb6fbce9f689b60c9cc7f04be" name="a48359badb6fbce9f689b60c9cc7f04be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48359badb6fbce9f689b60c9cc7f04be">&#9670;&nbsp;</a></span>GetPacketBool1() <span class="overload">[1/2]</span></h2>
+<a id="a6686e97d2e08cade8da91118bd2ffff0" name="a6686e97d2e08cade8da91118bd2ffff0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6686e97d2e08cade8da91118bd2ffff0">&#9670;&nbsp;</a></span>GetPacketPayload()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool RadioPacket::GetPacketBool1 </td>
+          <td class="memname">bool RadioPacket::GetPacketPayload </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the value of bool1 in the packet flags This is flag bit [4]. </p>
-
-</div>
-</div>
-<a id="a62504b562e947c868a96277ae2788946" name="a62504b562e947c868a96277ae2788946"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62504b562e947c868a96277ae2788946">&#9670;&nbsp;</a></span>GetPacketBool1() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool RadioPacket::GetPacketBool1 </td>
-          <td>(</td>
-          <td class="paramtype">const uint8_t&#160;</td>
-          <td class="paramname"><em>flagByte</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of bool1 in the packet flags This is flag bit [4]. </p>
+<p>Gets the data stored in the packet's payload. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">flagByte</td><td></td></tr>
+    <tr><td class="paramname">data</td><td>the void pointer of the appropriate data type to get</td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a7cde418d6c9c5380abea309f0601053a" name="a7cde418d6c9c5380abea309f0601053a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7cde418d6c9c5380abea309f0601053a">&#9670;&nbsp;</a></span>GetPacketBool2() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool RadioPacket::GetPacketBool2 </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the value of bool2 in the packet flags This is flag bit [5]. </p>
-
-</div>
-</div>
-<a id="add99dee698c4736c4428ec39bc578b3c" name="add99dee698c4736c4428ec39bc578b3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add99dee698c4736c4428ec39bc578b3c">&#9670;&nbsp;</a></span>GetPacketBool2() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool RadioPacket::GetPacketBool2 </td>
-          <td>(</td>
-          <td class="paramtype">const uint8_t&#160;</td>
-          <td class="paramname"><em>flagByte</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of bool2 in the packet flags This is flag bit [5]. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">flagByte</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a2be41d117dd4be0974b8a351463055ae" name="a2be41d117dd4be0974b8a351463055ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2be41d117dd4be0974b8a351463055ae">&#9670;&nbsp;</a></span>GetPacketType() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d5/de8/class_radio_packet.html#a5a7be65f764c7136a7807392383e28f4">RadioPacket::PacketPayloadTypes</a> RadioPacket::GetPacketType </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns what type of data the packet contains according to PacketTypes enum These are flag bits [3:0]. </p>
-
-</div>
-</div>
-<a id="a7c63f5f1ac250b05bc1a665d5b59d51f" name="a7c63f5f1ac250b05bc1a665d5b59d51f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c63f5f1ac250b05bc1a665d5b59d51f">&#9670;&nbsp;</a></span>GetPacketType() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d5/de8/class_radio_packet.html#a5a7be65f764c7136a7807392383e28f4">RadioPacket::PacketPayloadTypes</a> RadioPacket::GetPacketType </td>
-          <td>(</td>
-          <td class="paramtype">const uint8_t&#160;</td>
-          <td class="paramname"><em>flagByte</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns what type of data the packet contains according to PacketTypes enum These are flag bits [3:0]. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">flagByte</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section return"><dt>Returns</dt><dd>Boolean whether the payload was successfully returned. </dd></dl>
 
 </div>
 </div>
@@ -545,8 +458,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac940ca552de756cdcdf0563b3f3a5c71" name="ac940ca552de756cdcdf0563b3f3a5c71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac940ca552de756cdcdf0563b3f3a5c71">&#9670;&nbsp;</a></span>PrintAllPacketData()</h2>
+<a id="ac0cc63ee9b041c9ef24e5122caf41e75" name="ac0cc63ee9b041c9ef24e5122caf41e75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0cc63ee9b041c9ef24e5122caf41e75">&#9670;&nbsp;</a></span>PrintAllPacketData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -555,7 +468,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">void RadioPacket::PrintAllPacketData </td>
           <td>(</td>
           <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>flagBitLine</em> = <code>nullptr</code>, </td>
+          <td class="paramname"><em>headerLine</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -571,82 +484,11 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Prints all the packet data. Prints the flag byte first, then the payload data. </p>
+<p>Prints all the packet data. Prints the header byte first, then the payload data. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">flagBitLine</td><td>Optional. The first line of the printed message. Will be populated with data about the flag bits </td></tr>
+    <tr><td class="paramname">headerLine</td><td>Optional. The first line of the printed message. Will be populated with the header data </td></tr>
     <tr><td class="paramname">payloadLine</td><td>Optional. The second line of the printed message. Will be populated with the payload data </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a358661ca8159098c184dcc979434df03" name="a358661ca8159098c184dcc979434df03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a358661ca8159098c184dcc979434df03">&#9670;&nbsp;</a></span>PrintPacketFlagBits() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void RadioPacket::PrintPacketFlagBits </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>flagBitLine</em> = <code>nullptr</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Prints the packet flag byte (all the flag bits) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">flagBitLine</td><td>Optional. The first line of the printed message. Will be populated with data about the flag bits </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a818c3b80f8524bdb58e98605f1a8d40e" name="a818c3b80f8524bdb58e98605f1a8d40e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a818c3b80f8524bdb58e98605f1a8d40e">&#9670;&nbsp;</a></span>PrintPacketFlagBits() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void RadioPacket::PrintPacketFlagBits </td>
-          <td>(</td>
-          <td class="paramtype">const uint8_t&#160;</td>
-          <td class="paramname"><em>flagByte</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>flagBitLine</em> = <code>nullptr</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Prints the packet flag byte (all the flag bits) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">flagByte</td><td>The flag bits </td></tr>
-    <tr><td class="paramname">flagBitLine</td><td>Optional. The first line of the printed message. Will be populated with data about the flag bits </td></tr>
   </table>
   </dd>
 </dl>
@@ -679,97 +521,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1b6cfbc38cd6b1e764b621be97037352" name="a1b6cfbc38cd6b1e764b621be97037352"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b6cfbc38cd6b1e764b621be97037352">&#9670;&nbsp;</a></span>SetPacketBool1()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void RadioPacket::SetPacketBool1 </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bool1</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets bit [4] of the flag bits. This is bool1 sent with the packet flags Does not overwrite other flag values, only sets the bool1. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bool1</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a28b2ac0deb002a187ef0a8ccbd710fc3" name="a28b2ac0deb002a187ef0a8ccbd710fc3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28b2ac0deb002a187ef0a8ccbd710fc3">&#9670;&nbsp;</a></span>SetPacketBool2()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void RadioPacket::SetPacketBool2 </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bool2</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets bit [5] of the flag bits. This is bool2 sent with the packet flags Does not overwrite other flag values, only sets the bool2. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bool2</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a7114f07ca5eed6d16af552ff2ad517ed" name="a7114f07ca5eed6d16af552ff2ad517ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7114f07ca5eed6d16af552ff2ad517ed">&#9670;&nbsp;</a></span>SetPacketBools()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void RadioPacket::SetPacketBools </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bool1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bool2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets bits [5:4] of the flag bits. These are the two bools sent with the packet flags Does not overwrite other flag values, only sets the two bools. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bool1</td><td></td></tr>
-    <tr><td class="paramname">bool2</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a904c20e7ab150c6fb57c402a2402784b" name="a904c20e7ab150c6fb57c402a2402784b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a904c20e7ab150c6fb57c402a2402784b">&#9670;&nbsp;</a></span>SetPacketData() <span class="overload">[1/2]</span></h2>
+<a id="a34954bf164ed883c438f174f8c3bde0b" name="a34954bf164ed883c438f174f8c3bde0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34954bf164ed883c438f174f8c3bde0b">&#9670;&nbsp;</a></span>SetPacketData() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -777,26 +530,38 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">bool RadioPacket::SetPacketData </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d5/de8/class_radio_packet.html#a5a7be65f764c7136a7807392383e28f4">PacketPayloadTypes</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d6/d56/class_packet_data_structures.html#af19b40e5093b9a2c23cb4b5075bd2150">PacketPayloadTypes</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bool1</em>, </td>
+          <td class="paramname"><em>isPayloadValid</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bool2</em>, </td>
+          <td class="paramname"><em>extraBool</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/d56/class_packet_data_structures.html#af1320a6456273d40a20a6402a1a6857f">RadioAddress</a>&#160;</td>
+          <td class="paramname"><em>destAddress</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>payloadData</em>&#160;</td>
+          <td class="paramname"><em>payloadData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>expectACK</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -806,13 +571,15 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the paylaod data and flag byte of the packet. </p>
+<p>Sets the paylaod and header data of the packet. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">type</td><td>The type of the radio packet </td></tr>
-    <tr><td class="paramname">bool1</td><td>Bool1 of the packet flag byte </td></tr>
-    <tr><td class="paramname">bool2</td><td>Bool2 of the packet flag byte </td></tr>
-    <tr><td class="paramname">payloadData</td><td>The data to put in the packet. Pass in the appropriate data that matches the packet type. ex: if packet type is Float, pass in a pointer to a float[4]</td></tr>
+    <tr><td class="paramname">isPayloadValid</td><td>Marks if the data in the packet's payload is valid or not </td></tr>
+    <tr><td class="paramname">extraBool</td><td>The extra bool to send in the packet header </td></tr>
+    <tr><td class="paramname">destAddress</td><td>The destination address of where to send this packet to. </td></tr>
+    <tr><td class="paramname">payloadData</td><td>The data to put in the packet. Pass in the appropriate data that matches the packet type. ex: if packet type is Float, pass in a pointer to a float[4] </td></tr>
+    <tr><td class="paramname">expectACK</td><td>Defaults to true. Set to true for the receiver of this packet to send an ACK packet back. Set false if receiver doesn't need to send back an ACK packet</td></tr>
   </table>
   </dd>
 </dl>
@@ -820,8 +587,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a36b2813f410b334847c78c31b5b7fdc5" name="a36b2813f410b334847c78c31b5b7fdc5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36b2813f410b334847c78c31b5b7fdc5">&#9670;&nbsp;</a></span>SetPacketData() <span class="overload">[2/2]</span></h2>
+<a id="a57d1cb67f3a6513ef9f04ff9c20106b0" name="a57d1cb67f3a6513ef9f04ff9c20106b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57d1cb67f3a6513ef9f04ff9c20106b0">&#9670;&nbsp;</a></span>SetPacketData() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -829,8 +596,8 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">bool RadioPacket::SetPacketData </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>allFlagBits</em>, </td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>header</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -846,10 +613,10 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the paylaod data and flag byte of the packet. </p>
+<p>Sets the payload and header data of the packet. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">allFlagBits</td><td>the flag byte to set for the flag bits </td></tr>
+    <tr><td class="paramname">header</td><td>the header to set </td></tr>
     <tr><td class="paramname">payloadData</td><td>The data to put in the packet. Pass in the appropriate data that matches the packet type. ex: if packet type is Float, pass in a pointer to a float[4]</td></tr>
   </table>
   </dd>
@@ -859,8 +626,8 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/PSP/libraries/libs/RadioPacket/<a class="el" href="../../d2/da2/_radio_packet_8h_source.html">RadioPacket.h</a></li>
-<li>C:/PSP/libraries/libs/RadioPacket/<a class="el" href="../../da/da8/_radio_packet_8cpp.html">RadioPacket.cpp</a></li>
+<li>C:/PSP/libraries/libs/RadioPacket/src/<a class="el" href="../../d2/da2/_radio_packet_8h_source.html">RadioPacket.h</a></li>
+<li>C:/PSP/libraries/libs/RadioPacket/src/<a class="el" href="../../da/da8/_radio_packet_8cpp.html">RadioPacket.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -109,6 +109,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a04652e720c1e40da5511df06dce8d323"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#a04652e720c1e40da5511df06dce8d323">WaitForPacket</a> (<a class="el" href="../../d2/d58/struct_serial_packets_1_1serial_packet_node.html">SerialPackets::serialPacketNode</a> &amp;packet, uint32_t packetID, uint32_t timeoutMilliseconds=<a class="el" href="../../d8/dec/class_serial_interface.html#a2abf75ccabe2dd6dd38dc99a065738b0">TIMEOUT_INFINITY</a>)</td></tr>
 <tr class="memdesc:a04652e720c1e40da5511df06dce8d323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks and waits for a packet to be received over the serial COM port that matches packetID.  <a href="../../d8/dec/class_serial_interface.html#a04652e720c1e40da5511df06dce8d323">More...</a><br /></td></tr>
 <tr class="separator:a04652e720c1e40da5511df06dce8d323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c1f1216a75a1d9762137d7bc313cb81"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#a2c1f1216a75a1d9762137d7bc313cb81">WaitForAnyPacket</a> (<a class="el" href="../../d2/d58/struct_serial_packets_1_1serial_packet_node.html">SerialPackets::serialPacketNode</a> &amp;packet, uint32_t timeoutMilliseconds=<a class="el" href="../../d8/dec/class_serial_interface.html#a2abf75ccabe2dd6dd38dc99a065738b0">TIMEOUT_INFINITY</a>)</td></tr>
+<tr class="memdesc:a2c1f1216a75a1d9762137d7bc313cb81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks and waits for any packet to be received over the serial COM port.  <a href="../../d8/dec/class_serial_interface.html#a2c1f1216a75a1d9762137d7bc313cb81">More...</a><br /></td></tr>
+<tr class="separator:a2c1f1216a75a1d9762137d7bc313cb81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7a5e6889bd0acd2b145e6512091f3d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#ab7a5e6889bd0acd2b145e6512091f3d2">WritePacket</a> (<a class="el" href="../../d2/d58/struct_serial_packets_1_1serial_packet_node.html">SerialPackets::serialPacketNode</a> &amp;node)</td></tr>
 <tr class="memdesc:ab7a5e6889bd0acd2b145e6512091f3d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a packet over the serial interface.  <a href="../../d8/dec/class_serial_interface.html#ab7a5e6889bd0acd2b145e6512091f3d2">More...</a><br /></td></tr>
 <tr class="separator:ab7a5e6889bd0acd2b145e6512091f3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,6 +121,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afa657afa677c3d4f9d81912e12e58485"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#afa657afa677c3d4f9d81912e12e58485">WritePacket</a> (void *packetData, uint32_t packetID)</td></tr>
 <tr class="memdesc:afa657afa677c3d4f9d81912e12e58485"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a packet over the serial interface.  <a href="../../d8/dec/class_serial_interface.html#afa657afa677c3d4f9d81912e12e58485">More...</a><br /></td></tr>
 <tr class="separator:afa657afa677c3d4f9d81912e12e58485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac441621f1c44995562c19d464e619739"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#ac441621f1c44995562c19d464e619739">IsPacketAvailable</a> ()</td></tr>
+<tr class="memdesc:ac441621f1c44995562c19d464e619739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether there are any packets currently available to read from the buffer.  <a href="../../d8/dec/class_serial_interface.html#ac441621f1c44995562c19d464e619739">More...</a><br /></td></tr>
+<tr class="separator:ac441621f1c44995562c19d464e619739"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2521188c0b35b2f38ef0a63c9b3343c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dec/class_serial_interface.html#a2521188c0b35b2f38ef0a63c9b3343c4">PrintPacketsInBuffer</a> ()</td></tr>
 <tr class="memdesc:a2521188c0b35b2f38ef0a63c9b3343c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints all the packets that are currently in the buffer.  <a href="../../d8/dec/class_serial_interface.html#a2521188c0b35b2f38ef0a63c9b3343c4">More...</a><br /></td></tr>
 <tr class="separator:a2521188c0b35b2f38ef0a63c9b3343c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -212,6 +218,26 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Completely empties the packet buffer. </p>
+
+</div>
+</div>
+<a id="ac441621f1c44995562c19d464e619739" name="ac441621f1c44995562c19d464e619739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac441621f1c44995562c19d464e619739">&#9670;&nbsp;</a></span>IsPacketAvailable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SerialInterface::IsPacketAvailable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether there are any packets currently available to read from the buffer. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns true if a packet is available, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -938,6 +964,44 @@ Static Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2c1f1216a75a1d9762137d7bc313cb81" name="a2c1f1216a75a1d9762137d7bc313cb81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c1f1216a75a1d9762137d7bc313cb81">&#9670;&nbsp;</a></span>WaitForAnyPacket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SerialInterface::WaitForAnyPacket </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d58/struct_serial_packets_1_1serial_packet_node.html">SerialPackets::serialPacketNode</a> &amp;&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeoutMilliseconds</em> = <code><a class="el" href="../../d8/dec/class_serial_interface.html#a2abf75ccabe2dd6dd38dc99a065738b0">TIMEOUT_INFINITY</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Blocks and waits for any packet to be received over the serial COM port. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">packet</td><td>The variable that the read packet will be stored in. </td></tr>
+    <tr><td class="paramname">timeoutMilliseconds</td><td>The duration to wait before timing out if the packet has not been read yet. It's defaulted to TIMEOUT_INFINITY.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns true if a packet was read, false otherwise. </dd></dl>
 
 </div>
 </div>
